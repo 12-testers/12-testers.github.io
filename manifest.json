@@ -1,0 +1,15 @@
+{
+  "name": "12-Testers — Google Play Closed Testing Service",
+  "short_name": "12-Testers",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0284c7",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
