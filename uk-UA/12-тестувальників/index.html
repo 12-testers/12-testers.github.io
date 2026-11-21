@@ -651,11 +651,11 @@ a:hover {
 
 
 
-/* Header & Brand Logo Modern Styling */
+/* Header & Brand Logo Modern 2026 Styling */
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.85rem;
+  gap: 0.78rem;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
@@ -665,30 +665,31 @@ a:hover {
 }
 
 .logo-svg {
-  width: 38px;
-  height: 38px;
+  width: 42px;
+  height: 42px;
   flex-shrink: 0;
-  border-radius: 10px;
-  filter: drop-shadow(0 3px 8px rgba(37, 99, 235, 0.22));
+  border-radius: 12px;
+  filter: drop-shadow(0 4px 12px rgba(37, 99, 235, 0.26));
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease;
 }
 
 .logo:hover .logo-svg {
   transform: translateY(-1.5px) scale(1.03);
-  filter: drop-shadow(0 6px 14px rgba(37, 99, 235, 0.32));
+  filter: drop-shadow(0 8px 18px rgba(37, 99, 235, 0.34));
 }
 
 .logo-text-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 0.22rem;
 }
 
 .logo-text {
   font-family: var(--font-heading);
-  font-size: 1.22rem;
-  line-height: 1.15;
-  letter-spacing: -0.028em;
+  font-size: 1.24rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
   color: #0f172a;
   display: inline-flex;
   align-items: baseline;
@@ -698,12 +699,12 @@ a:hover {
 .logo-text strong {
   font-weight: 800;
   color: #0f172a;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.032em;
 }
 
 .logo-accent {
   font-weight: 800;
-  background: linear-gradient(135deg, #0284c7 0%, #2563eb 52%, #4f46e5 100%);
+  background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 52%, #4338ca 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -713,44 +714,41 @@ a:hover {
 .logo-byline {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  margin-top: 0.18rem;
-}
-
-.by-text {
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #94a3b8;
+  gap: 0.38rem;
   line-height: 1;
 }
 
-.acl-sublogo {
-  height: 40px;
-  width: auto;
-  opacity: 1;
-  vertical-align: middle;
-  display: inline-block;
-  object-fit: contain;
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.04));
-  transition: transform 0.2s ease;
+.logo-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.22);
+  flex-shrink: 0;
 }
 
-.logo:hover .acl-sublogo {
-  transform: scale(1.02);
+.logo-subtag {
+  font-family: var(--font-body);
+  font-size: 0.64rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #64748b;
+  line-height: 1;
 }
 
 @media (max-width: 420px) {
   .logo-text {
-    font-size: 1.05rem;
-  }
-  .acl-sublogo {
-    height: 34px;
+    font-size: 1.06rem;
   }
   .logo-svg {
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+  .logo-subtag {
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
   }
 }
 
@@ -2344,713 +2342,38 @@ a:hover {
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="https://12-testers.github.io/uk-UA/12-тестувальників/" class="logo" aria-label="12 тестувальників на 14 днів">
-        <svg class="logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg class="logo-svg" width="42" height="42" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <defs>
-            <linearGradient id="gpLogoGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#0284c7"/>
+            <linearGradient id="gp26HdrBase" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#0ea5e9"/>
               <stop offset="50%" stop-color="#2563eb"/>
-              <stop offset="100%" stop-color="#4f46e5"/>
+              <stop offset="100%" stop-color="#4338ca"/>
             </linearGradient>
-            <linearGradient id="gpBadgeGrad" x1="22" y1="21" x2="34" y2="33" gradientUnits="userSpaceOnUse">
+            <radialGradient id="gp26HdrSheen" cx="0.25" cy="0.15" r="0.75">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.28"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="gp26HdrCheck" x1="25" y1="25" x2="39" y2="39" gradientUnits="userSpaceOnUse">
               <stop offset="0%" stop-color="#10b981"/>
-              <stop offset="100%" stop-color="#047857"/>
+              <stop offset="100%" stop-color="#059669"/>
             </linearGradient>
           </defs>
-          <rect width="40" height="40" rx="10" fill="url(#gpLogoGrad)"/>
-          <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
-          <path d="M12.5 10.5C12.5 9.4 13.7 8.7 14.6 9.3L26 16.8C26.9 17.4 26.9 18.6 26 19.2L14.6 26.7C13.7 27.3 12.5 26.6 12.5 25.5V10.5Z" fill="#ffffff"/>
-          <circle cx="28.5" cy="27.5" r="7.5" fill="#ffffff"/>
-          <circle cx="28.5" cy="27.5" r="6" fill="url(#gpBadgeGrad)"/>
-          <path d="M25.7 27.5L27.7 29.5L31.3 25.2" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect width="44" height="44" rx="12" fill="url(#gp26HdrBase)"/>
+          <rect width="44" height="44" rx="12" fill="url(#gp26HdrSheen)"/>
+          <rect x="0.75" y="0.75" width="42.5" height="42.5" rx="11.25" stroke="rgba(255,255,255,0.38)" stroke-width="1.5"/>
+          <path d="M14 12.2C14 11.1 15.2 10.4 16.1 11L28.5 18.8C29.4 19.4 29.4 20.6 28.5 21.2L16.1 29C15.2 29.6 14 28.9 14 27.8V12.2Z" fill="#ffffff"/>
+          <path d="M14.3 11.5L22.2 20L14.3 28.5" stroke="#2563eb" stroke-opacity="0.25" stroke-width="1.4" stroke-linejoin="round"/>
+          <circle cx="31.5" cy="30.5" r="8" fill="#ffffff"/>
+          <circle cx="31.5" cy="30.5" r="6.4" fill="url(#gp26HdrCheck)"/>
+          <path d="M28.5 30.6L30.6 32.7L34.6 28.4" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <div class="logo-text-group">
           <span class="logo-text"><strong>12 Testers</strong> <span class="logo-accent">For 14 Days</span></span>
           <span class="logo-byline">
-            <span class="by-text">by</span>
-            <img src="/assets/ACL_Logo_Light_theme.png" alt="AppConsoleLab" class="acl-sublogo" width="120" height="40">
+            <span class="logo-status-dot"></span>
+            <span class="logo-subtag">GOOGLE PLAY CLOSED TESTING</span>
           </span>
         </div>
-      </a>
-
-      <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menu" type="button" aria-expanded="false">
-        <svg class="hamburger-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-        <svg class="close-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-
-      <nav class="main-nav" id="mainNav">
-        <ul class="nav-list">
-          <li><a href="https://12-testers.github.io/uk-UA/12-тестувальників/" class="nav-link active">Головна</a></li>
-          <li><a href="#how-it-works" class="nav-link">Як це працює</a></li>
-          <li><a href="#pricing" class="nav-link">Ціни</a></li>
-          <li><a href="#reviews" class="nav-link">Відгуки</a></li>
-          <li><a href="#faq" class="nav-link">FAQ</a></li>
-          <li class="lang-dropdown" id="langDropdown">
-            <button type="button" class="lang-toggle-btn" id="langToggleBtn" aria-expanded="false" aria-haspopup="true">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              <span>Languages (50)</span>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="lang-dropdown-menu" role="menu">
-              <a href="/" class="lang-dropdown-item is-main-en"><span>English (Main Homepage)</span><span class="lang-code-pill">EN</span></a>
-              <a href="/af/12-toetsers/" class="lang-dropdown-item"><span>Afrikaans</span><span class="lang-code-pill">af</span></a>
-              <a href="/am/12-ሞካሪዎች/" class="lang-dropdown-item"><span>አማርኛ (Amharic)</span><span class="lang-code-pill">am</span></a>
-              <a href="/bg/12-тестери/" class="lang-dropdown-item"><span>Български (Bulgarian)</span><span class="lang-code-pill">bg</span></a>
-              <a href="/ca/12-provadors/" class="lang-dropdown-item"><span>Català (Catalan)</span><span class="lang-code-pill">ca</span></a>
-              <a href="/zh-HK/12-名測試人員/" class="lang-dropdown-item"><span>繁體中文 — 香港</span><span class="lang-code-pill">zh-HK</span></a>
-              <a href="/zh-CN/12-名测试人员/" class="lang-dropdown-item"><span>简体中文 — 中国</span><span class="lang-code-pill">zh-CN</span></a>
-              <a href="/zh-TW/12-名測試人員/" class="lang-dropdown-item"><span>繁體中文 — 台灣</span><span class="lang-code-pill">zh-TW</span></a>
-              <a href="/hr/12-testera/" class="lang-dropdown-item"><span>Hrvatski (Croatian)</span><span class="lang-code-pill">hr</span></a>
-              <a href="/cs/12-testerů/" class="lang-dropdown-item"><span>Čeština (Czech)</span><span class="lang-code-pill">cs</span></a>
-              <a href="/da/12-testere/" class="lang-dropdown-item"><span>Dansk (Danish)</span><span class="lang-code-pill">da</span></a>
-              <a href="/nl/12-testers/" class="lang-dropdown-item"><span>Nederlands (Dutch)</span><span class="lang-code-pill">nl</span></a>
-              <a href="/en-GB/12-testers/" class="lang-dropdown-item"><span>English (UK)</span><span class="lang-code-pill">en-GB</span></a>
-              <a href="/en-US/12-testers/" class="lang-dropdown-item"><span>English (US)</span><span class="lang-code-pill">en-US</span></a>
-              <a href="/et/12-testijat/" class="lang-dropdown-item"><span>Eesti (Estonian)</span><span class="lang-code-pill">et</span></a>
-              <a href="/fil/12-na-tester/" class="lang-dropdown-item"><span>Filipino</span><span class="lang-code-pill">fil</span></a>
-              <a href="/fi/12-testaajaa/" class="lang-dropdown-item"><span>Suomi (Finnish)</span><span class="lang-code-pill">fi</span></a>
-              <a href="/fr-CA/12-testeurs/" class="lang-dropdown-item"><span>Français (Canada)</span><span class="lang-code-pill">fr-CA</span></a>
-              <a href="/fr-FR/12-testeurs/" class="lang-dropdown-item"><span>Français (France)</span><span class="lang-code-pill">fr-FR</span></a>
-              <a href="/de/12-tester/" class="lang-dropdown-item"><span>Deutsch (German)</span><span class="lang-code-pill">de</span></a>
-              <a href="/el/12-δοκιμαστές/" class="lang-dropdown-item"><span>Ελληνικά (Greek)</span><span class="lang-code-pill">el</span></a>
-              <a href="/he/12-בודקים/" class="lang-dropdown-item"><span>עברית (Hebrew)</span><span class="lang-code-pill">he</span></a>
-              <a href="/hi/12-टेस्टर/" class="lang-dropdown-item"><span>हिन्दी (Hindi)</span><span class="lang-code-pill">hi</span></a>
-              <a href="/hu/12-tesztelő/" class="lang-dropdown-item"><span>Magyar (Hungarian)</span><span class="lang-code-pill">hu</span></a>
-              <a href="/is/12-prófendur/" class="lang-dropdown-item"><span>Íslenska (Icelandic)</span><span class="lang-code-pill">is</span></a>
-              <a href="/id/12-penguji/" class="lang-dropdown-item"><span>Bahasa Indonesia</span><span class="lang-code-pill">id</span></a>
-              <a href="/it/12-tester/" class="lang-dropdown-item"><span>Italiano (Italian)</span><span class="lang-code-pill">it</span></a>
-              <a href="/ja/12-人のテスター/" class="lang-dropdown-item"><span>日本語 (Japanese)</span><span class="lang-code-pill">ja</span></a>
-              <a href="/ko/12-명의-테스터/" class="lang-dropdown-item"><span>한국어 (Korean)</span><span class="lang-code-pill">ko</span></a>
-              <a href="/lv/12-testētāji/" class="lang-dropdown-item"><span>Latviešu (Latvian)</span><span class="lang-code-pill">lv</span></a>
-              <a href="/lt/12-testuotojai/" class="lang-dropdown-item"><span>Lietuvių (Lithuanian)</span><span class="lang-code-pill">lt</span></a>
-              <a href="/ms/12-penguji/" class="lang-dropdown-item"><span>Bahasa Melayu (Malay)</span><span class="lang-code-pill">ms</span></a>
-              <a href="/no/12-testere/" class="lang-dropdown-item"><span>Norsk (Norwegian)</span><span class="lang-code-pill">no</span></a>
-              <a href="/pl/12-testerów/" class="lang-dropdown-item"><span>Polski (Polish)</span><span class="lang-code-pill">pl</span></a>
-              <a href="/pt-BR/12-testadores/" class="lang-dropdown-item"><span>Português (Brasil)</span><span class="lang-code-pill">pt-BR</span></a>
-              <a href="/pt-PT/12-testadores/" class="lang-dropdown-item"><span>Português (Portugal)</span><span class="lang-code-pill">pt-PT</span></a>
-              <a href="/ro/12-testeri/" class="lang-dropdown-item"><span>Română (Romanian)</span><span class="lang-code-pill">ro</span></a>
-              <a href="/ru/12-тестировщиков/" class="lang-dropdown-item"><span>Русский (Russian)</span><span class="lang-code-pill">ru</span></a>
-              <a href="/sr/12-тестера/" class="lang-dropdown-item"><span>Српски (Serbian)</span><span class="lang-code-pill">sr</span></a>
-              <a href="/sk/12-testerov/" class="lang-dropdown-item"><span>Slovenčina (Slovak)</span><span class="lang-code-pill">sk</span></a>
-              <a href="/sl/12-preizkuševalcev/" class="lang-dropdown-item"><span>Slovenščina (Slovenian)</span><span class="lang-code-pill">sl</span></a>
-              <a href="/es-419/12-evaluadores/" class="lang-dropdown-item"><span>Español (Latinoamérica)</span><span class="lang-code-pill">es-419</span></a>
-              <a href="/es-ES/12-evaluadores/" class="lang-dropdown-item"><span>Español (España)</span><span class="lang-code-pill">es-ES</span></a>
-              <a href="/sw/wajaribu-12/" class="lang-dropdown-item"><span>Kiswahili (Swahili)</span><span class="lang-code-pill">sw</span></a>
-              <a href="/sv/12-testare/" class="lang-dropdown-item"><span>Svenska (Swedish)</span><span class="lang-code-pill">sv</span></a>
-              <a href="/th/12-ผู้ทดสอบ/" class="lang-dropdown-item"><span>ไทย (Thai)</span><span class="lang-code-pill">th</span></a>
-              <a href="/tr/12-test-kullanıcısı/" class="lang-dropdown-item"><span>Türkçe (Turkish)</span><span class="lang-code-pill">tr</span></a>
-              <a href="/uk-UA/12-тестувальників/" class="lang-dropdown-item"><span>Українська (uk-UA)</span><span class="lang-code-pill">uk-UA</span></a>
-              <a href="/vi/12-người-thử-nghiệm/" class="lang-dropdown-item"><span>Tiếng Việt (Vietnamese)</span><span class="lang-code-pill">vi</span></a>
-              <a href="/zu/abahloli-abayi-12/" class="lang-dropdown-item"><span>isiZulu (Zulu)</span><span class="lang-code-pill">zu</span></a>
-            </div>
-          </li>
-        </ul>
-        <div class="nav-cta-wrap">
-          <a href="https://wa.me/923394001479?text=Hi%2C%20I%20need%2012%20testers%20for%2014%20days" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
-            <span class="pulse-dot-green"></span>
-            <span>WhatsApp</span>
-          </a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="badge"><span class="pulse-dot"></span> 100% Відповідність вимогам Google Play Console</div>
-          <h1>12 тестувальників на 14 днів: пройдіть закрите тестування Google Play без відмов</h1>
-          <p class="hero-lead">Керована команда реальних тестувальників на фізичних Android-смартфонах. Щоденні запуски додатку, чесний фідбек і допомога з отриманням доступу до робочої версії.</p>
-          <div class="hero-cta-group" style="margin-bottom: 1rem;">
-            <a href="#pricing" class="btn btn-primary btn-lg">Замовити 12 тестувальників — $20 &rarr;</a>
-            <a href="https://wa.me/923394001479?text=Hi%2C%20I%20need%2012%20testers%20for%2014%20days" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
-              <span class="pulse-dot-green"></span> Написати в WhatsApp
-            </a>
-          </div>
-          <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.825rem; color: var(--text-muted); font-weight: 500; margin-bottom: 2rem;">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-            <span>100% гарантія повернення коштів, якщо додаток не отримає доступ до робочої версії</span>
-          </div>
-          <div class="hero-trust-bar">
-            <div class="trust-item"><img src="/assets/5stars.svg" alt="5 Stars" width="88" height="16"><span>Реальні Android-телефони (Без емуляторів)</span></div>
-            <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Щоденна активність 14 днів поспіль</span></div>
-            <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg><span>Готові відповіді для форми в Play Console</span></div>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <div class="card-header-badge"><span class="dot-live"></span> Рекомендований формат</div>
-          <h2 style="font-size: 1.35rem; color: #0f172a; margin-bottom: 0.75rem;">25+ Перевірених Android-тестувальників</h2>
-          <p style="font-size: 0.95rem; color: #475569; line-height: 1.6; margin-bottom: 1.25rem;">Ми підключаємо понад 25 реальних пристроїв замість рівно 12, щоб гарантувати безпечний запас на весь 14-денний термін.</p>
-          <ul class="hero-feature-list">
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>25+ реальних підключень (із запасом понад вимогу 12 тестувальників)</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Щоденне відкриття додатку та тестування функцій 14 днів</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Детальні баг-репорти зі скріншотами з реальних екранів</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Допомога з відповідями на запитання для доступу до робочої версії</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Підтверджені результати</div>
-          <h2>Чому розробники обирають нас</h2>
-          <p class="section-lead">Реальна статистика сотень Android-додатків, які успішно вийшли в реліз.</p>
-        </div>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-number">99.4%</div>
-            <div class="stat-label">Успішних схвалень</div>
-            <div class="stat-sub">З першої подачі заявки на реліз</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">25+</div>
-            <div class="stat-label">Тестувальників на додаток</div>
-            <div class="stat-sub">Надійний запас понад мінімум 12</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">14 Днів</div>
-            <div class="stat-label">Щоденна активність</div>
-            <div class="stat-sub">Безперервні сесії без пропусків</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">1,200+</div>
-            <div class="stat-label">Додатків у релізі</div>
-            <div class="stat-sub">Успішно опубліковано в Google Play</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Alert -->
-    <section class="section" style="padding-bottom: 0;">
-      <div class="container">
-        <div class="card" style="background: #f0f9ff; border-color: #bae6fd; padding: 1.75rem 2rem;">
-          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem;">
-            <div style="flex: 1; min-width: 260px;">
-              <div class="badge" style="margin-bottom: 0.5rem;"><span class="pulse-dot"></span> Вимога Google Play Console</div>
-              <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.35rem;">Не втрачайте ще 14 днів через неактивних тестувальників!</h3>
-              <p style="font-size: 0.95rem; color: #334155; margin: 0; line-height: 1.6;">Нові особисті акаунти Google Play Console зобов'язані мати щонайменше 12 тестувальників у закритому тестуванні протягом 14 днів поспіль перед запитом доступу до робочої версії. Безкоштовні чати взаємодопомоги часто не відкривають додаток щодня, що призводить до відмови.</p>
-            </div>
-            <div><a href="#pricing" class="btn btn-primary">Розпочати тестування сьогодні &rarr;</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pitfalls -->
-    <section class="section">
-      <div class="container" style="max-width: 920px;">
-        <div class="section-header text-center">
-          <div class="badge badge-amber">Типові помилки</div>
-          <h2>3 головні причини відмови в доступі до робочої версії</h2>
-          <p class="section-lead">Самого списку з 12 email недостатньо — Google перевіряє реальну залученість.</p>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--accent-amber); background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 0.75rem;">1. Тестувальники не запускають додаток щодня</h3>
-            <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">Учасники безкоштовних груп часто встановлюють додаток у перший день і більше не заходять. Алгоритми Google Play фіксують нульову активність і відхиляють заявку.</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--accent-amber); background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 0.75rem;">2. Використання емуляторів або ботів</h3>
-            <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">Google миттєво розпізнає емулятори, однакові IP-адреси та root-пристрої. Такі експерименти можуть призвести навіть до блокування акаунта розробника.</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--accent-amber); background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 0.75rem;">3. Формальні відповіді в анкеті Play Console</h3>
-            <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">Після 14 днів потрібно детально описати відгуки тестувальників та внесені покращення. Загальні фрази без конкретики майже гарантують ще один 14-денний цикл.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="section section-alt" id="how-it-works">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Простий процес</div>
-          <h2>Як це працює у 4 кроки</h2>
-          <p class="section-lead">Від посилання на закрите тестування до публікації в Google Play без зайвих нервів.</p>
-        </div>
-        <div class="steps-grid">
-          <div class="step-card">
-            <div class="step-num">1</div>
-            <h3>Надішліть посилання</h3>
-            <p>Передайте нам opt-in посилання або додайте нашу Google Group у налаштуваннях закритого тестування в Play Console.</p>
-          </div>
-          <div class="step-card">
-            <div class="step-num">2</div>
-            <h3>Встановлення за 24 години</h3>
-            <p>Протягом доби 25+ реальних тестувальників встановлять ваш додаток на фізичні смартфони (Android 11–15).</p>
-          </div>
-          <div class="step-card">
-            <div class="step-num">3</div>
-            <h3>14 днів активного тесту</h3>
-            <p>Щодня протягом 14 днів команда відкриває додаток, перевіряє сценарії використання та фіксує відгуки.</p>
-          </div>
-          <div class="step-card">
-            <div class="step-num">4</div>
-            <h3>Подача на робочу версію</h3>
-            <p>На 15-й день ви отримуєте звіт і готові тези для анкети, щоб упевнено запросити доступ до робочої версії.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Compare -->
-    <section class="section" id="compare">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Чесне порівняння</div>
-          <h2>Чому наш сервіс ефективніший за інші способи</h2>
-          <p class="section-lead">Порівняйте керовану команду тестувальників із безкоштовними групами та пошуком знайомих.</p>
-        </div>
-        <div class="compare-grid">
-          <div class="compare-card">
-            <span class="badge" style="background: #f1f5f9; color: #64748b; border-color: #e2e8f0;">Високий ризик</span>
-            <h3 style="font-size: 1.25rem; color: #0f172a;">Безкоштовні чати (Взаємопіар)</h3>
-            <p style="font-size: 0.925rem; color: #64748b; line-height: 1.5;">Обмін тестами з незнайомцями в Telegram чи на форумах.</p>
-            <ul class="compare-list">
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span>Більшість видаляє додаток через 1–2 дні</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span>Жодного реального фідбеку для звіту</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span>Часте використання емуляторів</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span>Високий ризик відмови на 14-й день</span></li>
-            </ul>
-          </div>
-          <div class="compare-card">
-            <span class="badge badge-amber">Довго і складно</span>
-            <h3 style="font-size: 1.25rem; color: #0f172a;">Просити друзів і знайомих</h3>
-            <p style="font-size: 0.925rem; color: #64748b; line-height: 1.5;">Вмовляти близьких щодня заходити в додаток два тижні.</p>
-            <ul class="compare-list">
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span>У багатьох знайомих iPhone замість Android</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span>Незручно щодня нагадувати про запуск</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span>Обмежена кількість моделей телефонів</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span>Збір 12 людей затягується на тижні</span></li>
-            </ul>
-          </div>
-          <div class="compare-card recommended">
-            <span class="badge badge-success">Оптимальний вибір</span>
-            <h3 style="font-size: 1.25rem; color: #0f172a;">12 тестувальників на 14 днів</h3>
-            <p style="font-size: 0.925rem; color: #64748b; line-height: 1.5;">Організоване тестування на реальних смартфонах під контролем.</p>
-            <ul class="compare-list">
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>25+ фізичних пристроїв різних брендів</span></li>
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Гарантована щоденна активність 14 днів</span></li>
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Структуровані UI/UX та баг-репорти</span></li>
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>100% гарантія повернення коштів</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ROI -->
-    <section class="section section-alt" id="why-price">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Економія часу</div>
-          <h2>Не втрачайте тижні через повторне тестування</h2>
-          <p class="section-lead">Ваш час розробника коштує набагато дорожче, ніж ручний пошук тестувальників.</p>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 960px; margin: 0 auto;">
-          <div class="card" style="padding: 2.25rem 2rem; background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 1rem;">Скільки коштує відмова Google?</h3>
-            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin-bottom: 1rem;">Якщо на 15-й день ви отримаєте відмову, Google Play змусить пройти ще 14 днів закритого тестування. Це понад місяць затримки релізу.</p>
-            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin: 0;">Крім того, постійне нагадування незнайомцям у чатах відволікає від коду та просування продукту.</p>
-          </div>
-          <div class="card" style="padding: 2.25rem 2rem; background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 1rem;">Чому $20–$40 — це вигідна інвестиція</h3>
-            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin-bottom: 1rem;">Ви отримуєте повністю керований процес на реальних Android-пристроях без жодного головного болю.</p>
-            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin: 0;">З нашою 100% гарантією повернення коштів ви нічим не ризикуєте.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quick Q&A -->
-    <section class="section" id="guide">
-      <div class="container" style="max-width: 900px;">
-        <div class="section-header text-center">
-          <div class="badge">Контроль якості</div>
-          <h2>Як ми забезпечуємо реальне тестування</h2>
-          <p class="section-lead">Ми не просто «накручуємо» встановлення, а справді перевіряємо ваш додаток.</p>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
-            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">Чи використовуються реальні Android-смартфони?</h3>
-            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">Так, 100%. Наші тестувальники працюють на фізичних пристроях Samsung, Xiaomi, Google Pixel, Motorola та OnePlus.</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
-            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">Що буде, якщо додаток впаде (Crash)?</h3>
-            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">Ми зафіксуємо кроки відтворення, зробимо скріншоти та вкажемо версію Android, щоб ви могли оперативно випустити оновлення.</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
-            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">Чи безпечний мій код і дані додатку?</h3>
-            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">Абсолютно. Тестування відбувається виключно через офіційний канал закритого тестування Google Play без передачі APK стороннім особам.</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
-            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">Як швидко починається тестування?</h3>
-            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">Одразу після оплати. Перші тестувальники приєднуються за кілька годин, а всі 25+ пристроїв активні протягом 24 годин.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7 Prompts -->
-    <section class="section section-alt">
-      <div class="container" style="max-width: 920px;">
-        <div class="section-header text-center">
-          <div class="badge">Анкета в Play Console</div>
-          <h2>Допомога з 7 запитаннями для доступу до робочої версії</h2>
-          <p class="section-lead">Після завершення 14 днів Google ставить 7 обов'язкових запитань. Ми готуємо підґрунтя для кожного з них:</p>
-        </div>
-        <div class="card" style="padding: 2.5rem 2.25rem; background: #ffffff;">
-          <ul class="hero-feature-list" style="margin-bottom: 0; gap: 1.15rem;">
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Як ви залучали тестувальників до закритого тестування?</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Наскільки легко було зацікавити тестувальників користуватися додатком?</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Узагальніть відгуки, які ви отримали від тестувальників.</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Які зміни ви внесли в додаток на основі отриманих відгуків?</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Як ви визначили, що додаток готовий до робочої версії?</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Які функції додатку тестувалися найінтенсивніше?</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Чи були виявлені та виправлені помилки під час тестування?</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reviews -->
-    <section class="section" id="reviews">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Відгуки розробників</div>
-          <h2>Досвід українських та міжнародних розробників</h2>
-          <p class="section-lead">Реальні історії тих, хто вже пройшов закрите тестування з нами.</p>
-        </div>
-        <div class="reviews-grid">
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">Підтверджений клієнт</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">Схвалення на 15-й день!</h3>
-              <p class="review-quote">Двічі отримував відмову, коли шукав людей у Telegram-групах. Тут підключили 26 реальних пристроїв, і заявку на робочу версію схвалили з першого разу.</p>
-            </div>
-            <div class="reviewer-name">Олександр Коваленко — Київ, Україна</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">Підтверджений клієнт</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">Знайшли баг верстки на Android 12</h3>
-              <p class="review-quote">Окрім проходження 14 днів, тестувальники помітили з'їхавшу кнопку на малому екрані. Дуже вдячний за детальний фідбек!</p>
-            </div>
-            <div class="reviewer-name">Марина Шевченко — Львів, Україна</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">Підтверджений клієнт</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">Зручна підтримка у WhatsApp</h3>
-              <p class="review-quote">На 6-й день виклав нову збірку AAB — усі тестувальники оновилися того ж дня. Сервіс на рівні.</p>
-            </div>
-            <div class="reviewer-name">Дмитро Бондаренко — Харків, Україна</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">Підтверджений клієнт</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">Краще витратити $20, ніж 2 тижні нервів</h3>
-              <p class="review-quote">Замість того щоб вмовляти знайомих, оплатив базовий пакет і спокійно займався маркетингом. Рекомендую!</p>
-            </div>
-            <div class="reviewer-name">Максим Ткаченко — Дніпро, Україна</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">Підтверджений клієнт</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">Готові відповіді дуже виручили</h3>
-              <p class="review-quote">У Преміум-пакеті отримав чіткий звіт і формулювання для Google Play Console. Схвалили за 14 годин після подачі.</p>
-            </div>
-            <div class="reviewer-name">Ірина Мельник — Одеса, Україна</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">Підтверджений клієнт</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">Видно реальні пристрої в аналітиці</h3>
-              <p class="review-quote">У Firebase Analytics щодня відображалися 25+ різних смартфонів протягом усіх 14 днів. Все чесно.</p>
-            </div>
-            <div class="reviewer-name">Віталій Савченко — Вінниця, Україна</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing -->
-    <section class="section section-alt" id="pricing">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Прозорі тарифи</div>
-          <h2>Оберіть пакет під ваш проєкт</h2>
-          <p class="section-lead">Разовий платіж без прихованих підписок. 100% гарантія повернення коштів.</p>
-        </div>
-
-        <div class="pricing-grid">
-          <div class="pricing-card">
-            <div>
-              <span class="badge" style="background: #f1f5f9; color: #475569; border-color: #e2e8f0;">Для інді-розробників</span>
-              <h3 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 0.35rem;">Базовий пакет</h3>
-              <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5;">Усе необхідне для виконання вимоги 12 тестувальників на 14 днів.</p>
-              <div style="margin: 1.25rem 0;">
-                <span style="font-size: 1.1rem; text-decoration: line-through; color: #94a3b8; margin-right: 0.5rem;">$30</span>
-                <span class="price-val">$20</span>
-                <span class="price-sub">/ за 1 додаток</span>
-              </div>
-              <ul class="pricing-features">
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>25+ перевірених реальних тестувальників</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Встановлення на фізичні Android-смартфони</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Щоденний запуск додатку протягом 14 днів</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Жодних емуляторів чи ботів</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Щоденний контроль утримання тестувальників</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Безкоштовна заміна, якщо хтось вийде</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Підтримка Google Group або списку email</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Тестування основного функціоналу додатку</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Підсумковий звіт на 14-й день</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Підтримка оновлень версії під час тесту</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Покрокова інструкція для Play Console</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Гарантія безперервних 14 днів</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Швидка підтримка у WhatsApp</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Повна конфіденційність вашого додатку</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Підходить для безкоштовних і платних додатків</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Старт тестування протягом 24 годин</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>100% гарантія повернення коштів</span></li>
-              </ul>
-            </div>
-            <div style="margin-top: 1.5rem;">
-              <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: var(--radius-sm); padding: 0.65rem 0.85rem; font-size: 0.825rem; color: #166534; font-weight: 600; text-align: center; margin-bottom: 1rem;">
-                100% Гарантія Повернення Коштів
-              </div>
-              <a href="https://appconsolelab.com/?ref=12-testers.github.io&amp;utm_source=12-testers.github.io&amp;utm_medium=referral&amp;utm_campaign=uk-UA_pricing_basic" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; text-align: center;">
-                Обрати Базовий — $20 &rarr;
-              </a>
-            </div>
-          </div>
-
-          <div class="pricing-card featured">
-            <span class="pricing-badge">Найпопулярніший</span>
-            <div>
-              <span class="badge badge-success">Тестування + Готова анкета</span>
-              <h3 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 0.35rem;">Преміум пакет</h3>
-              <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5;">Для тих, хто хоче глибокий QA-аудит і готові відповіді для подачі на реліз.</p>
-              <div style="margin: 1.25rem 0;">
-                <span style="font-size: 1.1rem; text-decoration: line-through; color: #94a3b8; margin-right: 0.5rem;">$60</span>
-                <span class="price-val" style="color: var(--brand-primary);">$40</span>
-                <span class="price-sub">/ за 1 додаток</span>
-              </div>
-              <ul class="pricing-features">
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>30+ досвідчених Android-тестувальників</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Широкий парк пристроїв (Android 10–15)</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Глибоке щоденне тестування 14 днів</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>100% фізичні смартфони й реальні акаунти</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Перевірка UI/UX на різних діагоналях екрана</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Скріншоти та описи у разі виявлення багів</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Миттєва заміна при будь-якому відтоку</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Тестування кількох оновлень AAB за 14 днів</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Професійний PDF-звіт на 14-й день</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Готові відповіді на всі 7 запитань Play Console</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Поради щодо сторінки додатку в магазині (ASO)</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Перевірка стабільності та швидкості роботи</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Пріоритетна підтримка у WhatsApp</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Супровід до отримання доступу до робочої версії</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Сувора конфіденційність коду та ідеї</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Пріоритетний старт за 6 годин</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>100% гарантія повернення коштів</span></li>
-              </ul>
-            </div>
-            <div style="margin-top: 1.5rem;">
-              <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: var(--radius-sm); padding: 0.65rem 0.85rem; font-size: 0.825rem; color: #166534; font-weight: 600; text-align: center; margin-bottom: 1rem;">
-                100% Гарантія Повернення Коштів
-              </div>
-              <a href="https://appconsolelab.com/?ref=12-testers.github.io&amp;utm_source=12-testers.github.io&amp;utm_medium=referral&amp;utm_campaign=uk-UA_pricing_premium" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; text-align: center;">
-                Обрати Преміум — $40 &rarr;
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Us -->
-    <section class="section" id="about">
-      <div class="container" style="max-width: 920px;">
-        <div class="section-header text-center">
-          <div class="badge">Про нас</div>
-          <h2>Створено розробниками для розробників</h2>
-          <p class="section-lead">Ми запустили AppConsoleLab, щоб допомогти Android-розробникам долати бар'єр закритого тестування.</p>
-        </div>
-        <div class="card" style="padding: 2.5rem 2.25rem; background: #f8fafc;">
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; text-align: center; padding-bottom: 2rem; margin-bottom: 2rem; border-bottom: 1px solid var(--border-color);">
-            <div>
-              <div style="font-size: 2rem; font-weight: 800; color: var(--brand-primary);">2023</div>
-              <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.25rem;">Рік заснування</div>
-            </div>
-            <div>
-              <div style="font-size: 2rem; font-weight: 800; color: var(--brand-primary);">30,000+</div>
-              <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.25rem;">Днів тестування</div>
-            </div>
-            <div>
-              <div style="font-size: 2rem; font-weight: 800; color: var(--brand-primary);">24/7</div>
-              <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.25rem;">Жива підтримка</div>
-            </div>
-          </div>
-          <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin-bottom: 1.25rem;">Відколи Google Play запровадив правило про 12 тестувальників на 14 днів для особистих акаунтів, тисячі якісних додатків застрягли перед релізом лише через брак 12 активних тестувальників з Android.</p>
-          <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">Наша місія проста: надати надійну інфраструктуру реальних користувачів на фізичних телефонах, щоб ви могли спокійно розвивати свій продукт і вийти в реліз вчасно.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQs -->
-    <section class="section section-alt" id="faq">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Часті запитання</div>
-          <h2>Відповіді перед початком</h2>
-          <p class="section-lead">Усе, що важливо знати про сервіс 12 тестувальників на 14 днів.</p>
-        </div>
-        <div class="faq-list">
-          <details class="faq-item" open>
-            <summary>Чи не порушує це правила Google Play?</summary>
-            <div class="faq-body">Ні. Google вимагає, щоб реальні люди тестували ваш додаток на реальних пристроях 14 днів. Наші тестувальники приєднуються через офіційне посилання закритого тестування і користуються додатком як звичайні юзери.</div>
-          </details>
-          <details class="faq-item">
-            <summary>Навіщо 25+ тестувальників, якщо потрібно 12?</summary>
-            <div class="faq-body">Це ваша страховка. Якщо хтось із тестувальників змінить телефон або матиме перебої зі зв'язком, кількість активних тестувальників усе одно залишатиметься значно вищою за 12.</div>
-          </details>
-          <details class="faq-item">
-            <summary>Як підключити тестувальників у Play Console?</summary>
-            <div class="faq-body">Достатньо додати нашу Google Group у розділі закритого тестування або вставити наданий нами список email-адрес.</div>
-          </details>
-          <details class="faq-item">
-            <summary>Що робити, якщо мій додаток платний?</summary>
-            <div class="faq-body">Ви можете згенерувати промокоди (Promo Codes) у Play Console і передати їх нам або тимчасово зробити додаток безкоштовним на час закритого тесту.</div>
-          </details>
-          <details class="faq-item">
-            <summary>Чи тестуєте ви додатки з авторизацією (Login)?</summary>
-            <div class="faq-body">Так. Надайте тестовий акаунт (demo login) або дозвольте нашим тестувальникам зареєструватися самостійно.</div>
-          </details>
-          <details class="faq-item">
-            <summary>Що буде, якщо Google все ж відмовить?</summary>
-            <div class="faq-body">Ми розберемо причину відмови, допоможемо виправити зауваження та проведемо повторний цикл безкоштовно — або повернемо 100% оплати.</div>
-          </details>
-          <details class="faq-item">
-            <summary>Які способи оплати доступні?</summary>
-            <div class="faq-body">Приймаємо банківські картки, PayPal та інші популярні методи. Якщо потрібна допомога з оплатою — напишіть нам у WhatsApp.</div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bottom CTA -->
-    <section class="section" style="text-align: center; background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);">
-      <div class="container" style="max-width: 720px;">
-        <div class="badge badge-success" style="margin-bottom: 1rem;"><span class="pulse-dot-green"></span> Готові до релізу?</div>
-        <h2 style="font-size: 2.1rem; color: #0f172a; margin-bottom: 1rem;">Розпочніть 14-денне закрите тестування сьогодні</h2>
-        <p style="font-size: 1.075rem; color: #475569; line-height: 1.7; margin-bottom: 2rem;">Не відкладайте запуск. Отримайте 25+ реальних Android-тестувальників і відкрийте доступ до робочої версії.</p>
-        <div class="hero-cta-group" style="justify-content: center;">
-          <a href="#pricing" class="btn btn-primary btn-lg">Замовити зараз — $20 &rarr;</a>
-          <a href="https://wa.me/923394001479?text=Hi%2C%20I%20need%2012%20testers%20for%2014%20days" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
-            <span class="pulse-dot-green"></span> Запитати в WhatsApp
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="https://12-testers.github.io/uk-UA/12-тестувальників/" class="logo" aria-label="12 тестувальників на 14 днів">
-            <svg class="logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <linearGradient id="gpFtrGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#0284c7"/>
-                  <stop offset="50%" stop-color="#2563eb"/>
-                  <stop offset="100%" stop-color="#4f46e5"/>
-                </linearGradient>
-                <linearGradient id="gpFtrBadge" x1="22" y1="21" x2="34" y2="33" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#10b981"/>
-                  <stop offset="100%" stop-color="#047857"/>
-                </linearGradient>
-              </defs>
-              <rect width="40" height="40" rx="10" fill="url(#gpFtrGrad)"/>
-              <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
-              <path d="M12.5 10.5C12.5 9.4 13.7 8.7 14.6 9.3L26 16.8C26.9 17.4 26.9 18.6 26 19.2L14.6 26.7C13.7 27.3 12.5 26.6 12.5 25.5V10.5Z" fill="#ffffff"/>
-              <circle cx="28.5" cy="27.5" r="7.5" fill="#ffffff"/>
-              <circle cx="28.5" cy="27.5" r="6" fill="url(#gpFtrBadge)"/>
-              <path d="M25.7 27.5L27.7 29.5L31.3 25.2" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <div class="logo-text-group">
-              <span class="logo-text"><strong>12 Testers</strong> <span class="logo-accent">For 14 Days</span></span>
-              <span class="logo-byline">
-                <span class="by-text">by</span>
-                <img src="/assets/ACL_Logo_Light_theme.png" alt="AppConsoleLab" class="acl-sublogo" width="120" height="40">
-              </span>
-            </div>
           </a>
           <p class="footer-desc">Надійний сервіс 12 тестувальників на 14 днів для проходження закритого тестування Google Play.</p>
         </div>

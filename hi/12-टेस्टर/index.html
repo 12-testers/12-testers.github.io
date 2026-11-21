@@ -651,11 +651,11 @@ a:hover {
 
 
 
-/* Header & Brand Logo Modern Styling */
+/* Header & Brand Logo Modern 2026 Styling */
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.85rem;
+  gap: 0.78rem;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
@@ -665,30 +665,31 @@ a:hover {
 }
 
 .logo-svg {
-  width: 38px;
-  height: 38px;
+  width: 42px;
+  height: 42px;
   flex-shrink: 0;
-  border-radius: 10px;
-  filter: drop-shadow(0 3px 8px rgba(37, 99, 235, 0.22));
+  border-radius: 12px;
+  filter: drop-shadow(0 4px 12px rgba(37, 99, 235, 0.26));
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease;
 }
 
 .logo:hover .logo-svg {
   transform: translateY(-1.5px) scale(1.03);
-  filter: drop-shadow(0 6px 14px rgba(37, 99, 235, 0.32));
+  filter: drop-shadow(0 8px 18px rgba(37, 99, 235, 0.34));
 }
 
 .logo-text-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 0.22rem;
 }
 
 .logo-text {
   font-family: var(--font-heading);
-  font-size: 1.22rem;
-  line-height: 1.15;
-  letter-spacing: -0.028em;
+  font-size: 1.24rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
   color: #0f172a;
   display: inline-flex;
   align-items: baseline;
@@ -698,12 +699,12 @@ a:hover {
 .logo-text strong {
   font-weight: 800;
   color: #0f172a;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.032em;
 }
 
 .logo-accent {
   font-weight: 800;
-  background: linear-gradient(135deg, #0284c7 0%, #2563eb 52%, #4f46e5 100%);
+  background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 52%, #4338ca 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -713,44 +714,41 @@ a:hover {
 .logo-byline {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  margin-top: 0.18rem;
-}
-
-.by-text {
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #94a3b8;
+  gap: 0.38rem;
   line-height: 1;
 }
 
-.acl-sublogo {
-  height: 40px;
-  width: auto;
-  opacity: 1;
-  vertical-align: middle;
-  display: inline-block;
-  object-fit: contain;
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.04));
-  transition: transform 0.2s ease;
+.logo-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.22);
+  flex-shrink: 0;
 }
 
-.logo:hover .acl-sublogo {
-  transform: scale(1.02);
+.logo-subtag {
+  font-family: var(--font-body);
+  font-size: 0.64rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #64748b;
+  line-height: 1;
 }
 
 @media (max-width: 420px) {
   .logo-text {
-    font-size: 1.05rem;
-  }
-  .acl-sublogo {
-    height: 34px;
+    font-size: 1.06rem;
   }
   .logo-svg {
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+  .logo-subtag {
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
   }
 }
 
@@ -2344,713 +2342,38 @@ a:hover {
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="https://12-testers.github.io/hi/12-टेस्टर/" class="logo" aria-label="12 Testers For 14 Days by AppConsoleLab">
-        <svg class="logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg class="logo-svg" width="42" height="42" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <defs>
-            <linearGradient id="gpLogoGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#0284c7"/>
+            <linearGradient id="gp26HdrBase" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#0ea5e9"/>
               <stop offset="50%" stop-color="#2563eb"/>
-              <stop offset="100%" stop-color="#4f46e5"/>
+              <stop offset="100%" stop-color="#4338ca"/>
             </linearGradient>
-            <linearGradient id="gpBadgeGrad" x1="22" y1="21" x2="34" y2="33" gradientUnits="userSpaceOnUse">
+            <radialGradient id="gp26HdrSheen" cx="0.25" cy="0.15" r="0.75">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.28"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="gp26HdrCheck" x1="25" y1="25" x2="39" y2="39" gradientUnits="userSpaceOnUse">
               <stop offset="0%" stop-color="#10b981"/>
-              <stop offset="100%" stop-color="#047857"/>
+              <stop offset="100%" stop-color="#059669"/>
             </linearGradient>
           </defs>
-          <rect width="40" height="40" rx="10" fill="url(#gpLogoGrad)"/>
-          <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
-          <path d="M12.5 10.5C12.5 9.4 13.7 8.7 14.6 9.3L26 16.8C26.9 17.4 26.9 18.6 26 19.2L14.6 26.7C13.7 27.3 12.5 26.6 12.5 25.5V10.5Z" fill="#ffffff"/>
-          <circle cx="28.5" cy="27.5" r="7.5" fill="#ffffff"/>
-          <circle cx="28.5" cy="27.5" r="6" fill="url(#gpBadgeGrad)"/>
-          <path d="M25.7 27.5L27.7 29.5L31.3 25.2" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect width="44" height="44" rx="12" fill="url(#gp26HdrBase)"/>
+          <rect width="44" height="44" rx="12" fill="url(#gp26HdrSheen)"/>
+          <rect x="0.75" y="0.75" width="42.5" height="42.5" rx="11.25" stroke="rgba(255,255,255,0.38)" stroke-width="1.5"/>
+          <path d="M14 12.2C14 11.1 15.2 10.4 16.1 11L28.5 18.8C29.4 19.4 29.4 20.6 28.5 21.2L16.1 29C15.2 29.6 14 28.9 14 27.8V12.2Z" fill="#ffffff"/>
+          <path d="M14.3 11.5L22.2 20L14.3 28.5" stroke="#2563eb" stroke-opacity="0.25" stroke-width="1.4" stroke-linejoin="round"/>
+          <circle cx="31.5" cy="30.5" r="8" fill="#ffffff"/>
+          <circle cx="31.5" cy="30.5" r="6.4" fill="url(#gp26HdrCheck)"/>
+          <path d="M28.5 30.6L30.6 32.7L34.6 28.4" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <div class="logo-text-group">
           <span class="logo-text"><strong>12 Testers</strong> <span class="logo-accent">For 14 Days</span></span>
           <span class="logo-byline">
-            <span class="by-text">by</span>
-            <img src="/assets/ACL_Logo_Light_theme.png" alt="AppConsoleLab" class="acl-sublogo" width="120" height="40">
+            <span class="logo-status-dot"></span>
+            <span class="logo-subtag">GOOGLE PLAY CLOSED TESTING</span>
           </span>
         </div>
-      </a>
-
-      <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menu" type="button" aria-expanded="false">
-        <svg class="hamburger-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-        <svg class="close-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-
-      <nav class="main-nav" id="mainNav">
-        <ul class="nav-list">
-          <li><a href="https://12-testers.github.io/hi/12-टेस्टर/" class="nav-link active">होम</a></li>
-          <li><a href="#how-it-works" class="nav-link">यह कैसे काम करता है</a></li>
-          <li><a href="#pricing" class="nav-link">कीमत</a></li>
-          <li><a href="#reviews" class="nav-link">रिव्यू</a></li>
-          <li><a href="#faq" class="nav-link">FAQ</a></li>
-          <li class="lang-dropdown" id="langDropdown">
-            <button type="button" class="lang-toggle-btn" id="langToggleBtn" aria-expanded="false" aria-haspopup="true">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              <span>Languages (50)</span>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="lang-dropdown-menu" role="menu">
-              <a href="/" class="lang-dropdown-item is-main-en"><span>English (Main Homepage)</span><span class="lang-code-pill">EN</span></a>
-              <a href="/af/12-toetsers/" class="lang-dropdown-item"><span>Afrikaans</span><span class="lang-code-pill">af</span></a>
-              <a href="/am/12-ሞካሪዎች/" class="lang-dropdown-item"><span>አማርኛ (Amharic)</span><span class="lang-code-pill">am</span></a>
-              <a href="/bg/12-тестери/" class="lang-dropdown-item"><span>Български (Bulgarian)</span><span class="lang-code-pill">bg</span></a>
-              <a href="/ca/12-provadors/" class="lang-dropdown-item"><span>Català (Catalan)</span><span class="lang-code-pill">ca</span></a>
-              <a href="/zh-HK/12-名測試人員/" class="lang-dropdown-item"><span>繁體中文 — 香港</span><span class="lang-code-pill">zh-HK</span></a>
-              <a href="/zh-CN/12-名测试人员/" class="lang-dropdown-item"><span>简体中文 — 中国</span><span class="lang-code-pill">zh-CN</span></a>
-              <a href="/zh-TW/12-名測試人員/" class="lang-dropdown-item"><span>繁體中文 — 台灣</span><span class="lang-code-pill">zh-TW</span></a>
-              <a href="/hr/12-testera/" class="lang-dropdown-item"><span>Hrvatski (Croatian)</span><span class="lang-code-pill">hr</span></a>
-              <a href="/cs/12-testerů/" class="lang-dropdown-item"><span>Čeština (Czech)</span><span class="lang-code-pill">cs</span></a>
-              <a href="/da/12-testere/" class="lang-dropdown-item"><span>Dansk (Danish)</span><span class="lang-code-pill">da</span></a>
-              <a href="/nl/12-testers/" class="lang-dropdown-item"><span>Nederlands (Dutch)</span><span class="lang-code-pill">nl</span></a>
-              <a href="/en-GB/12-testers/" class="lang-dropdown-item"><span>English (UK)</span><span class="lang-code-pill">en-GB</span></a>
-              <a href="/en-US/12-testers/" class="lang-dropdown-item"><span>English (US)</span><span class="lang-code-pill">en-US</span></a>
-              <a href="/et/12-testijat/" class="lang-dropdown-item"><span>Eesti (Estonian)</span><span class="lang-code-pill">et</span></a>
-              <a href="/fil/12-na-tester/" class="lang-dropdown-item"><span>Filipino</span><span class="lang-code-pill">fil</span></a>
-              <a href="/fi/12-testaajaa/" class="lang-dropdown-item"><span>Suomi (Finnish)</span><span class="lang-code-pill">fi</span></a>
-              <a href="/fr-CA/12-testeurs/" class="lang-dropdown-item"><span>Français (Canada)</span><span class="lang-code-pill">fr-CA</span></a>
-              <a href="/fr-FR/12-testeurs/" class="lang-dropdown-item"><span>Français (France)</span><span class="lang-code-pill">fr-FR</span></a>
-              <a href="/de/12-tester/" class="lang-dropdown-item"><span>Deutsch (German)</span><span class="lang-code-pill">de</span></a>
-              <a href="/el/12-δοκιμαστές/" class="lang-dropdown-item"><span>Ελληνικά (Greek)</span><span class="lang-code-pill">el</span></a>
-              <a href="/he/12-בודקים/" class="lang-dropdown-item"><span>עברית (Hebrew)</span><span class="lang-code-pill">he</span></a>
-              <a href="/hi/12-टेस्टर/" class="lang-dropdown-item"><span>हिन्दी (Hindi)</span><span class="lang-code-pill">hi</span></a>
-              <a href="/hu/12-tesztelő/" class="lang-dropdown-item"><span>Magyar (Hungarian)</span><span class="lang-code-pill">hu</span></a>
-              <a href="/is/12-prófendur/" class="lang-dropdown-item"><span>Íslenska (Icelandic)</span><span class="lang-code-pill">is</span></a>
-              <a href="/id/12-penguji/" class="lang-dropdown-item"><span>Bahasa Indonesia</span><span class="lang-code-pill">id</span></a>
-              <a href="/it/12-tester/" class="lang-dropdown-item"><span>Italiano (Italian)</span><span class="lang-code-pill">it</span></a>
-              <a href="/ja/12-人のテスター/" class="lang-dropdown-item"><span>日本語 (Japanese)</span><span class="lang-code-pill">ja</span></a>
-              <a href="/ko/12-명의-테스터/" class="lang-dropdown-item"><span>한국어 (Korean)</span><span class="lang-code-pill">ko</span></a>
-              <a href="/lv/12-testētāji/" class="lang-dropdown-item"><span>Latviešu (Latvian)</span><span class="lang-code-pill">lv</span></a>
-              <a href="/lt/12-testuotojai/" class="lang-dropdown-item"><span>Lietuvių (Lithuanian)</span><span class="lang-code-pill">lt</span></a>
-              <a href="/ms/12-penguji/" class="lang-dropdown-item"><span>Bahasa Melayu (Malay)</span><span class="lang-code-pill">ms</span></a>
-              <a href="/no/12-testere/" class="lang-dropdown-item"><span>Norsk (Norwegian)</span><span class="lang-code-pill">no</span></a>
-              <a href="/pl/12-testerów/" class="lang-dropdown-item"><span>Polski (Polish)</span><span class="lang-code-pill">pl</span></a>
-              <a href="/pt-BR/12-testadores/" class="lang-dropdown-item"><span>Português (Brasil)</span><span class="lang-code-pill">pt-BR</span></a>
-              <a href="/pt-PT/12-testadores/" class="lang-dropdown-item"><span>Português (Portugal)</span><span class="lang-code-pill">pt-PT</span></a>
-              <a href="/ro/12-testeri/" class="lang-dropdown-item"><span>Română (Romanian)</span><span class="lang-code-pill">ro</span></a>
-              <a href="/ru/12-тестировщиков/" class="lang-dropdown-item"><span>Русский (Russian)</span><span class="lang-code-pill">ru</span></a>
-              <a href="/sr/12-тестера/" class="lang-dropdown-item"><span>Српски (Serbian)</span><span class="lang-code-pill">sr</span></a>
-              <a href="/sk/12-testerov/" class="lang-dropdown-item"><span>Slovenčina (Slovak)</span><span class="lang-code-pill">sk</span></a>
-              <a href="/sl/12-preizkuševalcev/" class="lang-dropdown-item"><span>Slovenščina (Slovenian)</span><span class="lang-code-pill">sl</span></a>
-              <a href="/es-419/12-evaluadores/" class="lang-dropdown-item"><span>Español (Latinoamérica)</span><span class="lang-code-pill">es-419</span></a>
-              <a href="/es-ES/12-evaluadores/" class="lang-dropdown-item"><span>Español (España)</span><span class="lang-code-pill">es-ES</span></a>
-              <a href="/sw/wajaribu-12/" class="lang-dropdown-item"><span>Kiswahili (Swahili)</span><span class="lang-code-pill">sw</span></a>
-              <a href="/sv/12-testare/" class="lang-dropdown-item"><span>Svenska (Swedish)</span><span class="lang-code-pill">sv</span></a>
-              <a href="/th/12-ผู้ทดสอบ/" class="lang-dropdown-item"><span>ไทย (Thai)</span><span class="lang-code-pill">th</span></a>
-              <a href="/tr/12-test-kullanıcısı/" class="lang-dropdown-item"><span>Türkçe (Turkish)</span><span class="lang-code-pill">tr</span></a>
-              <a href="/uk-UA/12-тестувальників/" class="lang-dropdown-item"><span>Українська (uk-UA)</span><span class="lang-code-pill">uk-UA</span></a>
-              <a href="/vi/12-người-thử-nghiệm/" class="lang-dropdown-item"><span>Tiếng Việt (Vietnamese)</span><span class="lang-code-pill">vi</span></a>
-              <a href="/zu/abahloli-abayi-12/" class="lang-dropdown-item"><span>isiZulu (Zulu)</span><span class="lang-code-pill">zu</span></a>
-            </div>
-          </li>
-        </ul>
-        <div class="nav-cta-wrap">
-          <a href="https://wa.me/923394001479?text=Hi%2C%20I%20need%2012%20testers%20for%2014%20days" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
-            <span class="pulse-dot-green"></span>
-            <span>WhatsApp पर चैट करें</span>
-          </a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="badge"><span class="pulse-dot"></span> Google Play नीति 2026 के लिए अपडेटेड • 12 टेस्टर • 14 दिन</div>
-          <h1>14 दिनों के लिए 12 असली टेस्टर पाएं और <span>Google Play प्रोडक्शन ऐक्सेस</span> अनलॉक करें</h1>
-          <p class="hero-lead">नए व्यक्तिगत Play Console अकाउंट के लिए Google का 12 टेस्टर और लगातार 14 दिनों का बंद परीक्षण (Closed Testing) अनिवार्य है। हम आपको असली Android डिवाइस पर 12+ वास्तविक मानवीय टेस्टर देते हैं — ताकि आपका ऐप पहली बार में प्रोडक्शन में अप्रूव हो।</p>
-          <div class="hero-cta-group" style="margin-bottom: 1rem;">
-            <a href="#pricing" class="btn btn-primary btn-lg">अभी टेस्टर ऑर्डर करें ($20 से शुरू) &rarr;</a>
-            <a href="https://wa.me/923394001479?text=Hi%2C%20I%20need%2012%20testers%20for%2014%20days" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
-              <span class="pulse-dot-green"></span> WhatsApp पर पूछें
-            </a>
-          </div>
-          <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.825rem; color: var(--text-muted); font-weight: 500; margin-bottom: 2rem;">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-            <span>100% प्रोडक्शन ऐक्सेस गारंटी • रिजेक्शन होने पर मुफ्त री-टेस्ट • कोई बॉट या एमुलेटर नहीं</span>
-          </div>
-          <div class="hero-trust-bar">
-            <div class="trust-item"><img src="/assets/5stars.svg" alt="5 Stars" width="88" height="16"><span>2,400+ ऐप्स अप्रूव्ड</span></div>
-            <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>99.2% पहली बार पास दर</span></div>
-            <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg><span>24 घंटे में टेस्टिंग शुरू</span></div>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <div class="card-header-badge"><span class="dot-live"></span> Play Console अनुपालन पैकेज</div>
-          <h2 style="font-size: 1.35rem; color: #0f172a; margin-bottom: 0.75rem;">बंद परीक्षण से प्रोडक्शन तक का पूरा समाधान</h2>
-          <p style="font-size: 0.95rem; color: #475569; line-height: 1.6; margin-bottom: 1.25rem;">Google केवल ऑप्ट-इन की संख्या नहीं, बल्कि 14 दिनों तक रोज़ाना असली उपयोग और सार्थक फीडबैक देखता है।</p>
-          <ul class="hero-feature-list">
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>अलग-अलग IP और असली Android डिवाइस पर 12+ या 20+ सत्यापित टेस्टर</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>लगातार 14 दिनों तक रोज़ाना ऐप खोलना, नेविगेशन और सक्रिय उपयोग</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Play Console के प्रोडक्शन प्रश्नों के लिए तैयार विस्तृत फीडबैक रिपोर्ट</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>यदि Google और टेस्टिंग मांगे, तो बिना किसी अतिरिक्त शुल्क के पूरा री-टेस्ट</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">प्रमाणित परिणाम</div>
-          <h2>संख्याएं जो हर Android डेवलपर का भरोसा जीतती हैं</h2>
-          <p class="section-lead">कम्युनिटी स्वैप और अनजान ग्रुप्स में समय बर्बाद करने के बजाय भरोसेमंद टेस्टिंग चुनें।</p>
-        </div>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-number">2,400+</div>
-            <div class="stat-label">ऐप्स प्रोडक्शन में</div>
-            <div class="stat-sub">Google Play पर सफलतापूर्वक लाइव</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">99.2%</div>
-            <div class="stat-label">पहली बार अप्रूवल दर</div>
-            <div class="stat-sub">प्रोडक्शन ऐक्सेस के पहले आवेदन में</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">14 दिन</div>
-            <div class="stat-label">लगातार सक्रिय टेस्टिंग</div>
-            <div class="stat-sub">बिना किसी ड्रॉप-ऑफ के पूर्ण चक्र</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">24 घंटे</div>
-            <div class="stat-label">तेज़ शुरुआत</div>
-            <div class="stat-sub">बंद परीक्षण लिंक शेयर करते ही ऑप्ट-इन</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Alert -->
-    <section class="section" style="padding-bottom: 0;">
-      <div class="container">
-        <div class="card" style="background: #f0f9ff; border-color: #bae6fd; padding: 1.75rem 2rem;">
-          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem;">
-            <div style="flex: 1; min-width: 260px;">
-              <div class="badge" style="margin-bottom: 0.5rem;"><span class="pulse-dot"></span> डेवलपर चेतावनी</div>
-              <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.35rem;">अकेले टेस्टर्स ढूंढने या फ्री एक्सचेंज ग्रुप्स से अकाउंट रिस्क में न डालें</h3>
-              <p style="font-size: 0.95rem; color: #334155; margin: 0; line-height: 1.6;">Google का एल्गोरिदम एक ही IP, एमुलेटर, या पहले दिन इंस्टॉल करके 14 दिन तक ऐप न खोलने वाले टेस्टर्स को आसानी से पकड़ लेता है — और इसी वजह से प्रोडक्शन ऐक्सेस रिजेक्ट होता है।</p>
-            </div>
-            <div><a href="#pricing" class="btn btn-primary">सुरक्षित टेस्टिंग शुरू करें &rarr;</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pitfalls -->
-    <section class="section">
-      <div class="container" style="max-width: 920px;">
-        <div class="section-header text-center">
-          <div class="badge badge-amber">सामान्य गलतियां</div>
-          <h2>Google Play प्रोडक्शन ऐक्सेस क्यों रिजेक्ट करता है?</h2>
-          <p class="section-lead">ज़्यादातर डेवलपर्स के पास 12 ऑप्ट-इन तो होते हैं, फिर भी Google 'अधिक टेस्टिंग की आवश्यकता है' कहकर आवेदन अस्वीकार कर देता है।</p>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--accent-amber); background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 0.75rem;">1. निष्क्रिय टेस्टर्स (सिर्फ इंस्टॉल करके भूल जाना)</h3>
-            <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">अगर टेस्टर केवल ऑप्ट-इन लिंक पर क्लिक करे और 14 दिनों तक ऐप को रोज़ाना इस्तेमाल न करे, तो Play Console उसे सक्रिय टेस्टिंग नहीं मानता और प्रोडक्शन ऐक्सेस रोक देता है।</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--accent-amber); background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 0.75rem;">2. एमुलेटर, VPN और एक जैसे डिवाइस सिग्नेचर</h3>
-            <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">फर्जी सेवाओं द्वारा इस्तेमाल किए जाने वाले एमुलेटर या एक ही नेटवर्क से जुड़े कई अकाउंट Google के फ्रॉड डिटेक्शन में आ जाते हैं, जिससे आपका Play Console अकाउंट भी खतरे में पड़ सकता है।</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--accent-amber); background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 0.75rem;">3. प्रोडक्शन आवेदन के उत्तरों में कमज़ोर विवरण</h3>
-            <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">14 दिन पूरे होने के बाद Google पूछता है कि टेस्टर्स ने क्या बग ढूंढे और आपने क्या सुधार किए। बिना वास्तविक टेस्टर फीडबैक के साधारण उत्तर देने पर रिजेक्शन मिल जाता है।</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="section section-alt" id="how-it-works">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">सरल प्रक्रिया</div>
-          <h2>4 आसान चरणों में बंद परीक्षण पूरा करें</h2>
-          <p class="section-lead">आपको सिर्फ अपनी बंद परीक्षण (Closed Testing) की रिलीज़ सेट करनी है — बाकी पूरा 14 दिन का संचालन हम संभालते हैं।</p>
-        </div>
-        <div class="steps-grid">
-          <div class="step-card">
-            <div class="step-num">1</div>
-            <h3>अपना प्लान चुनें</h3>
-            <p>Basic ($20) या Premium ($40) पैकेज चुनें और अपने ऐप का पैकेज नाम व Play Console ऑप्ट-इन लिंक शेयर करें।</p>
-          </div>
-          <div class="step-card">
-            <div class="step-num">2</div>
-            <h3>24 घंटे में टेस्टर जुड़ते हैं</h3>
-            <p>हमारे 12+ या 20+ सत्यापित Android टेस्टर आपके Google Group या ईमेल सूची के माध्यम से बंद परीक्षण में शामिल होते हैं।</p>
-          </div>
-          <div class="step-card">
-            <div class="step-num">3</div>
-            <h3>14 दिन लगातार असली उपयोग</h3>
-            <p>हर टेस्टर अपने असली Android फोन पर रोज़ाना ऐप खोलता है, स्क्रीन टेस्ट करता है और बग व UI फीडबैक दर्ज करता है।</p>
-          </div>
-          <div class="step-card">
-            <div class="step-num">4</div>
-            <h3>प्रोडक्शन ऐक्सेस के लिए आवेदन</h3>
-            <p>14वें दिन हम आपको पूरा फीडबैक और प्रोडक्शन फॉर्म के तैयार उत्तर देते हैं ताकि आपका ऐप तुरंत अप्रूव हो सके।</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Compare -->
-    <section class="section" id="compare">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">सही तुलना</div>
-          <h2>फ्री कम्युनिटी बनाम सस्ते बॉट्स बनाम AppConsoleLab</h2>
-          <p class="section-lead">देखें कि क्यों अनुभवी इंडी डेवलपर्स और एजेंसियां 14 दिनों का समय बचाने के लिए हमारी सेवा चुनती हैं।</p>
-        </div>
-        <div class="compare-grid">
-          <div class="compare-card">
-            <span class="badge" style="background: #f1f5f9; color: #64748b; border-color: #e2e8f0;">फ्री टेस्टर ग्रुप्स</span>
-            <h3 style="font-size: 1.25rem; color: #0f172a;">Reddit / Telegram स्वैप</h3>
-            <p style="font-size: 0.925rem; color: #64748b; line-height: 1.5;">दूसरों के ऐप्स टेस्ट करने में घंटों बर्बाद करना</p>
-            <ul class="compare-list">
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span>टेस्टर्स 3-4 दिन बाद ऐप अनइंस्टॉल कर देते हैं</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span>लगातार 14 दिन की सक्रियता की कोई गारंटी नहीं</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span>कोई व्यवस्थित बग रिपोर्ट या फीडबैक नहीं मिलता</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span>रिजेक्ट होने पर फिर से 14 दिन इंतज़ार करना पड़ता है</span></li>
-            </ul>
-          </div>
-          <div class="compare-card">
-            <span class="badge badge-amber">सस्ते बॉट विक्रेता</span>
-            <h3 style="font-size: 1.25rem; color: #0f172a;">एमुलेटर और फर्जी क्लिक</h3>
-            <p style="font-size: 0.925rem; color: #64748b; line-height: 1.5;">Play Console के नियमों का सीधा उल्लंघन</p>
-            <ul class="compare-list">
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span>एक ही IP और वर्चुअल डिवाइस का इस्तेमाल</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span>Google के ऑटोमेटेड सिस्टम द्वारा तुरंत पकड़ लिया जाता है</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span>कॉपी-पेस्ट किए गए बेकार रिव्यू</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span>डेवलपर अकाउंट सस्पेंड होने का गंभीर खतरा</span></li>
-            </ul>
-          </div>
-          <div class="compare-card recommended">
-            <span class="badge badge-success">अनुशंसित समाधान</span>
-            <h3 style="font-size: 1.25rem; color: #0f172a;">AppConsoleLab असली टेस्टर्स</h3>
-            <p style="font-size: 0.925rem; color: #64748b; line-height: 1.5;">100% मानवीय टेस्टर्स और प्रोडक्शन गारंटी</p>
-            <ul class="compare-list">
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>असली Android डिवाइस (Samsung, Xiaomi, Pixel, OnePlus)</span></li>
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>14 दिनों तक रोज़ाना सक्रिय उपयोग की लाइव ट्रैकिंग</span></li>
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Google Play प्रोडक्शन फॉर्म के लिए तैयार उत्तर</span></li>
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>असफल होने पर 100% मुफ्त दोबारा टेस्टिंग की गारंटी</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ROI -->
-    <section class="section section-alt" id="why-price">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">समय और लागत का मूल्य</div>
-          <h2>$20 या $40 खर्च करना खुद 12 टेस्टर ढूंढने से बेहतर क्यों है?</h2>
-          <p class="section-lead">एक डेवलपर के रूप में आपका सबसे कीमती संसाधन आपका समय है।</p>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 960px; margin: 0 auto;">
-          <div class="card" style="padding: 2.25rem 2rem; background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 1rem;">खुद टेस्टर जुटाने की छिपी हुई कीमत</h3>
-            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin-bottom: 1rem;">अधिकांश डेवलपर्स दोस्तों, रिश्तेदारों और सोशल मीडिया ग्रुप्स में 12 लोगों से भीख मांगते हुए 2 से 3 सप्ताह गंवा देते हैं। आधे लोग iPhone इस्तेमाल करते हैं, और बाकी तीसरे दिन ऐप डिलीट कर देते हैं।</p>
-            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin: 0;">यदि 14 दिन बाद Google आपका प्रोडक्शन ऐक्सेस रिजेक्ट कर दे, तो आपको फिर से 14 दिन इंतजार करना होगा — यानी पूरा एक महीना बर्बाद।</p>
-          </div>
-          <div class="card" style="padding: 2.25rem 2rem; background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 1rem;">AppConsoleLab के साथ तेज़ लॉन्च</h3>
-            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin-bottom: 1rem;">सिर्फ $20 (Basic) या $40 (Premium) के एकमुश्त निवेश से आप पहले दिन से ही निश्चिंत हो जाते हैं। हमारी टीम सुनिश्चित करती है कि सभी 12+ टेस्टर पूरे 14 दिनों तक सक्रिय रहें।</p>
-            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin: 0;">जब तक आपका बंद परीक्षण चल रहा होता है, आप अपने ऐप की मार्केटिंग, ASO और अगली अपडेट्स पर ध्यान केंद्रित कर सकते हैं।</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quick Q&A -->
-    <section class="section" id="guide">
-      <div class="container" style="max-width: 900px;">
-        <div class="section-header text-center">
-          <div class="badge">त्वरित जानकारी</div>
-          <h2>Google Play बंद परीक्षण के बारे में जरूरी बातें</h2>
-          <p class="section-lead">नए 2023-2026 Play Console नियम को सरल भाषा में समझें।</p>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
-            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">क्या 12 टेस्टर वाला नियम सभी ऐप्स पर लागू होता है?</h3>
-            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">नवंबर 2023 के बाद बने सभी नए व्यक्तिगत (Personal) Google Play Console अकाउंट्स को किसी भी ऐप को प्रोडक्शन में पब्लिश करने से पहले कम से कम 12 टेस्टर्स के साथ लगातार 14 दिनों तक बंद परीक्षण (Closed Testing) पूरा करना अनिवार्य है।</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
-            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">क्या टेस्टर्स को ऐप 14 दिनों तक इंस्टॉल रखना जरूरी है?</h3>
-            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">हां, केवल 14 दिनों तक इंस्टॉल रखना ही काफी नहीं है, बल्कि टेस्टर्स का नियमित रूप से ऐप खोलना और उसे इस्तेमाल करना भी जरूरी है ताकि Google Play Console में सक्रिय परीक्षण डेटा दर्ज हो सके।</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
-            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">Google Group और Email List में से कौन सा तरीका बेहतर है?</h3>
-            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">दोनों ही Google Play Console में आधिकारिक विकल्प हैं। Google Group सबसे आसान है क्योंकि इसमें हमें सिर्फ एक ग्रुप ईमेल जोड़ना होता है और हमारे सभी टेस्टर तुरंत ऑप्ट-इन लिंक से जुड़ जाते हैं।</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
-            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">14 दिन पूरे होने के बाद प्रोडक्शन ऐक्सेस मिलने में कितना समय लगता है?</h3>
-            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">14 दिन पूरे होते ही आपके Play Console डैशबोर्ड में 'Apply for production' बटन सक्रिय हो जाता है। हमारे द्वारा दिए गए फीडबैक उत्तरों के साथ आवेदन करने पर आमतौर पर 2 से 5 दिनों में अप्रूवल मिल जाता है।</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7 Prompts -->
-    <section class="section section-alt">
-      <div class="container" style="max-width: 920px;">
-        <div class="section-header text-center">
-          <div class="badge">प्रोडक्शन आवेदन सहायता</div>
-          <h2>Google Play के 7 प्रोडक्शन प्रश्नों के लिए हम आपको तैयार उत्तर देते हैं</h2>
-          <p class="section-lead">बंद परीक्षण समाप्त होने पर Google आपसे ये विवरण मांगता है — हमारी रिपोर्ट इन सभी को कवर करती है:</p>
-        </div>
-        <div class="card" style="padding: 2.5rem 2.25rem; background: #ffffff;">
-          <ul class="hero-feature-list" style="margin-bottom: 0; gap: 1.15rem;">
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>आपने बंद परीक्षण के लिए टेस्टर्स की भर्ती कैसे की?</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>बंद परीक्षण के दौरान टेस्टर्स के लिए ऐप का उपयोग करना कितना आसान था?</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>टेस्टर्स ने ऐप के किन हिस्सों के साथ सबसे अधिक इंटरैक्ट किया?</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>टेस्टर्स ने किस प्रकार का फीडबैक दिया (UI, क्रैश, परफॉर्मेंस)?</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>आपने टेस्टर्स के फीडबैक के आधार पर ऐप में क्या बदलाव किए?</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>आप कैसे सुनिश्चित करते हैं कि आपका ऐप प्रोडक्शन के लिए तैयार है?</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>टेस्टिंग के दौरान मिले बग्स को ठीक करने के लिए आपने कौन सा अपडेट जारी किया?</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reviews -->
-    <section class="section" id="reviews">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">डेवलपर समीक्षाएं</div>
-          <h2>भारत और दुनिया भर के Android डेवलपर्स के अनुभव</h2>
-          <p class="section-lead">देखें कि हमारे ग्राहकों ने पहली ही कोशिश में अपना प्रोडक्शन ऐक्सेस कैसे हासिल किया।</p>
-        </div>
-        <div class="reviews-grid">
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">सत्यापित डेवलपर</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">पहली बार में ही प्रोडक्शन ऐक्सेस मिल गया!</h3>
-              <p class="review-quote">पहले मैंने Telegram ग्रुप्स से कोशिश की थी लेकिन 14 दिन बाद मेरा ऐप रिजेक्ट हो गया। फिर मैंने AppConsoleLab का Premium पैकेज लिया। सभी 20 टेस्टर रोज़ सक्रिय रहे और 15वें दिन मेरा ऐप अप्रूव हो गया।</p>
-            </div>
-            <div class="reviewer-name">रोहित शर्मा — बेंगलुरु, भारत</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">सत्यापित डेवलपर</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">समय और सिरदर्द दोनों बच गए</h3>
-              <p class="review-quote">मेरे पास अपने दोस्तों के पास इतने Android फोन ही नहीं थे। WhatsApp पर सपोर्ट टीम ने मेरा Google Group सेट करने में मदद की और 24 घंटे के अंदर सभी टेस्टर जुड़ गए। शानदार सेवा!</p>
-            </div>
-            <div class="reviewer-name">अंकित पटेल — अहमदाबाद, भारत</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">सत्यापित डेवलपर</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">बग रिपोर्ट बहुत काम की थी</h3>
-              <p class="review-quote">मुझे लगा था सिर्फ 14 दिन की गिनती पूरी होगी, लेकिन टेस्टर्स ने मेरे लॉगिन स्क्रीन का एक असली क्रैश ढूंढ निकाला जो छोटे स्क्रीन वाले फोन पर हो रहा था। प्रोडक्शन प्रश्नों के उत्तर भी बहुत मददगार थे।</p>
-            </div>
-            <div class="reviewer-name">प्रिया नायर — कोच्चि, भारत</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">सत्यापित डेवलपर</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">$20 में इससे बेहतर कुछ नहीं</h3>
-              <p class="review-quote">मैं एक सोलो डेवलपर हूं और मेरे लिए टाइम सबसे जरूरी है। Basic पैकेज ने बिना किसी दिक्कत के 12 टेस्टर और 14 दिन का चक्र पूरा कर दिया। पूरी तरह भरोसेमंद।</p>
-            </div>
-            <div class="reviewer-name">विकास वर्मा — पुणे, भारत</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">सत्यापित डेवलपर</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">रिजेक्ट हुए ऐप को भी पास करवा दिया</h3>
-              <p class="review-quote">मेरा पहला आवेदन कम एंगेजमेंट के कारण रिजेक्ट हुआ था। AppConsoleLab की टीम ने पूरे 14 दिन रोज़ाना लॉगिन और टेस्टिंग रिपोर्ट दी, जिससे दूसरी बार में तुरंत प्रोडक्शन ऐक्सेस मिल गया।</p>
-            </div>
-            <div class="reviewer-name">संदीप कुमार — दिल्ली, भारत</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">सत्यापित डेवलपर</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">एजेंसी प्रोजेक्ट्स के लिए बेस्ट</h3>
-              <p class="review-quote">हम क्लाइंट्स के नए व्यक्तिगत Play Console अकाउंट्स के लिए अब तक 6 ऐप्स पर इनकी सेवा ले चुके हैं। हर बार 100% सफलता मिली है।</p>
-            </div>
-            <div class="reviewer-name">अर्जुन मेहता — मुंबई, भारत</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing -->
-    <section class="section section-alt" id="pricing">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">पारदर्शी कीमत</div>
-          <h2>सरल, एकमुश्त कीमत — कोई छिपा हुआ शुल्क नहीं</h2>
-          <p class="section-lead">अपने ऐप की जरूरत के अनुसार पैकेज चुनें। दोनों पैकेज में 100% प्रोडक्शन ऐक्सेस गारंटी शामिल है।</p>
-        </div>
-
-        <div class="pricing-grid">
-          <div class="pricing-card">
-            <div>
-              <span class="badge" style="background: #f1f5f9; color: #475569; border-color: #e2e8f0;">सोलो डेवलपर्स के लिए</span>
-              <h3 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 0.35rem;">Basic पैकेज</h3>
-              <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5;">Google Play के 12 टेस्टर और 14 दिन के बंद परीक्षण नियम को पूरा करने के लिए आदर्श।</p>
-              <div style="margin: 1.25rem 0;">
-                <span style="font-size: 1.1rem; text-decoration: line-through; color: #94a3b8; margin-right: 0.5rem;">$30</span>
-                <span class="price-val">$20</span>
-                <span class="price-sub">एकमुश्त / प्रति ऐप</span>
-              </div>
-              <ul class="pricing-features">
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>12+ असली Android टेस्टर (100% मानवीय)</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>लगातार 14 दिनों तक सक्रिय बंद परीक्षण</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>24 घंटे के भीतर ऑप्ट-इन की शुरुआत</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>असली भौतिक डिवाइस (कोई एमुलेटर नहीं)</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>विभिन्न IP और लोकेशन से विविध टेस्टिंग</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Google Group या Email List के जरिए आसान सेटअप</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>रोज़ाना ऐप लॉन्च और बेसिक नेविगेशन</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>प्रमुख फीचर्स और स्क्रीन की जांच</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Play Console के लिए डैशबोर्ड ट्रैकिंग सपोर्ट</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>बग और क्रैश की तुरंत सूचना</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>UI/UX सुधार के लिए प्रारंभिक सुझाव</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>14वें दिन संक्षिप्त टेस्टिंग सारांश रिपोर्ट</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>प्रोडक्शन ऐक्सेस प्रश्नों के लिए मार्गदर्शन</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>WhatsApp और ईमेल पर त्वरित ग्राहक सहायता</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>14 दिनों तक किसी भी टेस्टर के हटने पर मुफ्त रिप्लेसमेंट</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>गोपनीयता की सुरक्षा (आपका APK/AAB सुरक्षित)</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>100% प्रोडक्शन ऐक्सेस या मुफ्त री-टेस्ट गारंटी</span></li>
-              </ul>
-            </div>
-            <div style="margin-top: 1.5rem;">
-              <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: var(--radius-sm); padding: 0.65rem 0.85rem; font-size: 0.825rem; color: #166534; font-weight: 600; text-align: center; margin-bottom: 1rem;">
-                100% प्रोडक्शन ऐक्सेस गारंटी • असफल होने पर मुफ्त री-टेस्ट
-              </div>
-              <a href="https://appconsolelab.com/?ref=12-testers.github.io&amp;utm_source=12-testers.github.io&amp;utm_medium=referral&amp;utm_campaign=hi_pricing_basic" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; text-align: center;">
-                Basic चुनें ($20) &rarr;
-              </a>
-            </div>
-          </div>
-
-          <div class="pricing-card featured">
-            <span class="pricing-badge">सबसे लोकप्रिय</span>
-            <div>
-              <span class="badge badge-success">अधिकतम सुरक्षा और गति</span>
-              <h3 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 0.35rem;">Premium पैकेज</h3>
-              <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5;">20+ टेस्टर, गहन QA फीडबैक और पहले ही प्रयास में सुनिश्चित अप्रूवल के लिए।</p>
-              <div style="margin: 1.25rem 0;">
-                <span style="font-size: 1.1rem; text-decoration: line-through; color: #94a3b8; margin-right: 0.5rem;">$60</span>
-                <span class="price-val" style="color: var(--brand-primary);">$40</span>
-                <span class="price-sub">एकमुश्त / प्रति ऐप</span>
-              </div>
-              <ul class="pricing-features">
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>20+ असली Android टेस्टर (सुरक्षित बफर के साथ)</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>लगातार 14+ दिनों तक गहन बंद परीक्षण</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>6–12 घंटे के भीतर प्राथमिकता के साथ ऑप्ट-इन</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>अलग-अलग Android वर्जन (Android 11 से 15) पर टेस्टिंग</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>विभिन्न स्क्रीन साइज़ और ब्रांड्स पर संगतता जांच</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Google Group व Play Console सेटअप में पूरी सहायता</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>रोज़ाना 5–10 मिनट का वास्तविक उपयोग और टेस्टिंग</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>लॉगिन, पेमेंट फ्लो और सभी मुख्य यूज़र जर्नी की जांच</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>स्क्रीनशॉट सहित विस्तृत बग और क्रैश रिपोर्ट</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Play Console प्री-लॉन्च रिपोर्ट विश्लेषण सहायता</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>प्रत्येक टेस्टर से लिखित और विस्तृत फीडबैक</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>14वें दिन पूर्ण PDF QA और एंगेजमेंट रिपोर्ट</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Google के 7 प्रोडक्शन प्रश्नों के लिए तैयार कस्टम उत्तर</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>प्रोडक्शन आवेदन से पहले फ्री पॉलिसी चेक</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>प्राथमिकता WhatsApp सपोर्ट (सीधा डेवलपर संपर्क)</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>अपडेटेड AAB/APK बिल्ड्स की दोबारा जांच शामिल</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>100% प्रोडक्शन ऐक्सेस या अनलिमिटेड मुफ्त री-टेस्ट</span></li>
-              </ul>
-            </div>
-            <div style="margin-top: 1.5rem;">
-              <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: var(--radius-sm); padding: 0.65rem 0.85rem; font-size: 0.825rem; color: #166534; font-weight: 600; text-align: center; margin-bottom: 1rem;">
-                100% प्रोडक्शन ऐक्सेस गारंटी • प्राथमिकता सपोर्ट
-              </div>
-              <a href="https://appconsolelab.com/?ref=12-testers.github.io&amp;utm_source=12-testers.github.io&amp;utm_medium=referral&amp;utm_campaign=hi_pricing_premium" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; text-align: center;">
-                Premium चुनें ($40) &rarr;
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Us -->
-    <section class="section" id="about">
-      <div class="container" style="max-width: 920px;">
-        <div class="section-header text-center">
-          <div class="badge">AppConsoleLab के बारे में</div>
-          <h2>Android डेवलपर्स द्वारा डेवलपर्स के लिए निर्मित</h2>
-          <p class="section-lead">हम समझते हैं कि महीनों की मेहनत से बनाया गया ऐप सिर्फ 12 टेस्टर न मिलने के कारण Play Store पर अटक जाए तो कितना बुरा लगता है।</p>
-        </div>
-        <div class="card" style="padding: 2.5rem 2.25rem; background: #f8fafc;">
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; text-align: center; padding-bottom: 2rem; margin-bottom: 2rem; border-bottom: 1px solid var(--border-color);">
-            <div>
-              <div style="font-size: 2rem; font-weight: 800; color: var(--brand-primary);">2,400+</div>
-              <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.25rem;">सफल बंद परीक्षण</div>
-            </div>
-            <div>
-              <div style="font-size: 2rem; font-weight: 800; color: var(--brand-primary);">50+</div>
-              <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.25rem;">देशों के डेवलपर्स</div>
-            </div>
-            <div>
-              <div style="font-size: 2rem; font-weight: 800; color: var(--brand-primary);">99.2%</div>
-              <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.25rem;">अप्रूवल सफलता दर</div>
-            </div>
-          </div>
-          <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin-bottom: 1.25rem;">AppConsoleLab में हमारे पास सत्यापित Android टेस्टर्स का एक समर्पित नेटवर्क है जो असली डिवाइस पर आपके ऐप का परीक्षण करते हैं। हम कोई ऑटोमेटेड स्क्रिप्ट या क्लोन फोन इस्तेमाल नहीं करते।</p>
-          <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">हमारा लक्ष्य सरल है: आपको Google Play की जटिल बंद परीक्षण (Closed Testing) प्रक्रिया से बिना किसी तनाव के निकालना और आपका प्रोडक्शन ऐक्सेस सुरक्षित कराना।</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQs -->
-    <section class="section section-alt" id="faq">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">सामान्य प्रश्न (FAQ)</div>
-          <h2>अक्सर पूछे जाने वाले सवाल</h2>
-          <p class="section-lead">ऑर्डर देने से पहले अपने सभी सवालों के जवाब यहां पाएं।</p>
-        </div>
-        <div class="faq-list">
-          <details class="faq-item" open>
-            <summary>क्या यह सेवा Google Play की नीतियों के अनुरूप और सुरक्षित है?</summary>
-            <div class="faq-body">जी हां, बिल्कुल। हमारे सभी टेस्टर वास्तविक व्यक्ति हैं जो अपने असली Android स्मार्टफोन और अलग-अलग इंटरनेट कनेक्शन से ऐप टेस्ट करते हैं। इसमें कोई बॉट या एमुलेटर नहीं होता, इसलिए आपका अकाउंट 100% सुरक्षित रहता है।</div>
-          </details>
-          <details class="faq-item">
-            <summary>मुझे आपको कौन सा लिंक या एक्सेस देना होगा?</summary>
-            <div class="faq-body">आपको हमें Play Console का लॉगिन नहीं देना है। आपको बस अपने बंद परीक्षण (Closed Testing) ट्रैक में हमारा Google Group जोड़ना है और अपना Play Store ऑप्ट-इन लिंक (जैसे https://play.google.com/apps/testing/...) हमारे साथ शेयर करना है।</div>
-          </details>
-          <details class="faq-item">
-            <summary>टेस्टर्स कितने समय में जुड़ना शुरू होंगे?</summary>
-            <div class="faq-body">Basic प्लान में 24 घंटे के भीतर और Premium प्लान में 6 से 12 घंटे के भीतर टेस्टर आपके ऐप को डाउनलोड कर उपयोग शुरू कर देते हैं।</div>
-          </details>
-          <details class="faq-item">
-            <summary>क्या 14 दिनों तक मुझे कुछ अपडेट करना होगा?</summary>
-            <div class="faq-body">यदि कोई बग मिलता है या आप ऐप में सुधार करना चाहते हैं, तो आप बंद परीक्षण ट्रैक पर नया अपडेट डाल सकते हैं। हमारे टेस्टर आपका नया वर्जन अपडेट करके टेस्ट करना जारी रखेंगे।</div>
-          </details>
-          <details class="faq-item">
-            <summary>क्या होगा अगर Google फिर भी प्रोडक्शन ऐक्सेस रिजेक्ट कर दे?</summary>
-            <div class="faq-body">हमारी 99.2% ऐप्स पहली बार में ही पास हो जाती हैं। फिर भी, यदि Google अतिरिक्त टेस्टिंग मांगता है, तो हम बिना किसी अतिरिक्त शुल्क के आपके ऐप के लिए पूरा 14 दिन का री-टेस्ट मुफ्त करते हैं।</div>
-          </details>
-          <details class="faq-item">
-            <summary>क्या पेड (Paid) ऐप्स या लॉगिन वाले ऐप्स की टेस्टिंग हो सकती है?</summary>
-            <div class="faq-body">हां! यदि आपके ऐप में लॉगिन है, तो आप हमें एक डेमो अकाउंट दे सकते हैं। पेड ऐप्स के लिए आप Play Console में फ्री प्रोमो कोड जनरेट करके दे सकते हैं।</div>
-          </details>
-          <details class="faq-item">
-            <summary>मैं भुगतान कैसे कर सकता हूं?</summary>
-            <div class="faq-body">आप हमारे मुख्य प्लेटफॉर्म AppConsoleLab पर कार्ड, PayPal या स्थानीय भुगतान विकल्पों से सुरक्षित भुगतान कर सकते हैं। सहायता के लिए आप सीधे WhatsApp पर भी संपर्क कर सकते हैं।</div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bottom CTA -->
-    <section class="section" style="text-align: center; background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);">
-      <div class="container" style="max-width: 720px;">
-        <div class="badge badge-success" style="margin-bottom: 1rem;"><span class="pulse-dot-green"></span> लॉन्च के लिए तैयार?</div>
-        <h2 style="font-size: 2.1rem; color: #0f172a; margin-bottom: 1rem;">आज ही अपना 14 दिन का बंद परीक्षण शुरू करें</h2>
-        <p style="font-size: 1.075rem; color: #475569; line-height: 1.7; margin-bottom: 2rem;">12 टेस्टर्स के इंतजार में अपने ऐप का लॉन्च और न टालें। अभी ऑर्डर करें और 24 घंटे में टेस्टिंग शुरू होते देखें।</p>
-        <div class="hero-cta-group" style="justify-content: center;">
-          <a href="#pricing" class="btn btn-primary btn-lg">अभी शुरू करें ($20 से) &rarr;</a>
-          <a href="https://wa.me/923394001479?text=Hi%2C%20I%20need%2012%20testers%20for%2014%20days" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
-            <span class="pulse-dot-green"></span> WhatsApp पर बात करें
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="https://12-testers.github.io/hi/12-टेस्टर/" class="logo" aria-label="12 Testers For 14 Days by AppConsoleLab">
-            <svg class="logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <linearGradient id="gpFtrGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#0284c7"/>
-                  <stop offset="50%" stop-color="#2563eb"/>
-                  <stop offset="100%" stop-color="#4f46e5"/>
-                </linearGradient>
-                <linearGradient id="gpFtrBadge" x1="22" y1="21" x2="34" y2="33" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#10b981"/>
-                  <stop offset="100%" stop-color="#047857"/>
-                </linearGradient>
-              </defs>
-              <rect width="40" height="40" rx="10" fill="url(#gpFtrGrad)"/>
-              <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
-              <path d="M12.5 10.5C12.5 9.4 13.7 8.7 14.6 9.3L26 16.8C26.9 17.4 26.9 18.6 26 19.2L14.6 26.7C13.7 27.3 12.5 26.6 12.5 25.5V10.5Z" fill="#ffffff"/>
-              <circle cx="28.5" cy="27.5" r="7.5" fill="#ffffff"/>
-              <circle cx="28.5" cy="27.5" r="6" fill="url(#gpFtrBadge)"/>
-              <path d="M25.7 27.5L27.7 29.5L31.3 25.2" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <div class="logo-text-group">
-              <span class="logo-text"><strong>12 Testers</strong> <span class="logo-accent">For 14 Days</span></span>
-              <span class="logo-byline">
-                <span class="by-text">by</span>
-                <img src="/assets/ACL_Logo_Light_theme.png" alt="AppConsoleLab" class="acl-sublogo" width="120" height="40">
-              </span>
-            </div>
           </a>
           <p class="footer-desc">Google Play Console के 12 टेस्टर और 14 दिन के बंद परीक्षण नियम को पूरा करने के लिए भरोसेमंद मानवीय टेस्टिंग सेवा।</p>
         </div>

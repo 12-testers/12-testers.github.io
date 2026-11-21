@@ -651,11 +651,11 @@ a:hover {
 
 
 
-/* Header & Brand Logo Modern Styling */
+/* Header & Brand Logo Modern 2026 Styling */
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.85rem;
+  gap: 0.78rem;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
@@ -665,30 +665,31 @@ a:hover {
 }
 
 .logo-svg {
-  width: 38px;
-  height: 38px;
+  width: 42px;
+  height: 42px;
   flex-shrink: 0;
-  border-radius: 10px;
-  filter: drop-shadow(0 3px 8px rgba(37, 99, 235, 0.22));
+  border-radius: 12px;
+  filter: drop-shadow(0 4px 12px rgba(37, 99, 235, 0.26));
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease;
 }
 
 .logo:hover .logo-svg {
   transform: translateY(-1.5px) scale(1.03);
-  filter: drop-shadow(0 6px 14px rgba(37, 99, 235, 0.32));
+  filter: drop-shadow(0 8px 18px rgba(37, 99, 235, 0.34));
 }
 
 .logo-text-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 0.22rem;
 }
 
 .logo-text {
   font-family: var(--font-heading);
-  font-size: 1.22rem;
-  line-height: 1.15;
-  letter-spacing: -0.028em;
+  font-size: 1.24rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
   color: #0f172a;
   display: inline-flex;
   align-items: baseline;
@@ -698,12 +699,12 @@ a:hover {
 .logo-text strong {
   font-weight: 800;
   color: #0f172a;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.032em;
 }
 
 .logo-accent {
   font-weight: 800;
-  background: linear-gradient(135deg, #0284c7 0%, #2563eb 52%, #4f46e5 100%);
+  background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 52%, #4338ca 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -713,44 +714,41 @@ a:hover {
 .logo-byline {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  margin-top: 0.18rem;
-}
-
-.by-text {
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #94a3b8;
+  gap: 0.38rem;
   line-height: 1;
 }
 
-.acl-sublogo {
-  height: 40px;
-  width: auto;
-  opacity: 1;
-  vertical-align: middle;
-  display: inline-block;
-  object-fit: contain;
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.04));
-  transition: transform 0.2s ease;
+.logo-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.22);
+  flex-shrink: 0;
 }
 
-.logo:hover .acl-sublogo {
-  transform: scale(1.02);
+.logo-subtag {
+  font-family: var(--font-body);
+  font-size: 0.64rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #64748b;
+  line-height: 1;
 }
 
 @media (max-width: 420px) {
   .logo-text {
-    font-size: 1.05rem;
-  }
-  .acl-sublogo {
-    height: 34px;
+    font-size: 1.06rem;
   }
   .logo-svg {
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+  .logo-subtag {
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
   }
 }
 
@@ -2344,713 +2342,38 @@ a:hover {
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="https://12-testers.github.io/zh-CN/12-名测试人员/" class="logo" aria-label="12 Testers For 14 Days by AppConsoleLab">
-        <svg class="logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg class="logo-svg" width="42" height="42" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <defs>
-            <linearGradient id="gpLogoGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#0284c7"/>
+            <linearGradient id="gp26HdrBase" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#0ea5e9"/>
               <stop offset="50%" stop-color="#2563eb"/>
-              <stop offset="100%" stop-color="#4f46e5"/>
+              <stop offset="100%" stop-color="#4338ca"/>
             </linearGradient>
-            <linearGradient id="gpBadgeGrad" x1="22" y1="21" x2="34" y2="33" gradientUnits="userSpaceOnUse">
+            <radialGradient id="gp26HdrSheen" cx="0.25" cy="0.15" r="0.75">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.28"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="gp26HdrCheck" x1="25" y1="25" x2="39" y2="39" gradientUnits="userSpaceOnUse">
               <stop offset="0%" stop-color="#10b981"/>
-              <stop offset="100%" stop-color="#047857"/>
+              <stop offset="100%" stop-color="#059669"/>
             </linearGradient>
           </defs>
-          <rect width="40" height="40" rx="10" fill="url(#gpLogoGrad)"/>
-          <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
-          <path d="M12.5 10.5C12.5 9.4 13.7 8.7 14.6 9.3L26 16.8C26.9 17.4 26.9 18.6 26 19.2L14.6 26.7C13.7 27.3 12.5 26.6 12.5 25.5V10.5Z" fill="#ffffff"/>
-          <circle cx="28.5" cy="27.5" r="7.5" fill="#ffffff"/>
-          <circle cx="28.5" cy="27.5" r="6" fill="url(#gpBadgeGrad)"/>
-          <path d="M25.7 27.5L27.7 29.5L31.3 25.2" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect width="44" height="44" rx="12" fill="url(#gp26HdrBase)"/>
+          <rect width="44" height="44" rx="12" fill="url(#gp26HdrSheen)"/>
+          <rect x="0.75" y="0.75" width="42.5" height="42.5" rx="11.25" stroke="rgba(255,255,255,0.38)" stroke-width="1.5"/>
+          <path d="M14 12.2C14 11.1 15.2 10.4 16.1 11L28.5 18.8C29.4 19.4 29.4 20.6 28.5 21.2L16.1 29C15.2 29.6 14 28.9 14 27.8V12.2Z" fill="#ffffff"/>
+          <path d="M14.3 11.5L22.2 20L14.3 28.5" stroke="#2563eb" stroke-opacity="0.25" stroke-width="1.4" stroke-linejoin="round"/>
+          <circle cx="31.5" cy="30.5" r="8" fill="#ffffff"/>
+          <circle cx="31.5" cy="30.5" r="6.4" fill="url(#gp26HdrCheck)"/>
+          <path d="M28.5 30.6L30.6 32.7L34.6 28.4" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <div class="logo-text-group">
           <span class="logo-text"><strong>12 Testers</strong> <span class="logo-accent">For 14 Days</span></span>
           <span class="logo-byline">
-            <span class="by-text">by</span>
-            <img src="/assets/ACL_Logo_Light_theme.png" alt="AppConsoleLab" class="acl-sublogo" width="120" height="40">
+            <span class="logo-status-dot"></span>
+            <span class="logo-subtag">GOOGLE PLAY CLOSED TESTING</span>
           </span>
         </div>
-      </a>
-
-      <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menu" type="button" aria-expanded="false">
-        <svg class="hamburger-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-        <svg class="close-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-
-      <nav class="main-nav" id="mainNav">
-        <ul class="nav-list">
-          <li><a href="https://12-testers.github.io/zh-CN/12-名测试人员/" class="nav-link active">首页</a></li>
-          <li><a href="#how-it-works" class="nav-link">服务流程</a></li>
-          <li><a href="#pricing" class="nav-link">价格方案</a></li>
-          <li><a href="#reviews" class="nav-link">客户评价</a></li>
-          <li><a href="#faq" class="nav-link">常见问题</a></li>
-          <li class="lang-dropdown" id="langDropdown">
-            <button type="button" class="lang-toggle-btn" id="langToggleBtn" aria-expanded="false" aria-haspopup="true">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              <span>Languages (50)</span>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="lang-dropdown-menu" role="menu">
-              <a href="/" class="lang-dropdown-item is-main-en"><span>English (Main Homepage)</span><span class="lang-code-pill">EN</span></a>
-              <a href="/af/12-toetsers/" class="lang-dropdown-item"><span>Afrikaans</span><span class="lang-code-pill">af</span></a>
-              <a href="/am/12-ሞካሪዎች/" class="lang-dropdown-item"><span>አማርኛ (Amharic)</span><span class="lang-code-pill">am</span></a>
-              <a href="/bg/12-тестери/" class="lang-dropdown-item"><span>Български (Bulgarian)</span><span class="lang-code-pill">bg</span></a>
-              <a href="/ca/12-provadors/" class="lang-dropdown-item"><span>Català (Catalan)</span><span class="lang-code-pill">ca</span></a>
-              <a href="/zh-HK/12-名測試人員/" class="lang-dropdown-item"><span>繁體中文 — 香港</span><span class="lang-code-pill">zh-HK</span></a>
-              <a href="/zh-CN/12-名测试人员/" class="lang-dropdown-item"><span>简体中文 — 中国</span><span class="lang-code-pill">zh-CN</span></a>
-              <a href="/zh-TW/12-名測試人員/" class="lang-dropdown-item"><span>繁體中文 — 台灣</span><span class="lang-code-pill">zh-TW</span></a>
-              <a href="/hr/12-testera/" class="lang-dropdown-item"><span>Hrvatski (Croatian)</span><span class="lang-code-pill">hr</span></a>
-              <a href="/cs/12-testerů/" class="lang-dropdown-item"><span>Čeština (Czech)</span><span class="lang-code-pill">cs</span></a>
-              <a href="/da/12-testere/" class="lang-dropdown-item"><span>Dansk (Danish)</span><span class="lang-code-pill">da</span></a>
-              <a href="/nl/12-testers/" class="lang-dropdown-item"><span>Nederlands (Dutch)</span><span class="lang-code-pill">nl</span></a>
-              <a href="/en-GB/12-testers/" class="lang-dropdown-item"><span>English (UK)</span><span class="lang-code-pill">en-GB</span></a>
-              <a href="/en-US/12-testers/" class="lang-dropdown-item"><span>English (US)</span><span class="lang-code-pill">en-US</span></a>
-              <a href="/et/12-testijat/" class="lang-dropdown-item"><span>Eesti (Estonian)</span><span class="lang-code-pill">et</span></a>
-              <a href="/fil/12-na-tester/" class="lang-dropdown-item"><span>Filipino</span><span class="lang-code-pill">fil</span></a>
-              <a href="/fi/12-testaajaa/" class="lang-dropdown-item"><span>Suomi (Finnish)</span><span class="lang-code-pill">fi</span></a>
-              <a href="/fr-CA/12-testeurs/" class="lang-dropdown-item"><span>Français (Canada)</span><span class="lang-code-pill">fr-CA</span></a>
-              <a href="/fr-FR/12-testeurs/" class="lang-dropdown-item"><span>Français (France)</span><span class="lang-code-pill">fr-FR</span></a>
-              <a href="/de/12-tester/" class="lang-dropdown-item"><span>Deutsch (German)</span><span class="lang-code-pill">de</span></a>
-              <a href="/el/12-δοκιμαστές/" class="lang-dropdown-item"><span>Ελληνικά (Greek)</span><span class="lang-code-pill">el</span></a>
-              <a href="/he/12-בודקים/" class="lang-dropdown-item"><span>עברית (Hebrew)</span><span class="lang-code-pill">he</span></a>
-              <a href="/hi/12-टेस्टर/" class="lang-dropdown-item"><span>हिन्दी (Hindi)</span><span class="lang-code-pill">hi</span></a>
-              <a href="/hu/12-tesztelő/" class="lang-dropdown-item"><span>Magyar (Hungarian)</span><span class="lang-code-pill">hu</span></a>
-              <a href="/is/12-prófendur/" class="lang-dropdown-item"><span>Íslenska (Icelandic)</span><span class="lang-code-pill">is</span></a>
-              <a href="/id/12-penguji/" class="lang-dropdown-item"><span>Bahasa Indonesia</span><span class="lang-code-pill">id</span></a>
-              <a href="/it/12-tester/" class="lang-dropdown-item"><span>Italiano (Italian)</span><span class="lang-code-pill">it</span></a>
-              <a href="/ja/12-人のテスター/" class="lang-dropdown-item"><span>日本語 (Japanese)</span><span class="lang-code-pill">ja</span></a>
-              <a href="/ko/12-명의-테스터/" class="lang-dropdown-item"><span>한국어 (Korean)</span><span class="lang-code-pill">ko</span></a>
-              <a href="/lv/12-testētāji/" class="lang-dropdown-item"><span>Latviešu (Latvian)</span><span class="lang-code-pill">lv</span></a>
-              <a href="/lt/12-testuotojai/" class="lang-dropdown-item"><span>Lietuvių (Lithuanian)</span><span class="lang-code-pill">lt</span></a>
-              <a href="/ms/12-penguji/" class="lang-dropdown-item"><span>Bahasa Melayu (Malay)</span><span class="lang-code-pill">ms</span></a>
-              <a href="/no/12-testere/" class="lang-dropdown-item"><span>Norsk (Norwegian)</span><span class="lang-code-pill">no</span></a>
-              <a href="/pl/12-testerów/" class="lang-dropdown-item"><span>Polski (Polish)</span><span class="lang-code-pill">pl</span></a>
-              <a href="/pt-BR/12-testadores/" class="lang-dropdown-item"><span>Português (Brasil)</span><span class="lang-code-pill">pt-BR</span></a>
-              <a href="/pt-PT/12-testadores/" class="lang-dropdown-item"><span>Português (Portugal)</span><span class="lang-code-pill">pt-PT</span></a>
-              <a href="/ro/12-testeri/" class="lang-dropdown-item"><span>Română (Romanian)</span><span class="lang-code-pill">ro</span></a>
-              <a href="/ru/12-тестировщиков/" class="lang-dropdown-item"><span>Русский (Russian)</span><span class="lang-code-pill">ru</span></a>
-              <a href="/sr/12-тестера/" class="lang-dropdown-item"><span>Српски (Serbian)</span><span class="lang-code-pill">sr</span></a>
-              <a href="/sk/12-testerov/" class="lang-dropdown-item"><span>Slovenčina (Slovak)</span><span class="lang-code-pill">sk</span></a>
-              <a href="/sl/12-preizkuševalcev/" class="lang-dropdown-item"><span>Slovenščina (Slovenian)</span><span class="lang-code-pill">sl</span></a>
-              <a href="/es-419/12-evaluadores/" class="lang-dropdown-item"><span>Español (Latinoamérica)</span><span class="lang-code-pill">es-419</span></a>
-              <a href="/es-ES/12-evaluadores/" class="lang-dropdown-item"><span>Español (España)</span><span class="lang-code-pill">es-ES</span></a>
-              <a href="/sw/wajaribu-12/" class="lang-dropdown-item"><span>Kiswahili (Swahili)</span><span class="lang-code-pill">sw</span></a>
-              <a href="/sv/12-testare/" class="lang-dropdown-item"><span>Svenska (Swedish)</span><span class="lang-code-pill">sv</span></a>
-              <a href="/th/12-ผู้ทดสอบ/" class="lang-dropdown-item"><span>ไทย (Thai)</span><span class="lang-code-pill">th</span></a>
-              <a href="/tr/12-test-kullanıcısı/" class="lang-dropdown-item"><span>Türkçe (Turkish)</span><span class="lang-code-pill">tr</span></a>
-              <a href="/uk-UA/12-тестувальників/" class="lang-dropdown-item"><span>Українська (uk-UA)</span><span class="lang-code-pill">uk-UA</span></a>
-              <a href="/vi/12-người-thử-nghiệm/" class="lang-dropdown-item"><span>Tiếng Việt (Vietnamese)</span><span class="lang-code-pill">vi</span></a>
-              <a href="/zu/abahloli-abayi-12/" class="lang-dropdown-item"><span>isiZulu (Zulu)</span><span class="lang-code-pill">zu</span></a>
-            </div>
-          </li>
-        </ul>
-        <div class="nav-cta-wrap">
-          <a href="https://wa.me/923394001479?text=Hi%2C%20I%20need%2012%20testers%20for%2014%20days" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
-            <span class="pulse-dot-green"></span>
-            <span>WhatsApp 咨询</span>
-          </a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="badge"><span class="pulse-dot"></span> Google Play 封闭式测试专业托管</div>
-          <h1>12 名测试人员连续 14 天</h1>
-          <p class="hero-lead">安排 <strong>12 名以上测试人员连续测试 14 天</strong>，全部采用真实物理 Android 手机。通过每日真实启动应用、提交有效 Bug 报告与私密反馈，助您一次通过 <strong>Google Play 封闭式测试</strong>并解锁正式版发布权限，不过包退。</p>
-          <div class="hero-cta-group" style="margin-bottom: 1rem;">
-            <a href="#pricing" class="btn btn-primary btn-lg">立即获取 12 名测试人员 &rarr; &rarr;</a>
-            <a href="https://wa.me/923394001479?text=Hi%2C%20I%20need%2012%20testers%20for%2014%20days" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
-              <span class="pulse-dot-green"></span> WhatsApp 咨询
-            </a>
-          </div>
-          <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.825rem; color: var(--text-muted); font-weight: 500; margin-bottom: 2rem;">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-            <span>100% 退款保障 &bull; 6 小时内启动 &bull; 无需提供账号密码</span>
-          </div>
-          <div class="hero-trust-bar">
-            <div class="trust-item"><img src="/assets/5stars.svg" alt="5 Stars" width="88" height="16"><span><strong>4.9/5</strong> Trustpilot 好评</span></div>
-            <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span><strong>100%</strong> 退款保障</span></div>
-            <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg><span><strong>纯真机</strong>实体测试</span></div>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <div class="card-header-badge"><span class="dot-live"></span> 14 天持续测试保障</div>
-          <h2 style="font-size: 1.35rem; color: #0f172a; margin-bottom: 0.75rem;">封闭式测试专属 12 名测试人员</h2>
-          <p style="font-size: 0.95rem; color: #475569; line-height: 1.6; margin-bottom: 1.25rem;">Google Play 要求个人开发者账号必须保持至少 <strong>12 名测试人员连续参与封闭式测试 14 天</strong>。我们的专业团队为您全程托管以下工作：</p>
-          <ul class="hero-feature-list">
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>25–50 台实体 Android 真机：</strong> 涵盖三星、小米、Pixel、摩托罗拉等真实机型（绝不使用模拟器）。</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>零掉队风险：</strong> 配备充足冗余人员，确保 14 天内有效测试人数始终高于 12 人。</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>每日真实打开应用：</strong> 真人测试员每天打开体验您的应用，并在 Play 商店提交私密测试反馈。</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>正式版问卷填写指导：</strong> 为 Google Play 审核的 7 个生产访问问题提供专业回答方案。</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">真实交付数据</div>
-          <h2>稳定可靠的 Google Play 封闭式测试成果</h2>
-          <p class="section-lead">全球独立开发者与出海团队信赖我们的 <strong>12 名测试人员 14 天</strong>托管服务，高效通过<strong>封闭式测试</strong>并顺利发布上线。</p>
-        </div>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-number">99.8%</div>
-            <div class="stat-label">审核通过率</div>
-            <div class="stat-sub">首次提交即获批正式版发布权限</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">25–50</div>
-            <div class="stat-label">分配真实测试员</div>
-            <div class="stat-sub">远超 12 人门槛的安全冗余</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">14 天</div>
-            <div class="stat-label">连续参与周期</div>
-            <div class="stat-sub">杜绝第 13 天计数清零</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">100%</div>
-            <div class="stat-label">退款保障</div>
-            <div class="stat-sub">未过审可全额退款或免费重测</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Alert -->
-    <section class="section" style="padding-bottom: 0;">
-      <div class="container">
-        <div class="card" style="background: #f0f9ff; border-color: #bae6fd; padding: 1.75rem 2rem;">
-          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem;">
-            <div style="flex: 1; min-width: 260px;">
-              <div class="badge" style="margin-bottom: 0.5rem;"><span class="pulse-dot"></span> Google Play 个人账号新规</div>
-              <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.35rem;">为什么 Google Play 要求 12 名测试人员进行封闭式测试</h3>
-              <p style="font-size: 0.95rem; color: #334155; margin: 0; line-height: 1.6;">所有在 2023 年 11 月 13 日之后注册的个人 Google Play Console 账号，必须在封闭式测试轨道中保持至少 <strong>12 名测试人员连续测试 14 天</strong>，系统才会解锁“申请正式版发布权限”按钮。</p>
-            </div>
-            <div><a href="#pricing" class="btn btn-primary">立即开启 14 天测试 &rarr; &rarr;</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pitfalls -->
-    <section class="section">
-      <div class="container" style="max-width: 920px;">
-        <div class="section-header text-center">
-          <div class="badge badge-amber">常见踩坑点</div>
-          <h2>为什么自己凑 12 名测试人员总是过不了审？</h2>
-          <p class="section-lead">自己找 <strong>12 名测试人员</strong>看似简单，但绝大多数开发者在首次申请正式版时都会因为以下三个隐蔽问题被 Google 驳回：</p>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--accent-amber); background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 0.75rem;">1. 第 12 天有人卸载导致计时清零</h3>
-            <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">如果您刚好只找了 <strong>12 名测试人员</strong>，哪怕只有 1 人在第 12 天清理手机空间、换设备或卸载应用，活跃人数就会跌到 11 人，Google Play 会立刻将 14 天倒计时重置为第 0 天。因此我们每次都会安排 25 至 50 台实体真机，彻底消除掉队风险。</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--accent-amber); background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 0.75rem;">2. 只装不点触发“需要更多测试”拒审</h3>
-            <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">仅让 <strong>12 名测试人员</strong>加入名单却从不打开应用，是正式版申请被拒的首要原因。Google 会检测两周内的每日启动频次、页面浏览与真实交互。我们的测试团队每天都会在真机上操作您的应用并提交真实私密反馈。</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--accent-amber); background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 0.75rem;">3. 模拟器与机刷群组被风控拦截</h3>
-            <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">低价刷单群和自动化脚本普遍使用 Android 模拟器或批量云手机，Play Integrity 检测会直接识别出相同的硬件指纹并导致拒审甚至账号关联风险。我们的<strong>封闭式测试</strong>队列全部使用 Android 7 至 Android 16 实体真机。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="section section-alt" id="how-it-works">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">简单 4 步</div>
-          <h2>12 名测试人员 14 天托管服务流程</h2>
-          <p class="section-lead">通过 <strong>Google Play 封闭式测试</strong>不必拖慢您的上线节奏，我们的团队全程代管 14 天测试周期。</p>
-        </div>
-        <div class="steps-grid">
-          <div class="step-card">
-            <div class="step-num">1</div>
-            <h3>分享测试加入链接</h3>
-            <p>在 Play Console 的封闭式测试轨道中添加我们托管的 Google 群组邮箱，并将应用加入链接发给我们，6 小时内完成配置。</p>
-          </div>
-          <div class="step-card">
-            <div class="step-num">2</div>
-            <h3>25–50 名真机用户加入</h3>
-            <p>我们的测试团队会在 24 小时内使用 25 至 50 台实体 Android 手机安装您的应用，建立高安全冗余。</p>
-          </div>
-          <div class="step-card">
-            <div class="step-num">3</div>
-            <h3>连续 14 天每日真实使用</h3>
-            <p>测试员每天打开应用测试核心流程、提交带截图的 Bug 反馈和私密评价，我们还会指导您发布中期更新。</p>
-          </div>
-          <div class="step-card">
-            <div class="step-num">4</div>
-            <h3>解锁正式版发布权限</h3>
-            <p>第 14 天结束后，我们为您提供全部 7 个 Google Play 审核问题的定制回答，助您顺利通过正式版审核。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Compare -->
-    <section class="section" id="compare">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">方案对比</div>
-          <h2>12 名封闭式测试人员：三种获取方式对比</h2>
-          <p class="section-lead">看看我们的 <strong>12 名测试人员 14 天</strong>托管服务与找亲友、免费互测群的差距：</p>
-        </div>
-        <div class="compare-grid">
-          <div class="compare-card">
-            <span class="badge" style="background: #f1f5f9; color: #64748b; border-color: #e2e8f0;">自行协调</span>
-            <h3 style="font-size: 1.25rem; color: #0f172a;">亲戚朋友帮忙</h3>
-            <p style="font-size: 0.925rem; color: #64748b; line-height: 1.5;">请同事或家人下载并保留应用整整两周。</p>
-            <ul class="compare-list">
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span><strong>掉队风险极高：</strong> 只要有一人误删应用，人数低于 12 就会导致倒计时归零。</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span><strong>每天催促很尴尬：</strong> 您必须天天提醒大家打开应用点几下。</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span><strong>反馈质量有限：</strong> 亲友很少能提供有价值的崩溃日志或 UI 建议。</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span><strong>筹备周期长：</strong> 手动凑齐 12 位 Android 手机用户往往要耗费数周。</span></li>
-            </ul>
-          </div>
-          <div class="compare-card">
-            <span class="badge badge-amber">高风险</span>
-            <h3 style="font-size: 1.25rem; color: #0f172a;">Reddit / Discord 互测群</h3>
-            <p style="font-size: 0.925rem; color: #64748b; line-height: 1.5;">在论坛里和陌生人互相安装测试交换名额。</p>
-            <ul class="compare-list">
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span><strong>虚假留存：</strong> 陌生人安装截图后，往往第 2 天就直接卸载。</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span><strong>模拟器泛滥：</strong> 许多互测账号使用虚拟机或云手机，极易被 Google 标记。</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span><strong>耗费大量时间：</strong> 您需要花 20 多个小时去安装并评价几十个陌生应用。</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span><strong>无过审指导：</strong> 遇到 7 个正式版申请问题时无人提供专业解答。</span></li>
-            </ul>
-          </div>
-          <div class="compare-card recommended">
-            <span class="badge badge-success">强烈推荐</span>
-            <h3 style="font-size: 1.25rem; color: #0f172a;">AppConsoleLab 托管测试队列</h3>
-            <p style="font-size: 0.925rem; color: #64748b; line-height: 1.5;">全流程托管的 <strong>12 名测试人员 14 天</strong>实体 Android 真机测试。</p>
-            <ul class="compare-list">
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>25–50 名真实测试员：</strong> 充沛的人数冗余，确保 14 天内绝不跌破 12 人。</span></li>
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>每日真实打开：</strong> 经验证的真人测试员连续 14 天每日打开使用。</span></li>
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>带截图 Bug 报告：</strong> 详细的 UI/UX 建议与真机兼容性/崩溃排查。</span></li>
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>100% 过审保障：</strong> 顺利解锁 Google Play 正式版发布权限，否则全额退款。</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ROI -->
-    <section class="section section-alt" id="why-price">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">开发者投入产出比</div>
-          <h2>为什么花 $20 美元能为您省下数周时间</h2>
-          <p class="section-lead">自己协调、跟进 <strong>12 名测试人员 14 天</strong>通常需要耗费 30 到 40 小时的沟通与互测精力。</p>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 960px; margin: 0 auto;">
-          <div class="card" style="padding: 2.25rem 2rem; background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 1rem;">$20 帮您省去的麻烦</h3>
-            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin-bottom: 1rem;">不必再花几周时间在论坛求人互测，也不用每天早上提心吊胆担心<strong>封闭式测试</strong>人数掉到 11。只需一次付费，即可将整个 14 天周期交给专业团队。</p>
-            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin: 0;">零时间浪费，第 14 天提交审核更有底气。</p>
-          </div>
-          <div class="card" style="padding: 2.25rem 2rem; background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 1rem;">您获得的真实价值</h3>
-            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin-bottom: 1rem;">当我们的 25 至 50 位真实 Android 用户每日测试您的构建版本、排查不同分辨率的界面问题并提交私密反馈时，您可以 100% 专注于核心功能开发与上线准备。</p>
-            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin: 0;">享有 100% 正式版过审退款保障。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quick Q&A -->
-    <section class="section" id="guide">
-      <div class="container" style="max-width: 900px;">
-        <div class="section-header text-center">
-          <div class="badge">快速问答</div>
-          <h2>快速问答：12 名测试人员 14 天封闭式测试</h2>
-          <p class="section-lead">快速了解 <strong>Google Play 封闭式测试</strong>规则及如何一次通过审核。</p>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
-            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">问：为什么 Google Play 要求 12 名测试人员测试 14 天？</h3>
-            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">2023 年 11 月之后创建的个人 Google Play 开发者账号，必须有至少 <strong>12 名测试人员参与封闭式测试</strong>并连续保持 14 天（336 小时），以证明应用在真实手机上运行稳定，之后才能申请正式版发布权限。</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
-            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">问：如果第 14 天前有 1 位测试人员卸载了怎么办？</h3>
-            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">如果您只找了 12 个人，其中 1 人在第 12 天卸载，活跃人数就会降为 11，Google 会将 14 天计时器重置为第 0 天。我们每次安排 25 至 50 台实体手机，确保数量永远不会低于 12。</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
-            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">问：测试人员只安装不打开能通过审核吗？</h3>
-            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">不能。Google Play 会考核每日打开频次、页面浏览、无崩溃率以及私密测试反馈。我们的团队每天都会在 Android 7–16 实体真机上实际打开操作。</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
-            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">问：下单后多久可以开始 14 天封闭式测试？</h3>
-            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">配置只需不到 6 小时。分享您的封闭式测试加入链接后，我们的托管团队会在 24 小时内使用 25 至 50 台实体手机完成安装。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7 Prompts -->
-    <section class="section section-alt">
-      <div class="container" style="max-width: 920px;">
-        <div class="section-header text-center">
-          <div class="badge">第 14 天过审攻略</div>
-          <h2>通过 Google 审核：7 个正式版申请问卷问题解析</h2>
-          <p class="section-lead">完成 <strong>12 名测试人员 14 天</strong>测试周期后，Google 会要求回答 7 个问题。测试期间发布一次更新（如 v1.0.1）配合清晰回答是过审的核心关键。</p>
-        </div>
-        <div class="card" style="padding: 2.5rem 2.25rem; background: #ffffff;">
-          <ul class="hero-feature-list" style="margin-bottom: 0; gap: 1.15rem;">
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>1. 为您的应用招募测试人员有多容易？</strong> 说明您如何组建了一支由 25 名以上不同 Android 机型真实用户构成的结构化测试团队。</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>2. 测试人员在封闭式测试期间如何与您的应用互动？</strong> 阐述每日打开频率、核心功能测试以及 14 天持续留存情况。</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>3. 您从 12 名测试人员那里收到了哪些反馈？</strong> 总结 UI/UX 优化建议、加载速度反馈及 Play 商店私密评价。</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>4. 您的目标受众是谁？</strong> 明确界定应用的服务人群，并说明测试团队如何匹配这些真实目标用户。</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>5. 您的应用为用户提供了什么价值？</strong> 突出核心功能、14 天测试验证的稳定性以及解决的实际痛点。</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>6. 您根据测试人员的反馈做了哪些更改？</strong> 提及您在测试中期发布的更新版本（如 v1.0.1）以及修复的布局或崩溃问题。</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>7. 您如何确定应用已准备好发布正式版？</strong> 引用零崩溃表现、Android Vitals 健康指标以及 14 天内所有反馈的解决记录。</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reviews -->
-    <section class="section" id="reviews">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">真实开发者反馈</div>
-          <h2>已验证客户评价</h2>
-          <p class="section-lead">看看国内及全球 Android 出海开发者如何通过我们的 <strong>12 名测试人员 14 天</strong>服务顺利过审：</p>
-        </div>
-        <div class="reviews-grid">
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">已验证用户</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">一次通过正式版审核</h3>
-              <p class="review-quote">"之前在 Reddit 折腾了三周凑 12 名测试人员，结果连续被拒两次。AppConsoleLab 几小时就安排了 25 台真机测试，我的健身 App 第 15 天就顺利获批上架了。"</p>
-            </div>
-            <div class="reviewer-name">张伟 (Wei Z.) &bull; 中国上海</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">已验证用户</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">提前测出了 Android 14 闪退</h3>
-              <p class="review-quote">"他们的测试主管在封闭式测试第 4 天帮我们抓到了一个 Android 14 的闪退 Bug。我们及时推了 v1.0.1 更新，正式版审核一次通过。"</p>
-            </div>
-            <div class="reviewer-name">Priya M. &bull; 印度</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">已验证用户</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">省心省力，物超所值</h3>
-              <p class="review-quote">"上架前花得最值的 $20 美元。25 台真实 Android 手机同时在线，完全不用担心第 13 天有人突然卸载。"</p>
-            </div>
-            <div class="reviewer-name">Lucas R. &bull; 巴西</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">已验证用户</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">外包与出海团队必备</h3>
-              <p class="review-quote">"以前每次帮客户上架都要卡在 12 人封闭式测试。现在全权交给他们处理每日打开，还帮忙写好 7 个问题的英文回答，效率太高了。"</p>
-            </div>
-            <div class="reviewer-name">Tariq H. &bull; 阿联酋</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">已验证用户</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">非常细致的 UI 截图报告</h3>
-              <p class="review-quote">"不仅连续 14 天保持 25+ 台设备活跃，还截图指出小米手机深色模式下按钮重叠的问题，让我们在正式上线前顺利修好。"</p>
-            </div>
-            <div class="reviewer-name">Elena V. &bull; 波兰</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">已验证用户</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">最快拿到正式版权限的途径</h3>
-              <p class="review-quote">"工具类 App 急需 12 名测试人员跑 14 天测试，下单 4 小时内就开始装机了，第 14 天按指导提交问卷直接过审。"</p>
-            </div>
-            <div class="reviewer-name">李明 (Ming L.) &bull; 中国深圳</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing -->
-    <section class="section section-alt" id="pricing">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">官方套餐方案</div>
-          <h2>一个周期，一次过审</h2>
-          <p class="section-lead">透明一次性收费，全程使用真实物理 Android 手机完成 <strong>12 名测试人员 14 天</strong>封闭式测试，享 100% 退款保障。</p>
-        </div>
-
-        <div class="pricing-grid">
-          <div class="pricing-card">
-            <div>
-              <span class="badge" style="background: #f1f5f9; color: #475569; border-color: #e2e8f0;">基础入门版</span>
-              <h3 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 0.35rem;">Basic</h3>
-              <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5;">满足 <strong>Google Play 12 名测试人员封闭式测试</strong>的核心真机方案，包过正式版审核。</p>
-              <div style="margin: 1.25rem 0;">
-                <span style="font-size: 1.1rem; text-decoration: line-through; color: #94a3b8; margin-right: 0.5rem;">$30</span>
-                <span class="price-val">$20</span>
-                <span class="price-sub">每个应用 / 一次性付费</span>
-              </div>
-              <ul class="pricing-features">
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>25 名真实真人测试人员</strong></span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>正式版发布权限保障</strong></span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>专属测试项目主管跟进</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>14 天完整封闭式测试</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>详细测试反馈与 Bug 分析</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>UI/UX 界面与交互流程测试报告</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>25+ 台真实 Android 物理设备实测</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>额外赠送 2 天测试周期</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>每台设备每日测试长达 10 分钟</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>主流高配 Android 机型（Android 7–16）</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Crash 崩溃与 ANR 监测（含截图）</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>带截图证据的 Bug 详细报告</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Google Play 商店私密测试反馈</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>基础 Play 商店政策合规检查</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>性能与 UI 体验优化建议</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>14 天全程保持稳定测试活跃度</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>最终测试完成总结报告</span></li>
-              </ul>
-            </div>
-            <div style="margin-top: 1.5rem;">
-              <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: var(--radius-sm); padding: 0.65rem 0.85rem; font-size: 0.825rem; color: #166534; font-weight: 600; text-align: center; margin-bottom: 1rem;">
-                成功获取正式版权限 — 否则全额退款！
-              </div>
-              <a href="https://appconsolelab.com/?ref=12-testers.github.io&amp;utm_source=12-testers.github.io&amp;utm_medium=referral&amp;utm_campaign=zh-CN_pricing_basic" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; text-align: center;">
-                立即开始 ($20) &rarr; &rarr;
-              </a>
-            </div>
-          </div>
-
-          <div class="pricing-card featured">
-            <span class="pricing-badge">最受欢迎</span>
-            <div>
-              <span class="badge badge-success">全能进阶版</span>
-              <h3 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 0.35rem;">Premium</h3>
-              <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5;">更高安全冗余，专为追求高通过率与深度 Bug 排查的 <strong>Google Play 封闭式测试</strong>打造。</p>
-              <div style="margin: 1.25rem 0;">
-                <span style="font-size: 1.1rem; text-decoration: line-through; color: #94a3b8; margin-right: 0.5rem;">$60</span>
-                <span class="price-val" style="color: var(--brand-primary);">$40</span>
-                <span class="price-sub">每个应用 / 一次性付费</span>
-              </div>
-              <ul class="pricing-features">
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>50 名真实真人测试人员</strong></span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>正式版发布权限保障</strong></span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>资深测试项目主管跟进</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>延长至 20 天深度封闭式测试</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>高级测试反馈与深度 Bug 分析</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>专属应用测试专家</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>50+ 台真实 Android 物理设备实测</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>全面 UI/UX 与核心用户路径测试</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>每台设备每日测试长达 30 分钟</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>主流高配 Android 机型（Android 7–16）</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Crash 崩溃与 ANR 监测（含视频录屏）</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Crash 与 ANR 日志及修复建议</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>带录屏视频证据的 Bug 报告</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>分步骤 Bug 复现操作指南</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>安装、版本更新及首次启动测试</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>性能表现观察与优化建议</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>详尽最终测试与 Play 商店合规报告</span></li>
-              </ul>
-            </div>
-            <div style="margin-top: 1.5rem;">
-              <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: var(--radius-sm); padding: 0.65rem 0.85rem; font-size: 0.825rem; color: #166534; font-weight: 600; text-align: center; margin-bottom: 1rem;">
-                成功获取正式版权限 — 否则全额退款！
-              </div>
-              <a href="https://appconsolelab.com/?ref=12-testers.github.io&amp;utm_source=12-testers.github.io&amp;utm_medium=referral&amp;utm_campaign=zh-CN_pricing_premium" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; text-align: center;">
-                立即开始 ($40) &rarr; &rarr;
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Us -->
-    <section class="section" id="about">
-      <div class="container" style="max-width: 920px;">
-        <div class="section-header text-center">
-          <div class="badge">关于我们</div>
-          <h2>由 AppConsoleLab Android 发布专家团队打造</h2>
-          <p class="section-lead">我们的专业测试团队已助力全球数千名独立开发者与工作室高效通过 <strong>Google Play 封闭式测试</strong>。</p>
-        </div>
-        <div class="card" style="padding: 2.5rem 2.25rem; background: #f8fafc;">
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; text-align: center; padding-bottom: 2rem; margin-bottom: 2rem; border-bottom: 1px solid var(--border-color);">
-            <div>
-              <div style="font-size: 2rem; font-weight: 800; color: var(--brand-primary);">40+</div>
-              <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.25rem;">覆盖国家与地区</div>
-            </div>
-            <div>
-              <div style="font-size: 2rem; font-weight: 800; color: var(--brand-primary);">Android 7–16</div>
-              <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.25rem;">实体机型系统覆盖</div>
-            </div>
-            <div>
-              <div style="font-size: 2rem; font-weight: 800; color: var(--brand-primary);">100%</div>
-              <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.25rem;">真人实体机测试</div>
-            </div>
-          </div>
-          <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin-bottom: 1.25rem;">我们看到太多优秀的 Android 开发者被困在反复被拒的封闭式测试死循环中，因此打造了这个 <strong>12 名测试人员 14 天</strong>托管平台。Google 政策要求真实用户在实体设备上长期使用，这是自动化脚本和互测群无法稳定满足的。</p>
-          <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">每次<strong>封闭式测试</strong>均由专属主管全程监督，确保三星、Google Pixel、小米、一加和摩托罗拉等真机每日正常打开，并整理截图报告助您顺利拿下正式版发布权限。</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQs -->
-    <section class="section section-alt" id="faq">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">常见问题</div>
-          <h2>关于 12 名测试人员 14 天的常见问题解答</h2>
-          <p class="section-lead">关于 <strong>Google Play 封闭式测试</strong>与我们服务的全部疑问解答：</p>
-        </div>
-        <div class="faq-list">
-          <details class="faq-item" open>
-            <summary>1. 为什么在 Google Play 上需要 12 名测试人员测试 14 天？</summary>
-            <div class="faq-body">Google Play 规定，2023 年 11 月之后注册的个人开发者账号，必须让至少 12 名测试人员在封闭式测试轨道中连续保持 14 天有效参与，才能申请正式版发布权限。</div>
-          </details>
-          <details class="faq-item">
-            <summary>2. 你们会为 Google Play 测试安排多少名测试人员？</summary>
-            <div class="faq-body">我们不会卡着 12 人的下限。Basic 套餐提供 25 名真人测试员，Premium 套餐提供 50 名真人测试员。充足的安全冗余确保 14 天内有效人数绝不低于 12 人。</div>
-          </details>
-          <details class="faq-item">
-            <summary>3. 你们的测试人员真的会连续 14 天每天打开应用吗？</summary>
-            <div class="faq-body">是的。我们的团队每天都会在真实物理 Android 手机上打开您的应用，浏览核心界面、检测闪退并在 Google Play 内提交真实私密反馈。</div>
-          </details>
-          <details class="faq-item">
-            <summary>4. 会使用模拟器或自动化脚本吗？</summary>
-            <div class="faq-body">绝不。Google Play 极易识别模拟器和群控脚本。我们队列中的每一位测试员都使用运行 Android 7 至 Android 16 的真实物理手机。</div>
-          </details>
-          <details class="faq-item">
-            <summary>5. 在 14 天封闭式测试期间可以推送应用更新吗？</summary>
-            <div class="faq-body">可以！实际上我们强烈建议您在测试期间至少推送一次更新（例如 v1.0.1）。我们的测试员会自动更新并验证修复效果，这能大幅提升正式版过审率。</div>
-          </details>
-          <details class="faq-item">
-            <summary>6. 需要把 Google Play Console 的账号密码给你们吗？</summary>
-            <div class="faq-body">不需要，请勿向任何人泄露账号密码。您只需将我们托管的 Google 群组邮箱添加到封闭式测试名单，然后把测试加入链接发给我们即可。</div>
-          </details>
-          <details class="faq-item">
-            <summary>7. 如果最终没有获批正式版发布权限怎么办？</summary>
-            <div class="faq-body">我们提供 100% 退款保障。如果您按照项目主管的指导操作后仍未获批正式版权限，可以选择免费重测 14 天或申请全额退款。</div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bottom CTA -->
-    <section class="section" style="text-align: center; background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);">
-      <div class="container" style="max-width: 720px;">
-        <div class="badge badge-success" style="margin-bottom: 1rem;"><span class="pulse-dot-green"></span> 准备好在 Google Play 发布应用了吗</div>
-        <h2 style="font-size: 2.1rem; color: #0f172a; margin-bottom: 1rem;">今天就开始您的 12 名测试人员 14 天测试</h2>
-        <p style="font-size: 1.075rem; color: #475569; line-height: 1.7; margin-bottom: 2rem;">立即部署 25 至 50 名真实实体 Android 手机测试人员，告别反复拒审，轻松解锁 Google Play 正式版发布权限。</p>
-        <div class="hero-cta-group" style="justify-content: center;">
-          <a href="#pricing" class="btn btn-primary btn-lg">选择您的套餐 &rarr; &rarr;</a>
-          <a href="https://wa.me/923394001479?text=Hi%2C%20I%20need%2012%20testers%20for%2014%20days" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
-            <span class="pulse-dot-green"></span> WhatsApp 咨询
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="https://12-testers.github.io/zh-CN/12-名测试人员/" class="logo" aria-label="12 Testers For 14 Days by AppConsoleLab">
-            <svg class="logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <linearGradient id="gpFtrGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#0284c7"/>
-                  <stop offset="50%" stop-color="#2563eb"/>
-                  <stop offset="100%" stop-color="#4f46e5"/>
-                </linearGradient>
-                <linearGradient id="gpFtrBadge" x1="22" y1="21" x2="34" y2="33" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#10b981"/>
-                  <stop offset="100%" stop-color="#047857"/>
-                </linearGradient>
-              </defs>
-              <rect width="40" height="40" rx="10" fill="url(#gpFtrGrad)"/>
-              <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
-              <path d="M12.5 10.5C12.5 9.4 13.7 8.7 14.6 9.3L26 16.8C26.9 17.4 26.9 18.6 26 19.2L14.6 26.7C13.7 27.3 12.5 26.6 12.5 25.5V10.5Z" fill="#ffffff"/>
-              <circle cx="28.5" cy="27.5" r="7.5" fill="#ffffff"/>
-              <circle cx="28.5" cy="27.5" r="6" fill="url(#gpFtrBadge)"/>
-              <path d="M25.7 27.5L27.7 29.5L31.3 25.2" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <div class="logo-text-group">
-              <span class="logo-text"><strong>12 Testers</strong> <span class="logo-accent">For 14 Days</span></span>
-              <span class="logo-byline">
-                <span class="by-text">by</span>
-                <img src="/assets/ACL_Logo_Light_theme.png" alt="AppConsoleLab" class="acl-sublogo" width="120" height="40">
-              </span>
-            </div>
           </a>
           <p class="footer-desc">专注于真实物理 Android 手机的 12 名测试人员 14 天托管服务，助力独立开发者与出海工作室顺利通过 Google Play 封闭式测试。</p>
         </div>

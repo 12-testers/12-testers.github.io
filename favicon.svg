@@ -1,28 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0284c7" />
-      <stop offset="50%" stop-color="#2563eb" />
-      <stop offset="100%" stop-color="#4f46e5" />
+    <linearGradient id="g2026Base" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#4338ca"/>
     </linearGradient>
-    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" />
-      <stop offset="100%" stop-color="#047857" />
+    <radialGradient id="g2026Sheen" cx="0.25" cy="0.15" r="0.75">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="g2026Check" x1="25" y1="25" x2="39" y2="39" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
     </linearGradient>
-    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.22" />
-    </filter>
   </defs>
-  <!-- Modern Squircle Base -->
-  <rect width="64" height="64" rx="16" fill="url(#grad)" />
-  <rect x="1" y="1" width="62" height="62" rx="15" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
-  
-  <!-- Sleek Google Play Symbol -->
-  <path d="M20 16.8C20 15.2 21.8 14.2 23.2 15.1L41.5 26.8C42.8 27.6 42.8 29.6 41.5 30.4L23.2 42.1C21.8 43.0 20 42.0 20 40.4V16.8Z" fill="#ffffff" filter="url(#glow)" />
-  <path d="M20 16.8L32 28.6L20 40.4" stroke="#2563eb" stroke-opacity="0.3" stroke-width="2" stroke-linejoin="round" fill="none" />
-  
-  <!-- Emerald 14-Day Verified Badge -->
-  <circle cx="45" cy="44" r="12" fill="#ffffff" />
-  <circle cx="45" cy="44" r="9.5" fill="url(#badgeGrad)" />
-  <path d="M40.5 44L43.8 47.2L49.5 40.5" fill="none" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+  <rect width="44" height="44" rx="12" fill="url(#g2026Base)"/>
+  <rect width="44" height="44" rx="12" fill="url(#g2026Sheen)"/>
+  <rect x="0.75" y="0.75" width="42.5" height="42.5" rx="11.25" stroke="rgba(255,255,255,0.38)" stroke-width="1.5"/>
+  <path d="M14 12.2C14 11.1 15.2 10.4 16.1 11L28.5 18.8C29.4 19.4 29.4 20.6 28.5 21.2L16.1 29C15.2 29.6 14 28.9 14 27.8V12.2Z" fill="#ffffff"/>
+  <path d="M14.3 11.5L22.2 20L14.3 28.5" stroke="#2563eb" stroke-opacity="0.25" stroke-width="1.4" stroke-linejoin="round"/>
+  <circle cx="31.5" cy="30.5" r="8" fill="#ffffff"/>
+  <circle cx="31.5" cy="30.5" r="6.4" fill="url(#g2026Check)"/>
+  <path d="M28.5 30.6L30.6 32.7L34.6 28.4" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

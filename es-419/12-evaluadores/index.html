@@ -651,11 +651,11 @@ a:hover {
 
 
 
-/* Header & Brand Logo Modern Styling */
+/* Header & Brand Logo Modern 2026 Styling */
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.85rem;
+  gap: 0.78rem;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
@@ -665,30 +665,31 @@ a:hover {
 }
 
 .logo-svg {
-  width: 38px;
-  height: 38px;
+  width: 42px;
+  height: 42px;
   flex-shrink: 0;
-  border-radius: 10px;
-  filter: drop-shadow(0 3px 8px rgba(37, 99, 235, 0.22));
+  border-radius: 12px;
+  filter: drop-shadow(0 4px 12px rgba(37, 99, 235, 0.26));
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease;
 }
 
 .logo:hover .logo-svg {
   transform: translateY(-1.5px) scale(1.03);
-  filter: drop-shadow(0 6px 14px rgba(37, 99, 235, 0.32));
+  filter: drop-shadow(0 8px 18px rgba(37, 99, 235, 0.34));
 }
 
 .logo-text-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 0.22rem;
 }
 
 .logo-text {
   font-family: var(--font-heading);
-  font-size: 1.22rem;
-  line-height: 1.15;
-  letter-spacing: -0.028em;
+  font-size: 1.24rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
   color: #0f172a;
   display: inline-flex;
   align-items: baseline;
@@ -698,12 +699,12 @@ a:hover {
 .logo-text strong {
   font-weight: 800;
   color: #0f172a;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.032em;
 }
 
 .logo-accent {
   font-weight: 800;
-  background: linear-gradient(135deg, #0284c7 0%, #2563eb 52%, #4f46e5 100%);
+  background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 52%, #4338ca 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -713,44 +714,41 @@ a:hover {
 .logo-byline {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  margin-top: 0.18rem;
-}
-
-.by-text {
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #94a3b8;
+  gap: 0.38rem;
   line-height: 1;
 }
 
-.acl-sublogo {
-  height: 40px;
-  width: auto;
-  opacity: 1;
-  vertical-align: middle;
-  display: inline-block;
-  object-fit: contain;
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.04));
-  transition: transform 0.2s ease;
+.logo-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.22);
+  flex-shrink: 0;
 }
 
-.logo:hover .acl-sublogo {
-  transform: scale(1.02);
+.logo-subtag {
+  font-family: var(--font-body);
+  font-size: 0.64rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #64748b;
+  line-height: 1;
 }
 
 @media (max-width: 420px) {
   .logo-text {
-    font-size: 1.05rem;
-  }
-  .acl-sublogo {
-    height: 34px;
+    font-size: 1.06rem;
   }
   .logo-svg {
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+  .logo-subtag {
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
   }
 }
 
@@ -2344,713 +2342,38 @@ a:hover {
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="https://12-testers.github.io/es-419/12-evaluadores/" class="logo" aria-label="12 Evaluadores 14 Días">
-        <svg class="logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg class="logo-svg" width="42" height="42" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <defs>
-            <linearGradient id="gpLogoGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#0284c7"/>
+            <linearGradient id="gp26HdrBase" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#0ea5e9"/>
               <stop offset="50%" stop-color="#2563eb"/>
-              <stop offset="100%" stop-color="#4f46e5"/>
+              <stop offset="100%" stop-color="#4338ca"/>
             </linearGradient>
-            <linearGradient id="gpBadgeGrad" x1="22" y1="21" x2="34" y2="33" gradientUnits="userSpaceOnUse">
+            <radialGradient id="gp26HdrSheen" cx="0.25" cy="0.15" r="0.75">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.28"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="gp26HdrCheck" x1="25" y1="25" x2="39" y2="39" gradientUnits="userSpaceOnUse">
               <stop offset="0%" stop-color="#10b981"/>
-              <stop offset="100%" stop-color="#047857"/>
+              <stop offset="100%" stop-color="#059669"/>
             </linearGradient>
           </defs>
-          <rect width="40" height="40" rx="10" fill="url(#gpLogoGrad)"/>
-          <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
-          <path d="M12.5 10.5C12.5 9.4 13.7 8.7 14.6 9.3L26 16.8C26.9 17.4 26.9 18.6 26 19.2L14.6 26.7C13.7 27.3 12.5 26.6 12.5 25.5V10.5Z" fill="#ffffff"/>
-          <circle cx="28.5" cy="27.5" r="7.5" fill="#ffffff"/>
-          <circle cx="28.5" cy="27.5" r="6" fill="url(#gpBadgeGrad)"/>
-          <path d="M25.7 27.5L27.7 29.5L31.3 25.2" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect width="44" height="44" rx="12" fill="url(#gp26HdrBase)"/>
+          <rect width="44" height="44" rx="12" fill="url(#gp26HdrSheen)"/>
+          <rect x="0.75" y="0.75" width="42.5" height="42.5" rx="11.25" stroke="rgba(255,255,255,0.38)" stroke-width="1.5"/>
+          <path d="M14 12.2C14 11.1 15.2 10.4 16.1 11L28.5 18.8C29.4 19.4 29.4 20.6 28.5 21.2L16.1 29C15.2 29.6 14 28.9 14 27.8V12.2Z" fill="#ffffff"/>
+          <path d="M14.3 11.5L22.2 20L14.3 28.5" stroke="#2563eb" stroke-opacity="0.25" stroke-width="1.4" stroke-linejoin="round"/>
+          <circle cx="31.5" cy="30.5" r="8" fill="#ffffff"/>
+          <circle cx="31.5" cy="30.5" r="6.4" fill="url(#gp26HdrCheck)"/>
+          <path d="M28.5 30.6L30.6 32.7L34.6 28.4" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <div class="logo-text-group">
           <span class="logo-text"><strong>12 Testers</strong> <span class="logo-accent">For 14 Days</span></span>
           <span class="logo-byline">
-            <span class="by-text">by</span>
-            <img src="/assets/ACL_Logo_Light_theme.png" alt="AppConsoleLab" class="acl-sublogo" width="120" height="40">
+            <span class="logo-status-dot"></span>
+            <span class="logo-subtag">GOOGLE PLAY CLOSED TESTING</span>
           </span>
         </div>
-      </a>
-
-      <button class="mobile-menu-toggle" id="menuToggle" aria-label="Menu" type="button" aria-expanded="false">
-        <svg class="hamburger-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-        <svg class="close-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-
-      <nav class="main-nav" id="mainNav">
-        <ul class="nav-list">
-          <li><a href="https://12-testers.github.io/es-419/12-evaluadores/" class="nav-link active">Inicio</a></li>
-          <li><a href="#how-it-works" class="nav-link">Cómo funciona</a></li>
-          <li><a href="#pricing" class="nav-link">Precios</a></li>
-          <li><a href="#reviews" class="nav-link">Reseñas</a></li>
-          <li><a href="#faq" class="nav-link">Preguntas frecuentes</a></li>
-          <li class="lang-dropdown" id="langDropdown">
-            <button type="button" class="lang-toggle-btn" id="langToggleBtn" aria-expanded="false" aria-haspopup="true">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              <span>Languages (50)</span>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="lang-dropdown-menu" role="menu">
-              <a href="/" class="lang-dropdown-item is-main-en"><span>English (Main Homepage)</span><span class="lang-code-pill">EN</span></a>
-              <a href="/af/12-toetsers/" class="lang-dropdown-item"><span>Afrikaans</span><span class="lang-code-pill">af</span></a>
-              <a href="/am/12-ሞካሪዎች/" class="lang-dropdown-item"><span>አማርኛ (Amharic)</span><span class="lang-code-pill">am</span></a>
-              <a href="/bg/12-тестери/" class="lang-dropdown-item"><span>Български (Bulgarian)</span><span class="lang-code-pill">bg</span></a>
-              <a href="/ca/12-provadors/" class="lang-dropdown-item"><span>Català (Catalan)</span><span class="lang-code-pill">ca</span></a>
-              <a href="/zh-HK/12-名測試人員/" class="lang-dropdown-item"><span>繁體中文 — 香港</span><span class="lang-code-pill">zh-HK</span></a>
-              <a href="/zh-CN/12-名测试人员/" class="lang-dropdown-item"><span>简体中文 — 中国</span><span class="lang-code-pill">zh-CN</span></a>
-              <a href="/zh-TW/12-名測試人員/" class="lang-dropdown-item"><span>繁體中文 — 台灣</span><span class="lang-code-pill">zh-TW</span></a>
-              <a href="/hr/12-testera/" class="lang-dropdown-item"><span>Hrvatski (Croatian)</span><span class="lang-code-pill">hr</span></a>
-              <a href="/cs/12-testerů/" class="lang-dropdown-item"><span>Čeština (Czech)</span><span class="lang-code-pill">cs</span></a>
-              <a href="/da/12-testere/" class="lang-dropdown-item"><span>Dansk (Danish)</span><span class="lang-code-pill">da</span></a>
-              <a href="/nl/12-testers/" class="lang-dropdown-item"><span>Nederlands (Dutch)</span><span class="lang-code-pill">nl</span></a>
-              <a href="/en-GB/12-testers/" class="lang-dropdown-item"><span>English (UK)</span><span class="lang-code-pill">en-GB</span></a>
-              <a href="/en-US/12-testers/" class="lang-dropdown-item"><span>English (US)</span><span class="lang-code-pill">en-US</span></a>
-              <a href="/et/12-testijat/" class="lang-dropdown-item"><span>Eesti (Estonian)</span><span class="lang-code-pill">et</span></a>
-              <a href="/fil/12-na-tester/" class="lang-dropdown-item"><span>Filipino</span><span class="lang-code-pill">fil</span></a>
-              <a href="/fi/12-testaajaa/" class="lang-dropdown-item"><span>Suomi (Finnish)</span><span class="lang-code-pill">fi</span></a>
-              <a href="/fr-CA/12-testeurs/" class="lang-dropdown-item"><span>Français (Canada)</span><span class="lang-code-pill">fr-CA</span></a>
-              <a href="/fr-FR/12-testeurs/" class="lang-dropdown-item"><span>Français (France)</span><span class="lang-code-pill">fr-FR</span></a>
-              <a href="/de/12-tester/" class="lang-dropdown-item"><span>Deutsch (German)</span><span class="lang-code-pill">de</span></a>
-              <a href="/el/12-δοκιμαστές/" class="lang-dropdown-item"><span>Ελληνικά (Greek)</span><span class="lang-code-pill">el</span></a>
-              <a href="/he/12-בודקים/" class="lang-dropdown-item"><span>עברית (Hebrew)</span><span class="lang-code-pill">he</span></a>
-              <a href="/hi/12-टेस्टर/" class="lang-dropdown-item"><span>हिन्दी (Hindi)</span><span class="lang-code-pill">hi</span></a>
-              <a href="/hu/12-tesztelő/" class="lang-dropdown-item"><span>Magyar (Hungarian)</span><span class="lang-code-pill">hu</span></a>
-              <a href="/is/12-prófendur/" class="lang-dropdown-item"><span>Íslenska (Icelandic)</span><span class="lang-code-pill">is</span></a>
-              <a href="/id/12-penguji/" class="lang-dropdown-item"><span>Bahasa Indonesia</span><span class="lang-code-pill">id</span></a>
-              <a href="/it/12-tester/" class="lang-dropdown-item"><span>Italiano (Italian)</span><span class="lang-code-pill">it</span></a>
-              <a href="/ja/12-人のテスター/" class="lang-dropdown-item"><span>日本語 (Japanese)</span><span class="lang-code-pill">ja</span></a>
-              <a href="/ko/12-명의-테스터/" class="lang-dropdown-item"><span>한국어 (Korean)</span><span class="lang-code-pill">ko</span></a>
-              <a href="/lv/12-testētāji/" class="lang-dropdown-item"><span>Latviešu (Latvian)</span><span class="lang-code-pill">lv</span></a>
-              <a href="/lt/12-testuotojai/" class="lang-dropdown-item"><span>Lietuvių (Lithuanian)</span><span class="lang-code-pill">lt</span></a>
-              <a href="/ms/12-penguji/" class="lang-dropdown-item"><span>Bahasa Melayu (Malay)</span><span class="lang-code-pill">ms</span></a>
-              <a href="/no/12-testere/" class="lang-dropdown-item"><span>Norsk (Norwegian)</span><span class="lang-code-pill">no</span></a>
-              <a href="/pl/12-testerów/" class="lang-dropdown-item"><span>Polski (Polish)</span><span class="lang-code-pill">pl</span></a>
-              <a href="/pt-BR/12-testadores/" class="lang-dropdown-item"><span>Português (Brasil)</span><span class="lang-code-pill">pt-BR</span></a>
-              <a href="/pt-PT/12-testadores/" class="lang-dropdown-item"><span>Português (Portugal)</span><span class="lang-code-pill">pt-PT</span></a>
-              <a href="/ro/12-testeri/" class="lang-dropdown-item"><span>Română (Romanian)</span><span class="lang-code-pill">ro</span></a>
-              <a href="/ru/12-тестировщиков/" class="lang-dropdown-item"><span>Русский (Russian)</span><span class="lang-code-pill">ru</span></a>
-              <a href="/sr/12-тестера/" class="lang-dropdown-item"><span>Српски (Serbian)</span><span class="lang-code-pill">sr</span></a>
-              <a href="/sk/12-testerov/" class="lang-dropdown-item"><span>Slovenčina (Slovak)</span><span class="lang-code-pill">sk</span></a>
-              <a href="/sl/12-preizkuševalcev/" class="lang-dropdown-item"><span>Slovenščina (Slovenian)</span><span class="lang-code-pill">sl</span></a>
-              <a href="/es-419/12-evaluadores/" class="lang-dropdown-item"><span>Español (Latinoamérica)</span><span class="lang-code-pill">es-419</span></a>
-              <a href="/es-ES/12-evaluadores/" class="lang-dropdown-item"><span>Español (España)</span><span class="lang-code-pill">es-ES</span></a>
-              <a href="/sw/wajaribu-12/" class="lang-dropdown-item"><span>Kiswahili (Swahili)</span><span class="lang-code-pill">sw</span></a>
-              <a href="/sv/12-testare/" class="lang-dropdown-item"><span>Svenska (Swedish)</span><span class="lang-code-pill">sv</span></a>
-              <a href="/th/12-ผู้ทดสอบ/" class="lang-dropdown-item"><span>ไทย (Thai)</span><span class="lang-code-pill">th</span></a>
-              <a href="/tr/12-test-kullanıcısı/" class="lang-dropdown-item"><span>Türkçe (Turkish)</span><span class="lang-code-pill">tr</span></a>
-              <a href="/uk-UA/12-тестувальників/" class="lang-dropdown-item"><span>Українська (uk-UA)</span><span class="lang-code-pill">uk-UA</span></a>
-              <a href="/vi/12-người-thử-nghiệm/" class="lang-dropdown-item"><span>Tiếng Việt (Vietnamese)</span><span class="lang-code-pill">vi</span></a>
-              <a href="/zu/abahloli-abayi-12/" class="lang-dropdown-item"><span>isiZulu (Zulu)</span><span class="lang-code-pill">zu</span></a>
-            </div>
-          </li>
-        </ul>
-        <div class="nav-cta-wrap">
-          <a href="https://wa.me/923394001479?text=Hi%2C%20I%20need%2012%20testers%20for%2014%20days" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
-            <span class="pulse-dot-green"></span>
-            <span>Chatear por WhatsApp</span>
-          </a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="badge"><span class="pulse-dot"></span> Servicio de Prueba Cerrada en Google Play</div>
-          <h1>12 Evaluadores por 14 Días</h1>
-          <p class="hero-lead">Consigue <strong>12 evaluadores durante 14 días</strong> en celulares Android físicos reales. Supera la <strong>prueba cerrada de Google Play</strong> con aperturas diarias, reportes reales de errores y acceso a producción garantizado o te devolvemos tu dinero.</p>
-          <div class="hero-cta-group" style="margin-bottom: 1rem;">
-            <a href="#pricing" class="btn btn-primary btn-lg">Conseguir 12 Evaluadores &rarr;</a>
-            <a href="https://wa.me/923394001479?text=Hi%2C%20I%20need%2012%20testers%20for%2014%20days" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
-              <span class="pulse-dot-green"></span> Chatear por WhatsApp
-            </a>
-          </div>
-          <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.825rem; color: var(--text-muted); font-weight: 500; margin-bottom: 2rem;">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-            <span>Garantía 100% de reembolso &bull; Inicio en &lt; 6 horas &bull; Sin compartir contraseñas</span>
-          </div>
-          <div class="hero-trust-bar">
-            <div class="trust-item"><img src="/assets/5stars.svg" alt="5 Stars" width="88" height="16"><span><strong>4.9/5</strong> en Trustpilot</span></div>
-            <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span><strong>100%</strong> Garantía de reembolso</span></div>
-            <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg><span>Solo <strong>celulares reales</strong></span></div>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <div class="card-header-badge"><span class="dot-live"></span> Garantía de Prueba de 14 Días</div>
-          <h2 style="font-size: 1.35rem; color: #0f172a; margin-bottom: 0.75rem;">12 Evaluadores para Prueba Cerrada</h2>
-          <p style="font-size: 0.95rem; color: #475569; line-height: 1.6; margin-bottom: 1.25rem;">Google Play exige a las cuentas personales de desarrollador mantener <strong>12 evaluadores durante 14 días</strong> inscritos de forma continua. Así es como nuestro equipo se encarga de todo por ti:</p>
-          <ul class="hero-feature-list">
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>25–50 celulares Android reales:</strong> Equipos Samsung, Xiaomi, Pixel y Motorola (cero emuladores virtuales).</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>Cero abandonos:</strong> El conteo activo se mantiene por encima de 12 con respaldos listos los 14 días.</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>Aperturas diarias de la app:</strong> Evaluadores humanos abren tu app cada día y envían comentarios privados en Play Store.</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>Ayuda con el cuestionario de producción:</strong> Respuestas personalizadas para las 7 preguntas de revisión de Google Play.</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Resultados Comprobados</div>
-          <h2>Resultados Confiables para 12 Evaluadores en Google Play</h2>
-          <p class="section-lead">Desarrolladores de toda Latinoamérica y el mundo confían en nuestro servicio gestionado de <strong>12 evaluadores por 14 días</strong> para aprobar su <strong>prueba cerrada</strong> sin demoras ni rechazos.</p>
-        </div>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-number">99.8%</div>
-            <div class="stat-label">Tasa de Aprobación</div>
-            <div class="stat-sub">Acceso a producción al primer intento</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">25–50</div>
-            <div class="stat-label">Evaluadores Reales</div>
-            <div class="stat-sub">Margen de seguridad sobre los 12 mínimos</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">14 Días</div>
-            <div class="stat-label">Inscripción Continua</div>
-            <div class="stat-sub">Cero reinicios de contador en el día 13</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Garantía de Reembolso</div>
-            <div class="stat-sub">Devolución total o repetición gratis</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Alert -->
-    <section class="section" style="padding-bottom: 0;">
-      <div class="container">
-        <div class="card" style="background: #f0f9ff; border-color: #bae6fd; padding: 1.75rem 2rem;">
-          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem;">
-            <div style="flex: 1; min-width: 260px;">
-              <div class="badge" style="margin-bottom: 0.5rem;"><span class="pulse-dot"></span> Política de Cuentas Personales de Google Play</div>
-              <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.35rem;">Por qué Google Play exige 12 evaluadores en prueba cerrada</h3>
-              <p style="font-size: 0.95rem; color: #334155; margin: 0; line-height: 1.6;">Toda cuenta personal de Google Play Console creada después del 13 de noviembre de 2023 debe mantener al menos <strong>12 evaluadores durante 14 días</strong> inscritos en una pista de prueba cerrada antes de que Google habilite el botón para solicitar acceso a producción.</p>
-            </div>
-            <div><a href="#pricing" class="btn btn-primary">Iniciar Prueba de 14 Días &rarr;</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pitfalls -->
-    <section class="section">
-      <div class="container" style="max-width: 920px;">
-        <div class="section-header text-center">
-          <div class="badge badge-amber">Errores Comunes</div>
-          <h2>Por qué falla buscar 12 evaluadores de Google Play por tu cuenta</h2>
-          <p class="section-lead">Reunir <strong>12 evaluadores para prueba cerrada</strong> parece sencillo en teoría, pero la mayoría de los desarrolladores independientes reciben un rechazo en su primera revisión por tres problemas ocultos.</p>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--accent-amber); background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 0.75rem;">1. La trampa del reinicio en el Día 12</h3>
-            <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">Si consigues exactamente <strong>12 evaluadores por 14 días</strong> y una sola persona libera espacio, cambia de celular o desinstala la app en el día 12, tu conteo baja a 11. Google Play reinicia de inmediato el reloj de 14 días al Día 0. Por eso siempre asignamos de 25 a 50 dispositivos físicos reales.</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--accent-amber); background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 0.75rem;">2. Instalaciones inactivas que activan “Se requieren más pruebas”</h3>
-            <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">Tener <strong>12 evaluadores en Google Play</strong> que se inscriben pero nunca abren la app es la causa #1 de rechazo. Google verifica aperturas diarias, navegación entre pantallas e interacción real durante dos semanas. Nuestro equipo abre tu app todos los días y deja comentarios privados auténticos.</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--accent-amber); background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 0.75rem;">3. Bloqueos por emuladores y granjas de bots</h3>
-            <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">Los grupos gratuitos de intercambio y scripts automáticos usan emuladores de Android, máquinas virtuales o cuentas clonadas. Las verificaciones de Play Integrity detectan de inmediato hardware idéntico y sesiones falsas. Con nuestro grupo, cada instalación viene de un celular físico real (Android 7 a 16).</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="section section-alt" id="how-it-works">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Proceso Simple en 4 Pasos</div>
-          <h2>Cómo funciona nuestro servicio de 12 Evaluadores por 14 Días</h2>
-          <p class="section-lead">Conseguir la aprobación de <strong>12 evaluadores en Google Play</strong> no tiene por qué retrasar tu lanzamiento. Nuestro equipo gestiona todo el ciclo de prueba cerrada de 14 días de principio a fin.</p>
-        </div>
-        <div class="steps-grid">
-          <div class="step-card">
-            <div class="step-num">1</div>
-            <h3>Comparte tu enlace de inscripción</h3>
-            <p>Agrega nuestro Grupo de Google gestionado a tu pista de prueba cerrada en Play Console y envíanos el enlace de prueba. La configuración toma menos de 6 horas.</p>
-          </div>
-          <div class="step-card">
-            <div class="step-num">2</div>
-            <h3>25–50 usuarios reales se inscriben</h3>
-            <p>Nuestro equipo de <strong>evaluadores</strong> instala tu app en 25 a 50 celulares Android físicos reales en menos de 24 horas, dándote un gran margen de respaldo.</p>
-          </div>
-          <div class="step-card">
-            <div class="step-num">3</div>
-            <h3>14 días de aperturas diarias</h3>
-            <p>Los evaluadores abren tu app cada día, prueban flujos clave, reportan errores con capturas de pantalla y dejan comentarios privados. También te guiamos en tu actualización intermedia.</p>
-          </div>
-          <div class="step-card">
-            <div class="step-num">4</div>
-            <h3>Desbloquea el acceso a producción</h3>
-            <p>En el día 14 te entregamos respuestas claras para las 7 preguntas de revisión de Google Play para que tu solicitud de <strong>acceso a producción</strong> sea aprobada sin trabas.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Compare -->
-    <section class="section" id="compare">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Compara Opciones</div>
-          <h2>12 Evaluadores para Prueba Cerrada: Comparando tus Opciones</h2>
-          <p class="section-lead">Mira cómo se compara nuestro grupo gestionado de <strong>12 evaluadores por 14 días</strong> frente a pedirle favores a conocidos o entrar a grupos gratuitos de intercambio:</p>
-        </div>
-        <div class="compare-grid">
-          <div class="compare-card">
-            <span class="badge" style="background: #f1f5f9; color: #64748b; border-color: #e2e8f0;">Por tu cuenta</span>
-            <h3 style="font-size: 1.25rem; color: #0f172a;">Amigos y Familia</h3>
-            <p style="font-size: 0.925rem; color: #64748b; line-height: 1.5;">Pedirle a compañeros o familiares que dejen tu app instalada dos semanas seguidas.</p>
-            <ul class="compare-list">
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span><strong>Alto riesgo de abandono:</strong> Una sola desinstalación te baja de 12 evaluadores y reinicia el reloj.</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span><strong>Recordatorios incómodos:</strong> Tienes que estar persiguiendo a la gente cada día para que abra la app.</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span><strong>Poca retroalimentación:</strong> Rara vez envían reportes útiles de errores o registros de fallos.</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span><strong>Inicio lento:</strong> Conseguir 12 usuarios con Android manualmente puede tomar semanas.</span></li>
-            </ul>
-          </div>
-          <div class="compare-card">
-            <span class="badge badge-amber">Alto Riesgo</span>
-            <h3 style="font-size: 1.25rem; color: #0f172a;">Intercambios en Reddit / Discord</h3>
-            <p style="font-size: 0.925rem; color: #64748b; line-height: 1.5;">Intercambiar instalaciones “prueba por prueba” con desconocidos en foros.</p>
-            <ul class="compare-list">
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span><strong>Instalaciones fantasma:</strong> Desconocidos instalan una vez para la captura y borran al día 2.</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span><strong>Emuladores y bots:</strong> Muchas cuentas de intercambio usan teléfonos virtuales que Google detecta.</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span><strong>Horas perdidas:</strong> Pierdes más de 20 horas instalando y reseñando apps de otras personas.</span></li>
-              <li><span style="color: #e11d48; font-weight: 700;">&times;</span> <span><strong>Sin apoyo en la revisión:</strong> Cero ayuda para responder las 7 preguntas de producción.</span></li>
-            </ul>
-          </div>
-          <div class="compare-card recommended">
-            <span class="badge badge-success">Recomendado</span>
-            <h3 style="font-size: 1.25rem; color: #0f172a;">Grupo Gestionado 12-Testers</h3>
-            <p style="font-size: 0.925rem; color: #64748b; line-height: 1.5;">Servicio llave en mano de <strong>12 evaluadores por 14 días</strong> en celulares Android físicos reales.</p>
-            <ul class="compare-list">
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>25–50 evaluadores reales:</strong> Gran margen de seguridad para nunca bajar de 12.</span></li>
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>Aperturas diarias:</strong> Personas verificadas abren tu app todos los días durante 14 días.</span></li>
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>Reportes con capturas:</strong> Notas detalladas de UI/UX y pruebas reales de estabilidad.</span></li>
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>Garantía 100%:</strong> Obtienes acceso a producción en Google Play o te devolvemos tu dinero.</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ROI -->
-    <section class="section section-alt" id="why-price">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Retorno Inteligente</div>
-          <h2>Por qué invertir $20 en 12 evaluadores de Google Play ahorra semanas</h2>
-          <p class="section-lead">Coordinar manualmente a <strong>12 evaluadores por 14 días</strong> consume de 30 a 40 horas entre mensajes, seguimiento e intercambios en foros.</p>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 960px; margin: 0 auto;">
-          <div class="card" style="padding: 2.25rem 2rem; background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 1rem;">Lo que evitas por $20</h3>
-            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin-bottom: 1rem;">En lugar de pasar semanas rogando en Reddit para que no desinstalen tu app o revisar cada mañana con estrés si tu conteo de <strong>prueba cerrada</strong> bajó a 11, delegas todo el ciclo de 14 días a nuestro equipo con un único pago.</p>
-            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin: 0;">Cero horas perdidas probando apps ajenas. Cero incertidumbre en el día 14.</p>
-          </div>
-          <div class="card" style="padding: 2.25rem 2rem; background: #ffffff;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 1rem;">Lo que ganas a cambio</h3>
-            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin-bottom: 1rem;">Mientras de 25 a 50 usuarios Android reales prueban tu compilación a diario, revisan el diseño en distintas pantallas y dejan comentarios privados en Google Play, tú te enfocas al 100% en pulir funciones y preparar tu lanzamiento.</p>
-            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin: 0;">Respaldado por una garantía de reembolso del 100% para aprobación en producción.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quick Q&A -->
-    <section class="section" id="guide">
-      <div class="container" style="max-width: 900px;">
-        <div class="section-header text-center">
-          <div class="badge">Respuestas Rápidas</div>
-          <h2>Preguntas y Respuestas Rápidas: 12 Evaluadores por 14 Días</h2>
-          <p class="section-lead">Respuestas directas sobre cómo funciona la <strong>prueba cerrada de Google Play</strong> y cómo aprobar en tu primer intento.</p>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
-            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">P: ¿Por qué Google Play exige 12 evaluadores durante 14 días?</h3>
-            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">Las cuentas personales de Google Play Console creadas después de noviembre de 2023 deben mantener al menos <strong>12 evaluadores en prueba cerrada</strong> inscritos de forma continua por 14 días seguidos (336 horas). Esto demuestra que tu app Android funciona bien en celulares reales antes de salir al público.</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
-            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">P: ¿Qué pasa si 1 evaluador desinstala antes del Día 14?</h3>
-            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">Si solo consigues 12 personas y una desinstala en el día 12, tu conteo activo cae a 11 y Google reinicia el reloj de <strong>14 días</strong> al Día 0. Nuestro servicio asigna 25 a 50 dispositivos físicos reales para que nunca bajes de 12.</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
-            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">P: ¿Basta con que se inscriban para aprobar la revisión de Google Play?</h3>
-            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">No. Google Play revisa aperturas diarias reales, navegación por pantallas, sesiones sin cierres inesperados y comentarios privados. Nuestro equipo abre tu app cada día en dispositivos Android 7–16 reales.</p>
-          </div>
-          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
-            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">P: ¿Qué tan rápido puedo iniciar mi prueba cerrada de 14 días?</h3>
-            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">La configuración toma menos de 6 horas. Envíanos tu enlace de inscripción a la prueba cerrada y nuestro grupo instala tu app en 25 a 50 celulares físicos en menos de 24 horas, con garantía 100% de reembolso.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7 Prompts -->
-    <section class="section section-alt">
-      <div class="container" style="max-width: 920px;">
-        <div class="section-header text-center">
-          <div class="badge">Aprobación en el Día 14</div>
-          <h2>Cómo aprobar la revisión de Google y las 7 preguntas del cuestionario</h2>
-          <p class="section-lead">Al terminar tu ciclo de <strong>12 evaluadores por 14 días</strong>, Google hace 7 preguntas antes de otorgar el acceso a producción. Publicar una actualización intermedia (v1.0.1) y dar respuestas claras es el factor #1 de aprobación.</p>
-        </div>
-        <div class="card" style="padding: 2.5rem 2.25rem; background: #ffffff;">
-          <ul class="hero-feature-list" style="margin-bottom: 0; gap: 1.15rem;">
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>1. ¿Qué tan fácil fue reclutar evaluadores para tu app?</strong> Detalla cómo reuniste un grupo estructurado de 25+ usuarios Android reales en distintos equipos.</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>2. ¿Cómo interactuaron los evaluadores durante la prueba cerrada?</strong> Explica las aperturas diarias, pruebas de funciones principales y retención constante de 14 días.</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>3. ¿Qué comentarios recibiste de tus 12 evaluadores?</strong> Resume sugerencias de UI/UX, notas sobre velocidad de carga y comentarios privados en Play Store.</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>4. ¿Quién es tu público objetivo?</strong> Define con claridad a quién sirve tu app y cómo el grupo de prueba cerrada reflejó a esos usuarios reales.</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>5. ¿Qué valor aporta tu app a los usuarios?</strong> Destaca funciones clave, estabilidad verificada en la prueba de Google Play y problemas que resuelve.</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>6. ¿Qué cambios hiciste con base en los comentarios?</strong> Menciona la actualización intermedia (ej. v1.0.1) que subiste para corregir diseño o fallos.</span>
-            </li>
-            <li>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span><strong>7. ¿Cómo decidiste que tu app está lista para producción?</strong> Cita cero cierres inesperados, buena salud en Android Vitals y 14 días resolviendo comentarios.</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reviews -->
-    <section class="section" id="reviews">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Opiniones Reales de Desarrolladores</div>
-          <h2>Reseñas Verificadas de Clientes</h2>
-          <p class="section-lead">Lee cómo desarrolladores Android de todo el mundo usaron nuestro servicio de <strong>12 evaluadores por 14 días</strong> para superar la prueba cerrada de Google Play:</p>
-        </div>
-        <div class="reviews-grid">
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">Usuario Verificado</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">Aprobada al Primer Intento</h3>
-              <p class="review-quote">“Perdí tres semanas en Reddit tratando de juntar 12 evaluadores por 14 días y me rechazaron dos veces. AppConsoleLab asignó 25 evaluadores reales en horas y mi app de fitness fue aprobada el día 15.”</p>
-            </div>
-            <div class="reviewer-name">Carlos G. &bull; México</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">Usuario Verificado</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">Detectaron un Fallo Real en Android 14</h3>
-              <p class="review-quote">“Su supervisor detectó un cierre inesperado en Android 14 el día 4 de la prueba cerrada. Subimos la v1.0.1 y pasamos la revisión de Google Play sin problemas.”</p>
-            </div>
-            <div class="reviewer-name">Sofía M. &bull; Colombia</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">Usuario Verificado</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">Cero Estrés, Vale Cada Centavo</h3>
-              <p class="review-quote">“Los mejores $20 que invertí en mi lanzamiento. Con 25 celulares Android físicos inscritos nunca tuve que preocuparme de que alguien desinstalara en el día 13.”</p>
-            </div>
-            <div class="reviewer-name">Mateo R. &bull; Argentina</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">Usuario Verificado</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">Excelente Soporte para Prueba Cerrada</h3>
-              <p class="review-quote">“Conseguir 12 evaluadores bloqueaba cada app que entregaba a clientes. Su equipo maneja el ingreso, aperturas diarias y hasta redacta respuestas para las 7 preguntas.”</p>
-            </div>
-            <div class="reviewer-name">Diego L. &bull; Chile</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">Usuario Verificado</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">Reportes Detallados de Errores UI</h3>
-              <p class="review-quote">“No solo mantuvieron 25+ dispositivos activos 14 días seguidos, sino que me enviaron capturas de un botón encimado en modo oscuro en Xiaomi para corregirlo antes de salir.”</p>
-            </div>
-            <div class="reviewer-name">Valeria P. &bull; Perú</div>
-          </div>
-          <div class="review-card">
-            <div>
-              <div class="review-header">
-                <img src="/assets/5stars.svg" alt="5 Stars" width="84" height="15">
-                <span class="badge badge-success" style="font-size: 0.75rem;">Usuario Verificado</span>
-              </div>
-              <h3 style="font-size: 1.15rem; color: #0f172a; margin-bottom: 0.75rem;">La Vía Más Rápida a Producción</h3>
-              <p class="review-quote">“Necesitaba 12 evaluadores por 14 días con urgencia para una app de utilidades. Empezaron a las 4 horas de mi pedido y me llevaron directo a la aprobación.”</p>
-            </div>
-            <div class="reviewer-name">Andrés T. &bull; Estados Unidos</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing -->
-    <section class="section section-alt" id="pricing">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Paquetes Oficiales</div>
-          <h2>Un Ciclo. Aprobación Completa.</h2>
-          <p class="section-lead">Paquetes transparentes de pago único para <strong>12 evaluadores por 14 días</strong> en celulares Android físicos reales y garantía 100% de reembolso.</p>
-        </div>
-
-        <div class="pricing-grid">
-          <div class="pricing-card">
-            <div>
-              <span class="badge" style="background: #f1f5f9; color: #475569; border-color: #e2e8f0;">Paquete Inicial</span>
-              <h3 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 0.35rem;">Basic</h3>
-              <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5;">Servicio esencial de <strong>12 evaluadores para prueba cerrada</strong> en dispositivos reales con aprobación garantizada.</p>
-              <div style="margin: 1.25rem 0;">
-                <span style="font-size: 1.1rem; text-decoration: line-through; color: #94a3b8; margin-right: 0.5rem;">$30</span>
-                <span class="price-val">$20</span>
-                <span class="price-sub">por lanzamiento / pago único</span>
-              </div>
-              <ul class="pricing-features">
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>25 Evaluadores Humanos Reales</strong></span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>Garantía de Acceso a Producción</strong></span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Supervisor de Cuenta Dedicado</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Prueba Cerrada de 14 Días</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Comentarios Detallados y Análisis de Errores</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Reporte de Pruebas UI/UX y Flujo de App</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Probado en 25+ Celulares Android Reales</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>2 Días Adicionales de Prueba</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Hasta 10 Minutos de Prueba Diaria por Equipo</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Dispositivos Android de Gama Alta (Android 7–16)</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Monitoreo de Crashes y ANR (Con Capturas)</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Reportes de Errores con Evidencia en Captura</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Comentarios Privados de Evaluadores en Google Play</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Revisión Básica de Políticas de Play Store</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Pruebas de Rendimiento y UI con Sugerencias</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Actividad Constante Durante los 14 Días</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Reporte Final de Finalización de Prueba</span></li>
-              </ul>
-            </div>
-            <div style="margin-top: 1.5rem;">
-              <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: var(--radius-sm); padding: 0.65rem 0.85rem; font-size: 0.825rem; color: #166534; font-weight: 600; text-align: center; margin-bottom: 1rem;">
-                Obtén Acceso a Producción — ¡O te Devolvemos tu Dinero!
-              </div>
-              <a href="https://appconsolelab.com/?ref=12-testers.github.io&amp;utm_source=12-testers.github.io&amp;utm_medium=referral&amp;utm_campaign=es-419_pricing_basic" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; text-align: center;">
-                Empezar ($20) &rarr;
-              </a>
-            </div>
-          </div>
-
-          <div class="pricing-card featured">
-            <span class="pricing-badge">Más Popular</span>
-            <div>
-              <span class="badge badge-success">Paquete Completo</span>
-              <h3 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 0.35rem;">Premium</h3>
-              <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5;">Máximo margen de seguridad para aprobar <strong>12 evaluadores en Google Play</strong> con análisis profundo de errores.</p>
-              <div style="margin: 1.25rem 0;">
-                <span style="font-size: 1.1rem; text-decoration: line-through; color: #94a3b8; margin-right: 0.5rem;">$60</span>
-                <span class="price-val" style="color: var(--brand-primary);">$40</span>
-                <span class="price-sub">por lanzamiento / pago único</span>
-              </div>
-              <ul class="pricing-features">
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>50 Evaluadores Humanos Reales</strong></span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>Garantía de Acceso a Producción</strong></span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Supervisor Senior de Cuenta</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Prueba Cerrada Extendida de 20 Días</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Comentarios Avanzados y Análisis de Errores</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Especialista Dedicado para tu App</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Probado en 50+ Celulares Android Reales</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Pruebas Integrales de UI/UX y Flujo de Usuario</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Hasta 30 Minutos de Prueba Diaria por Equipo</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Dispositivos Android de Gama Alta (Android 7–16)</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Monitoreo de Crashes y ANR con Evidencia en Video</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Logs de Crashes y ANR con Sugerencias de Corrección</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Reportes de Errores con Grabación de Pantalla</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Pasos Detallados para Reproducir Errores</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Pruebas de Instalación, Actualización y Primer Inicio</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Observaciones de Rendimiento y Optimización</span></li>
-                <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span>Reporte Final Detallado y Cumplimiento de Play Store</span></li>
-              </ul>
-            </div>
-            <div style="margin-top: 1.5rem;">
-              <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: var(--radius-sm); padding: 0.65rem 0.85rem; font-size: 0.825rem; color: #166534; font-weight: 600; text-align: center; margin-bottom: 1rem;">
-                Obtén Acceso a Producción — ¡O te Devolvemos tu Dinero!
-              </div>
-              <a href="https://appconsolelab.com/?ref=12-testers.github.io&amp;utm_source=12-testers.github.io&amp;utm_medium=referral&amp;utm_campaign=es-419_pricing_premium" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; text-align: center;">
-                Empezar ($40) &rarr;
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Us -->
-    <section class="section" id="about">
-      <div class="container" style="max-width: 920px;">
-        <div class="section-header text-center">
-          <div class="badge">Quiénes Somos</div>
-          <h2>Creado por Especialistas en Lanzamientos Android en AppConsoleLab</h2>
-          <p class="section-lead">Nuestro equipo dedicado ayuda a desarrolladores independientes y estudios a superar la <strong>prueba cerrada de Google Play</strong> sin perder semanas.</p>
-        </div>
-        <div class="card" style="padding: 2.5rem 2.25rem; background: #f8fafc;">
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; text-align: center; padding-bottom: 2rem; margin-bottom: 2rem; border-bottom: 1px solid var(--border-color);">
-            <div>
-              <div style="font-size: 2rem; font-weight: 800; color: var(--brand-primary);">40+</div>
-              <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.25rem;">Países Representados</div>
-            </div>
-            <div>
-              <div style="font-size: 2rem; font-weight: 800; color: var(--brand-primary);">Android 7–16</div>
-              <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.25rem;">Cobertura de Equipos Físicos</div>
-            </div>
-            <div>
-              <div style="font-size: 2rem; font-weight: 800; color: var(--brand-primary);">100%</div>
-              <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.25rem;">Evaluadores Humanos Reales</div>
-            </div>
-          </div>
-          <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin-bottom: 1.25rem;">Creamos esta plataforma de <strong>12 evaluadores por 14 días</strong> tras ver a cientos de desarrolladores Android talentosos atrapados en ciclos interminables de prueba cerrada. Las políticas de Google exigen uso humano real en equipos físicos — algo que los scripts automáticos y los intercambios en foros no pueden garantizar.</p>
-          <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">Cada campaña es supervisada por un encargado dedicado que verifica las aperturas diarias en celulares Samsung, Google Pixel, Xiaomi, OnePlus y Motorola, recopila reportes con capturas y te guía directo hasta la aprobación de producción.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQs -->
-    <section class="section section-alt" id="faq">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Preguntas Frecuentes</div>
-          <h2>Preguntas Frecuentes sobre 12 Evaluadores por 14 Días</h2>
-          <p class="section-lead">Respuestas claras a todo lo que preguntan los desarrolladores sobre la <strong>prueba cerrada de Google Play</strong> y nuestro servicio:</p>
-        </div>
-        <div class="faq-list">
-          <details class="faq-item" open>
-            <summary>1. ¿Por qué necesito 12 evaluadores por 14 días en Google Play?</summary>
-            <div class="faq-body">Google Play exige a toda cuenta personal de desarrollador creada después de noviembre de 2023 mantener al menos <strong>12 evaluadores en prueba cerrada</strong> inscritos de forma continua durante 14 días antes de solicitar acceso a producción.</div>
-          </details>
-          <details class="faq-item">
-            <summary>2. ¿Cuántos evaluadores asignan para la prueba de Google Play?</summary>
-            <div class="faq-body">En lugar de asignar solo 12, nuestro plan Basic incluye 25 evaluadores humanos reales y nuestro plan Premium incluye 50. Este margen garantiza que el conteo activo nunca baje de 12 durante los 14 días.</div>
-          </details>
-          <details class="faq-item">
-            <summary>3. ¿Sus evaluadores abren la app todos los días durante 14 días?</summary>
-            <div class="faq-body">Sí. Nuestro equipo abre tu app diariamente en celulares Android físicos reales, recorre las pantallas principales, revisa fallos y envía comentarios privados genuinos en Google Play.</div>
-          </details>
-          <details class="faq-item">
-            <summary>4. ¿Usan emuladores o bots automáticos?</summary>
-            <div class="faq-body">Nunca. Google Play detecta fácilmente emuladores y granjas de bots. Cada integrante de nuestro grupo usa un smartphone Android físico real con Android 7 hasta Android 16.</div>
-          </details>
-          <details class="faq-item">
-            <summary>5. ¿Puedo subir actualizaciones durante el periodo de 14 días?</summary>
-            <div class="faq-body">¡Sí! De hecho recomendamos publicar al menos una actualización (como la v1.0.1) durante tu <strong>prueba cerrada</strong>. Nuestros evaluadores instalan la actualización y verifican las correcciones, lo que aumenta mucho las probabilidades de aprobación.</div>
-          </details>
-          <details class="faq-item">
-            <summary>6. ¿Tengo que compartir mi contraseña de Google Play Console?</summary>
-            <div class="faq-body">No. Nunca compartas tu contraseña de Play Console con nadie. Solo agregas nuestra lista de correos de Google Groups a tu pista de prueba cerrada y nos envías tu enlace público de inscripción.</div>
-          </details>
-          <details class="faq-item">
-            <summary>7. ¿Qué pasa si no aprueban mi acceso a producción?</summary>
-            <div class="faq-body">Respaldamos nuestro servicio con garantía 100% de reembolso. Si tu app no es aprobada para producción tras seguir las indicaciones de nuestro supervisor, puedes elegir una repetición gratuita de 14 días o el reembolso total.</div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bottom CTA -->
-    <section class="section" style="text-align: center; background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);">
-      <div class="container" style="max-width: 720px;">
-        <div class="badge badge-success" style="margin-bottom: 1rem;"><span class="pulse-dot-green"></span> Listo para Lanzar en Google Play</div>
-        <h2 style="font-size: 2.1rem; color: #0f172a; margin-bottom: 1rem;">Inicia Hoy tu Prueba de 12 Evaluadores por 14 Días</h2>
-        <p style="font-size: 1.075rem; color: #475569; line-height: 1.7; margin-bottom: 2rem;">Despliega de 25 a 50 evaluadores reales en dispositivos Android físicos y desbloquea el acceso a producción en Google Play sin adivinanzas.</p>
-        <div class="hero-cta-group" style="justify-content: center;">
-          <a href="#pricing" class="btn btn-primary btn-lg">Elegir Plan &rarr;</a>
-          <a href="https://wa.me/923394001479?text=Hi%2C%20I%20need%2012%20testers%20for%2014%20days" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
-            <span class="pulse-dot-green"></span> Chatear por WhatsApp
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="https://12-testers.github.io/es-419/12-evaluadores/" class="logo" aria-label="12 Evaluadores 14 Días">
-            <svg class="logo-svg" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <linearGradient id="gpFtrGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#0284c7"/>
-                  <stop offset="50%" stop-color="#2563eb"/>
-                  <stop offset="100%" stop-color="#4f46e5"/>
-                </linearGradient>
-                <linearGradient id="gpFtrBadge" x1="22" y1="21" x2="34" y2="33" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#10b981"/>
-                  <stop offset="100%" stop-color="#047857"/>
-                </linearGradient>
-              </defs>
-              <rect width="40" height="40" rx="10" fill="url(#gpFtrGrad)"/>
-              <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="9.25" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
-              <path d="M12.5 10.5C12.5 9.4 13.7 8.7 14.6 9.3L26 16.8C26.9 17.4 26.9 18.6 26 19.2L14.6 26.7C13.7 27.3 12.5 26.6 12.5 25.5V10.5Z" fill="#ffffff"/>
-              <circle cx="28.5" cy="27.5" r="7.5" fill="#ffffff"/>
-              <circle cx="28.5" cy="27.5" r="6" fill="url(#gpFtrBadge)"/>
-              <path d="M25.7 27.5L27.7 29.5L31.3 25.2" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <div class="logo-text-group">
-              <span class="logo-text"><strong>12 Testers</strong> <span class="logo-accent">For 14 Days</span></span>
-              <span class="logo-byline">
-                <span class="by-text">by</span>
-                <img src="/assets/ACL_Logo_Light_theme.png" alt="AppConsoleLab" class="acl-sublogo" width="120" height="40">
-              </span>
-            </div>
           </a>
           <p class="footer-desc">Servicio gestionado de 12 evaluadores por 14 días en celulares Android físicos reales. Creado para desarrolladores independientes y estudios.</p>
         </div>
