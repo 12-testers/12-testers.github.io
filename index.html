@@ -944,6 +944,8 @@ a:hover {
 
   border-radius: var(--radius-lg);
 
+  padding: 2.25rem 2rem;
+
   box-shadow: var(--shadow-sm);
 
   transition: all 0.25s ease;
@@ -2350,7 +2352,7 @@ a:hover {
 
     <!-- Why Solo Developers Struggle -->
     <section class="section">
-      <div class="container">
+      <div class="container" style="max-width: 920px;">
         <div class="section-header text-center">
           <div class="badge badge-amber">Common Pitfalls</div>
           <h2>Why Finding 12 Testers Google Play Users Manually Fails</h2>
@@ -2359,28 +2361,26 @@ a:hover {
           </p>
         </div>
 
-        <div class="card" style="max-width: 920px; margin: 0 auto;">
-          <div style="display: grid; gap: 1.75rem;">
-            <div>
-              <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.5rem;">1. The Day 12 Dropout Reset Trap</h3>
-              <p style="color: #334155; line-height: 1.75; margin: 0;">
-                If you gather exactly <strong>12 testers for 14 days</strong> and even one person clears phone storage, switches devices, or uninstalls your app on Day 12, your active opt-in count falls to 11. Google Play immediately resets your 14-day timer back to Day 0. That is why our <strong>12-testers</strong> service always assigns 25 to 50 real physical devices &mdash; giving you a massive safety buffer so your count never falls below 12.
-              </p>
-            </div>
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--accent-amber); background: #ffffff;">
+            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 0.75rem;">1. The Day 12 Dropout Reset Trap</h3>
+            <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">
+              If you gather exactly <strong>12 testers for 14 days</strong> and even one person clears phone storage, switches devices, or uninstalls your app on Day 12, your active opt-in count falls to 11. Google Play immediately resets your 14-day timer back to Day 0. That is why our <strong>12-testers</strong> service always assigns 25 to 50 real physical devices &mdash; giving you a massive safety buffer so your count never falls below 12.
+            </p>
+          </div>
 
-            <div>
-              <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.5rem;">2. Inactive Installs Triggering "More Testing Required"</h3>
-              <p style="color: #334155; line-height: 1.75; margin: 0;">
-                Simply having <strong>12 testers Google Play</strong> accounts opt in and never open the app is the #1 reason Google rejects production applications. Google checks daily app opens, screen views, and real user interaction across two weeks. Our testing team opens your app daily on real Android phones, navigates through key flows, and submits authentic private feedback inside Google Play.
-              </p>
-            </div>
+          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--accent-amber); background: #ffffff;">
+            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 0.75rem;">2. Inactive Installs Triggering "More Testing Required"</h3>
+            <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">
+              Simply having <strong>12 testers Google Play</strong> accounts opt in and never open the app is the #1 reason Google rejects production applications. Google checks daily app opens, screen views, and real user interaction across two weeks. Our testing team opens your app daily on real Android phones, navigates through key flows, and submits authentic private feedback inside Google Play.
+            </p>
+          </div>
 
-            <div>
-              <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.5rem;">3. Emulator &amp; Bot Farm Flags</h3>
-              <p style="color: #334155; line-height: 1.75; margin: 0;">
-                Cheap swap groups and automated scripts rely on Android emulators, virtual machines, or cloned accounts. Google's Play Integrity checks detect identical hardware signatures and non-genuine sessions immediately, causing rejection or developer account strikes. With our <strong>12 testers for closed testing</strong> cohort, every install comes from an authentic physical Android phone running Android 7 through Android 16.
-              </p>
-            </div>
+          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--accent-amber); background: #ffffff;">
+            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 0.75rem;">3. Emulator &amp; Bot Farm Flags</h3>
+            <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">
+              Cheap swap groups and automated scripts rely on Android emulators, virtual machines, or cloned accounts. Google's Play Integrity checks detect identical hardware signatures and non-genuine sessions immediately, causing rejection or developer account strikes. With our <strong>12 testers for closed testing</strong> cohort, every install comes from an authentic physical Android phone running Android 7 through Android 16.
+            </p>
           </div>
         </div>
       </div>
@@ -2405,7 +2405,7 @@ a:hover {
           </div>
           <div class="step-card">
             <div class="step-num">2</div>
-            <h3>25–50 Real Users Opt In</h3>
+            <h3>25&ndash;50 Real Users Opt In</h3>
             <p>Our <strong>12-testers</strong> cohort installs your app on 25 to 50 real physical Android phones within 24 hours, giving you a huge safety buffer.</p>
           </div>
           <div class="step-card">
@@ -2472,7 +2472,7 @@ a:hover {
               Done-for-you <strong>12 testers for 14 days</strong> on real physical Android phones.
             </p>
             <ul class="compare-list">
-              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>25–50 Real Testers:</strong> Massive safety buffer so your count never dips below 12.</span></li>
+              <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>25&ndash;50 Real Testers:</strong> Massive safety buffer so your count never dips below 12.</span></li>
               <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>Daily App Opens:</strong> Verified human testers open your app every day for 14 days.</span></li>
               <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>Screenshot Bug Reports:</strong> Detailed UI/UX notes and real device crash checks.</span></li>
               <li><span style="color: #16a34a; font-weight: 700;">&#10003;</span> <span><strong>100% Guarantee:</strong> Unlock Google Play production access or get a full refund.</span></li>
@@ -2484,7 +2484,7 @@ a:hover {
 
     <!-- Why $20 Pays For Itself -->
     <section class="section section-alt" id="why-price">
-      <div class="container" style="max-width: 900px;">
+      <div class="container">
         <div class="section-header text-center">
           <div class="badge">Smart Developer ROI</div>
           <h2>Why Investing $20 in 12 Testers Google Play Testing Saves Weeks</h2>
@@ -2493,13 +2493,26 @@ a:hover {
           </p>
         </div>
 
-        <div class="card">
-          <p style="color: var(--text-body); line-height: 1.75; margin-bottom: 1rem;">
-            Think about what your development time is worth. Instead of spending weeks begging strangers on Reddit to keep your app installed or worrying every morning whether your <strong>12 testers for closed testing</strong> count dropped to 11, you can hand the entire 14-day cycle to our testing team for a one-time $20 fee.
-          </p>
-          <p style="color: var(--text-body); line-height: 1.75; margin: 0;">
-            While our 25 to 50 physical Android users test your build daily, check for layout glitches across screen sizes, and log private Google Play feedback, you stay 100% focused on polishing features, preparing your Play Store listing screenshots, and planning your launch marketing.
-          </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 960px; margin: 0 auto;">
+          <div class="card" style="padding: 2.25rem 2rem; background: #ffffff;">
+            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 1rem;">What You Avoid for $20</h3>
+            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin-bottom: 1rem;">
+              Instead of spending weeks begging strangers on Reddit to keep your app installed or worrying every morning whether your <strong>12 testers for closed testing</strong> count dropped to 11, you hand the entire 14-day cycle to our testing team for a single one-time fee.
+            </p>
+            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin: 0;">
+              Zero wasted hours trading installs. Zero guesswork on Day 14.
+            </p>
+          </div>
+
+          <div class="card" style="padding: 2.25rem 2rem; background: #ffffff;">
+            <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 1rem;">What You Gain Instead</h3>
+            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin-bottom: 1rem;">
+              While our 25 to 50 physical Android users test your build daily, check for layout glitches across screen sizes, and log private Google Play feedback, you stay 100% focused on polishing features and preparing your Play Store launch.
+            </p>
+            <p style="color: #334155; font-size: 1rem; line-height: 1.8; margin: 0;">
+              Backed by a 100% money-back production approval guarantee.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -2515,31 +2528,31 @@ a:hover {
           </p>
         </div>
 
-        <div class="faq-list">
-          <div class="card" style="padding: 1.5rem 1.75rem;">
-            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.5rem;">Q: Why does Google Play require 12 testers for 14 days?</h3>
-            <p style="color: var(--text-body); margin: 0; line-height: 1.7;">
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
+            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">Q: Why does Google Play require 12 testers for 14 days?</h3>
+            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">
               Personal Google Play developer accounts created after November 2023 must keep at least <strong>12 testers for closed testing</strong> opted in continuously for 14 consecutive days (336 hours). This proves your Android app runs smoothly on real physical smartphones before going live on the Play Store.
             </p>
           </div>
 
-          <div class="card" style="padding: 1.5rem 1.75rem;">
-            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.5rem;">Q: What happens if 1 tester uninstalls before Day 14?</h3>
-            <p style="color: var(--text-body); margin: 0; line-height: 1.7;">
+          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
+            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">Q: What happens if 1 tester uninstalls before Day 14?</h3>
+            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">
               If you only recruit 12 people and even one user uninstalls on Day 12, your active count drops to 11 and Google resets your <strong>12 testers for 14 days</strong> clock back to Day 0. Our <strong>12-testers</strong> service assigns 25 to 50 real physical devices so your count never drops below 12.
             </p>
           </div>
 
-          <div class="card" style="padding: 1.5rem 1.75rem;">
-            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.5rem;">Q: Is simply opting in enough to pass 12 testers Google Play review?</h3>
-            <p style="color: var(--text-body); margin: 0; line-height: 1.7;">
+          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
+            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">Q: Is simply opting in enough to pass 12 testers Google Play review?</h3>
+            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">
               No. Google Play checks for genuine daily app opens, screen navigation, crash-free sessions, and private tester feedback. Our testing team opens your app every day on real Android 7&ndash;16 devices and submits authentic feedback so you pass <strong>12 testers for closed testing</strong> effortlessly.
             </p>
           </div>
 
-          <div class="card" style="padding: 1.5rem 1.75rem;">
-            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.5rem;">Q: How fast can I start my 12 testers for 14 days closed test?</h3>
-            <p style="color: var(--text-body); margin: 0; line-height: 1.7;">
+          <div class="card" style="padding: 2rem 2.25rem; border-left: 4px solid var(--brand-primary); background: #f8fafc;">
+            <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 0.65rem;">Q: How fast can I start my 12 testers for 14 days closed test?</h3>
+            <p style="color: #334155; font-size: 1rem; margin: 0; line-height: 1.8;">
               Setup takes under 6 hours. Share your closed testing opt-in link, and our managed <strong>12-testers</strong> cohort installs your app on 25 to 50 physical phones within 24 hours &mdash; backed by a 100% money-back guarantee.
             </p>
           </div>
@@ -2558,8 +2571,8 @@ a:hover {
           </p>
         </div>
 
-        <div class="card">
-          <ul class="hero-feature-list" style="margin-bottom: 0;">
+        <div class="card" style="padding: 2.5rem 2.25rem; background: #ffffff;">
+          <ul class="hero-feature-list" style="margin-bottom: 0; gap: 1.15rem;">
             <li>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
               <span><strong>1. How easy was it to recruit testers for your app?</strong> Detail how you assembled a structured cohort of 25+ real Android users across diverse devices.</span>
@@ -2796,7 +2809,7 @@ a:hover {
 
     <!-- About Us Section -->
     <section class="section" id="about">
-      <div class="container" style="max-width: 900px;">
+      <div class="container" style="max-width: 920px;">
         <div class="section-header text-center">
           <div class="badge">Who We Are</div>
           <h2>Built by Android Release Specialists at AppConsoleLab</h2>
@@ -2805,11 +2818,25 @@ a:hover {
           </p>
         </div>
 
-        <div class="card">
-          <p style="color: var(--text-body); line-height: 1.75; margin-bottom: 1rem;">
+        <div class="card" style="padding: 2.5rem 2.25rem; background: #f8fafc;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; text-align: center; padding-bottom: 2rem; margin-bottom: 2rem; border-bottom: 1px solid var(--border-color);">
+            <div>
+              <div style="font-size: 2rem; font-weight: 800; color: var(--brand-primary);">40+</div>
+              <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.25rem;">Countries Represented</div>
+            </div>
+            <div>
+              <div style="font-size: 2rem; font-weight: 800; color: var(--brand-primary);">Android 7&ndash;16</div>
+              <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.25rem;">Physical Device Coverage</div>
+            </div>
+            <div>
+              <div style="font-size: 2rem; font-weight: 800; color: var(--brand-primary);">100%</div>
+              <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.25rem;">Real Human Testers</div>
+            </div>
+          </div>
+          <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin-bottom: 1.25rem;">
             We built this <strong>12 testers for 14 days</strong> platform after watching countless talented Android developers get stuck in endless closed testing loops. Google's policy requires real human usage across real devices &mdash; something automated scripts and forum swaps simply cannot deliver reliably.
           </p>
-          <p style="color: var(--text-body); line-height: 1.75; margin: 0;">
+          <p style="color: #334155; font-size: 1.02rem; line-height: 1.8; margin: 0;">
             Every <strong>12 testers for closed testing</strong> campaign is overseen by a dedicated account supervisor who verifies daily app opens across Samsung, Google Pixel, Xiaomi, OnePlus, and Motorola phones, compiles screenshot bug reports, and guides you straight through production approval.
           </p>
         </div>
