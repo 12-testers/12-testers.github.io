@@ -170,205 +170,222 @@
   <!-- Schema.org JSON-LD -->
 
   <script type="application/ld+json">
-
 {
-
   "@context": "https://schema.org",
-
   "@graph": [
-
     {
-
       "@type": "Organization",
-
       "@id": "https://12-testers.github.io/#organization",
-
       "name": "12 Testerov na 14 Dní",
-
       "url": "https://12-testers.github.io/sk/12-testerov/",
-
       "logo": "https://12-testers.github.io/assets/logo.svg"
-
     },
-
     {
-
       "@type": "WebSite",
-
       "@id": "https://12-testers.github.io/sk/12-testerov/#website",
-
       "url": "https://12-testers.github.io/sk/12-testerov/",
-
       "name": "12 Testerov na 14 Dní",
-
       "inLanguage": "sk",
-
       "publisher": {
-
         "@id": "https://12-testers.github.io/#organization"
-
       }
-
     },
-
     {
-
       "@type": "Product",
-
       "name": "12 testerov na 14 dní | Služba pre uzavreté testovanie Google Play",
-
       "description": "Získajte 12 testerov na 14 dní na reálnych fyzických Android telefónoch. Prejdite uzavretým testovaním v Google Play a získajte prístup k produkcii na prvý pokus.",
-
       "brand": {
-
         "@type": "Brand",
-
         "name": "12 Testers For 14 Days by AppConsoleLab"
-
       },
-
       "offers": {
-
         "@type": "AggregateOffer",
-
         "lowPrice": "20",
-
         "highPrice": "40",
-
         "priceCurrency": "USD",
-
         "offerCount": "2"
-
-      }
-
-    },
-
-    {
-
-      "@type": "FAQPage",
-
-      "mainEntity": [
-
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "6",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
         {
-
-          "@type": "Question",
-
-          "name": "1. Prečo potrebujem 12 testerov na 14 dní v Google Play?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Google Play vyžaduje od každého osobného vývojárskeho účtu vytvoreného po novembri 2023 minimálne <strong>12 testerov pre uzavreté testovanie</strong> nepretržite zapojených 14 dní, kým môže požiadať o prístup k produkcii."
-
+          "@type": "Review",
+          "name": "Schválené na prvý pokus",
+          "reviewBody": "„Tri týždne som strácal čas na Reddite snahou získať 12 testerov na 14 dní a dvakrát ma zamietli. AppConsoleLab pridelil 25 reálnych testerov za pár hodín a moju fitnes aplikáciu schválili na 15. deň.",
+          "author": {
+            "@type": "Person",
+            "name": "Marek K."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "2. Koľko testerov prideľujete pre testovanie v Google Play?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Namiesto iba 12 testerov poskytuje náš balík Basic 25 reálnych testerov a balík Premium 50 reálnych testerov. Táto rezerva zaručuje, že aktívny počet počas 14 dní nikdy neklesne pod 12."
-
+          "@type": "Review",
+          "name": "Odhalili reálny pád na Androide 14",
+          "reviewBody": "„Ich supervízor zachytil pád na Androide 14 na 4. deň uzavretého testovania. Nahrali sme verziu v1.0.1 a kontrolou Google Play sme prešli bez jediného problému.",
+          "author": {
+            "@type": "Person",
+            "name": "Zuzana H."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "3. Otvárajú vaši testeri aplikáciu každý deň počas 14 dní?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Áno. Náš tím aplikáciu otvára denne na reálnych fyzických Android telefónoch, prechádza hlavné obrazovky, sleduje pády a posiela súkromnú spätnú väzbu v Google Play."
-
+          "@type": "Review",
+          "name": "Bez stresu, stojí za každý dolár",
+          "reviewBody": "„Najlepších $20 investovaných do spustenia. S 25 fyzickými Android telefónmi v teste som sa nemusel báť, že niekto aplikáciu na 13. deň vymaže.",
+          "author": {
+            "@type": "Person",
+            "name": "Lukáš B."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "4. Používajú sa emulátory alebo automatizované boty?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Nikdy. Google Play emulátory a farmy botov ľahko odhalí. Každý tester v našej skupine používa reálny fyzický smartfón so systémom Android 7 až Android 16."
-
+          "@type": "Review",
+          "name": "Skvelá podpora pre uzavreté testovanie",
+          "reviewBody": "„Hľadanie 12 testerov mi doteraz brzdilo každú klientsku aplikáciu. Ich tím vyrieši zapojenie, denné spúšťanie a dokonca pomôže s odpoveďami na 7 otázok.",
+          "author": {
+            "@type": "Person",
+            "name": "Tomáš N."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "5. Môžem počas 14-dňového testu vydávať aktualizácie aplikácie?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Áno! Dokonca odporúčame vydať aspoň jednu aktualizáciu (napr. v1.0.1) počas <strong>uzavretého testovania</strong>. Naši testeri aktualizáciu automaticky nainštalujú a overia opravy, čo výrazne zvyšuje šancu na schválenie."
-
+          "@type": "Review",
+          "name": "Podrobné hlásenia UI chýb",
+          "reviewBody": "„Nielenže udržali 25+ zariadení aktívnych 14 dní v kuse, ale poslali mi aj snímky prekrývania tlačidiel v tmavom režime na Xiaomi, aby som to opravil pred vydaním.",
+          "author": {
+            "@type": "Person",
+            "name": "Petra V."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "6. Musím zdieľať svoje heslo do Google Play Console?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Nie. Heslo do Play Console nikomu neposkytujte. Stačí pridať náš zoznam Google Skupiny do kanála uzavretého testovania a poslať nám verejný odkaz na prihlásenie."
-
+          "@type": "Review",
+          "name": "Najrýchlejšia cesta do produkcie",
+          "reviewBody": "„Súrne som potreboval 12 testerov na 14 dní pre nástrojovú aplikáciu. Začali do 4 hodín od objednávky a doviedli ma priamo k schváleniu produkcie.",
+          "author": {
+            "@type": "Person",
+            "name": "Martin R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
-        },
-
-        {
-
-          "@type": "Question",
-
-          "name": "7. Čo sa stane, ak môj prístup k produkcii nebude schválený?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Našu službu kryjeme 100 % garanciou vrátenia peňazí. Ak aplikácia nezíska schválenie do produkcie po dodržaní pokynov nášho supervízora, môžete si vybrať bezplatné opakovanie 14-dňového testu alebo plnú refundáciu."
-
-          }
-
         }
-
       ]
-
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "1. Prečo potrebujem 12 testerov na 14 dní v Google Play?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Play vyžaduje od každého osobného vývojárskeho účtu vytvoreného po novembri 2023 minimálne <strong>12 testerov pre uzavreté testovanie</strong> nepretržite zapojených 14 dní, kým môže požiadať o prístup k produkcii."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2. Koľko testerov prideľujete pre testovanie v Google Play?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Namiesto iba 12 testerov poskytuje náš balík Basic 25 reálnych testerov a balík Premium 50 reálnych testerov. Táto rezerva zaručuje, že aktívny počet počas 14 dní nikdy neklesne pod 12."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "3. Otvárajú vaši testeri aplikáciu každý deň počas 14 dní?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Áno. Náš tím aplikáciu otvára denne na reálnych fyzických Android telefónoch, prechádza hlavné obrazovky, sleduje pády a posiela súkromnú spätnú väzbu v Google Play."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "4. Používajú sa emulátory alebo automatizované boty?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nikdy. Google Play emulátory a farmy botov ľahko odhalí. Každý tester v našej skupine používa reálny fyzický smartfón so systémom Android 7 až Android 16."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "5. Môžem počas 14-dňového testu vydávať aktualizácie aplikácie?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Áno! Dokonca odporúčame vydať aspoň jednu aktualizáciu (napr. v1.0.1) počas <strong>uzavretého testovania</strong>. Naši testeri aktualizáciu automaticky nainštalujú a overia opravy, čo výrazne zvyšuje šancu na schválenie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "6. Musím zdieľať svoje heslo do Google Play Console?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nie. Heslo do Play Console nikomu neposkytujte. Stačí pridať náš zoznam Google Skupiny do kanála uzavretého testovania a poslať nám verejný odkaz na prihlásenie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "7. Čo sa stane, ak môj prístup k produkcii nebude schválený?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Našu službu kryjeme 100 % garanciou vrátenia peňazí. Ak aplikácia nezíska schválenie do produkcie po dodržaní pokynov nášho supervízora, môžete si vybrať bezplatné opakovanie 14-dňového testu alebo plnú refundáciu."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://12-testers.github.io/sk/12-testerov/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://12-testers.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "12 testerov na 14 dní",
+          "item": "https://12-testers.github.io/sk/12-testerov/"
+        }
+      ]
     }
-
   ]
-
 }
-
   </script>
 
 

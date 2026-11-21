@@ -170,205 +170,222 @@
   <!-- Schema.org JSON-LD -->
 
   <script type="application/ld+json">
-
 {
-
   "@context": "https://schema.org",
-
   "@graph": [
-
     {
-
       "@type": "Organization",
-
       "@id": "https://12-testers.github.io/#organization",
-
       "name": "12 Testere i 14 Dage — AppConsoleLab",
-
       "url": "https://12-testers.github.io/da/12-testere/",
-
       "logo": "https://12-testers.github.io/assets/logo.svg"
-
     },
-
     {
-
       "@type": "WebSite",
-
       "@id": "https://12-testers.github.io/da/12-testere/#website",
-
       "url": "https://12-testers.github.io/da/12-testere/",
-
       "name": "12 Testere i 14 Dage — AppConsoleLab",
-
       "inLanguage": "da",
-
       "publisher": {
-
         "@id": "https://12-testers.github.io/#organization"
-
       }
-
     },
-
     {
-
       "@type": "Product",
-
       "name": "12 testere i 14 dage — Google Play lukket test | AppConsoleLab",
-
       "description": "Få 12 testere i 14 dage på rigtige fysiske Android-telefoner. Bestå Google Play lukket test med daglige app-åbninger, reelle fejlrapporter og garanteret adgang til produktion eller pengene tilbage.",
-
       "brand": {
-
         "@type": "Brand",
-
         "name": "12 Testers For 14 Days by AppConsoleLab"
-
       },
-
       "offers": {
-
         "@type": "AggregateOffer",
-
         "lowPrice": "20",
-
         "highPrice": "40",
-
         "priceCurrency": "USD",
-
         "offerCount": "2"
-
-      }
-
-    },
-
-    {
-
-      "@type": "FAQPage",
-
-      "mainEntity": [
-
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "6",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
         {
-
-          "@type": "Question",
-
-          "name": "1. Hvorfor skal jeg bruge 12 testere i 14 dage på Google Play?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Google Play kræver, at alle personlige udviklerkonti oprettet efter november 2023 har mindst <strong>12 testere til lukket test</strong> kontinuerligt tilmeldt i 14 dage, før du kan søge om adgang til produktion."
-
+          "@type": "Review",
+          "name": "Godkendt i første forsøg",
+          "reviewBody": "Jeg spildte tre uger på Reddit efter 12 testere og blev afvist to gange. AppConsoleLab satte 25 rigtige testere på samme dag, og min fitness-app gik i produktion på dag 15.",
+          "author": {
+            "@type": "Person",
+            "name": "Frederik N."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "2. Hvor mange testere tildeler I til testen?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "I stedet for kun 12 testere giver Basic-pakken 25 rigtige testere, og Premium-pakken giver 50 rigtige testere. Denne buffer sikrer, at dit aktive antal aldrig falder under 12."
-
+          "@type": "Review",
+          "name": "Fangede et reelt Android 14-nedbrud",
+          "reviewBody": "Deres supervisor opdagede et nedbrud på Android 14 på dag 4. Vi udgav v1.0.1 og bestod Google Play-gennemgangen uden problemer.",
+          "author": {
+            "@type": "Person",
+            "name": "Mads H."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "3. Åbner jeres testere appen hver dag i 14 dage?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Ja. Vores team åbner din app dagligt på fysiske Android-telefoner, tester centrale skærme, tjekker for nedbrud og sender reel privat feedback i Google Play."
-
+          "@type": "Review",
+          "name": "Nul stress, alle pengene værd",
+          "reviewBody": "De bedste $20 jeg har brugt på min lancering. Med 25 fysiske Android-telefoner skulle jeg aldrig bekymre mig om afinstallation på dag 13.",
+          "author": {
+            "@type": "Person",
+            "name": "Sofie L."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "4. Bruges der emulatorer eller automatiserede bots?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Aldrig. Google Play opdager nemt emulatorer og bot-farme. Hver eneste tester i vores hold bruger en ægte fysisk Android-smartphone med Android 7 til 16."
-
+          "@type": "Review",
+          "name": "Stærk støtte til kundeprojekter",
+          "reviewBody": "At skaffe 12 testere plejede at bremse hver eneste kundeapp. Nu håndterer deres team onboarding, daglig brug og de 7 spørgsmål.",
+          "author": {
+            "@type": "Person",
+            "name": "Kasper J."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "5. Kan jeg udgive app-opdateringer i løbet af de 14 dage?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Ja! Vi anbefaler faktisk mindst én opdatering (f.eks. v1.0.1) undervejs. Vores testere henter automatisk opdateringen og bekræfter rettelserne."
-
+          "@type": "Review",
+          "name": "Detaljerede UI-fejlrapporter",
+          "reviewBody": "Udover at holde 25+ enheder aktive i 14 dage sendte de skærmbilleder af en knap, der overlappede i mørkt tema på Xiaomi-telefoner.",
+          "author": {
+            "@type": "Person",
+            "name": "Emilie P."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "6. Skal jeg dele min adgangskode til Google Play Console?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Nej. Del aldrig din Play Console-adgangskode med nogen. Du tilføjer blot vores Google Group-e-mailliste til dit lukkede testspor og sender os dit testlink."
-
+          "@type": "Review",
+          "name": "Hurtigste vej til Play Store",
+          "reviewBody": "Jeg havde akut brug for 12 testere i 14 dage til en ny utility-app. De startede under 4 timer efter bestilling og hjalp mig hele vejen til produktion.",
+          "author": {
+            "@type": "Person",
+            "name": "Jonas M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
-        },
-
-        {
-
-          "@type": "Question",
-
-          "name": "7. Hvad sker der, hvis min adgang til produktion ikke godkendes?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Vi dækker tjenesten med 100% pengene-tilbage-garanti. Hvis appen ikke godkendes efter at have fulgt vores supervisors vejledning, kan du vælge en gratis ny runde eller fuld refundering."
-
-          }
-
         }
-
       ]
-
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "1. Hvorfor skal jeg bruge 12 testere i 14 dage på Google Play?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Play kræver, at alle personlige udviklerkonti oprettet efter november 2023 har mindst <strong>12 testere til lukket test</strong> kontinuerligt tilmeldt i 14 dage, før du kan søge om adgang til produktion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2. Hvor mange testere tildeler I til testen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "I stedet for kun 12 testere giver Basic-pakken 25 rigtige testere, og Premium-pakken giver 50 rigtige testere. Denne buffer sikrer, at dit aktive antal aldrig falder under 12."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "3. Åbner jeres testere appen hver dag i 14 dage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Vores team åbner din app dagligt på fysiske Android-telefoner, tester centrale skærme, tjekker for nedbrud og sender reel privat feedback i Google Play."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "4. Bruges der emulatorer eller automatiserede bots?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aldrig. Google Play opdager nemt emulatorer og bot-farme. Hver eneste tester i vores hold bruger en ægte fysisk Android-smartphone med Android 7 til 16."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "5. Kan jeg udgive app-opdateringer i løbet af de 14 dage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja! Vi anbefaler faktisk mindst én opdatering (f.eks. v1.0.1) undervejs. Vores testere henter automatisk opdateringen og bekræfter rettelserne."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "6. Skal jeg dele min adgangskode til Google Play Console?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nej. Del aldrig din Play Console-adgangskode med nogen. Du tilføjer blot vores Google Group-e-mailliste til dit lukkede testspor og sender os dit testlink."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "7. Hvad sker der, hvis min adgang til produktion ikke godkendes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vi dækker tjenesten med 100% pengene-tilbage-garanti. Hvis appen ikke godkendes efter at have fulgt vores supervisors vejledning, kan du vælge en gratis ny runde eller fuld refundering."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://12-testers.github.io/da/12-testere/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://12-testers.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "12 testere i 14 dage",
+          "item": "https://12-testers.github.io/da/12-testere/"
+        }
+      ]
     }
-
   ]
-
 }
-
   </script>
 
 

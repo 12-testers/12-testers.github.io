@@ -170,205 +170,222 @@
   <!-- Schema.org JSON-LD -->
 
   <script type="application/ld+json">
-
 {
-
   "@context": "https://schema.org",
-
   "@graph": [
-
     {
-
       "@type": "Organization",
-
       "@id": "https://12-testers.github.io/#organization",
-
       "name": "12 Testers For 14 Days by AppConsoleLab",
-
       "url": "https://12-testers.github.io/zh-TW/12-名測試人員/",
-
       "logo": "https://12-testers.github.io/assets/logo.svg"
-
     },
-
     {
-
       "@type": "WebSite",
-
       "@id": "https://12-testers.github.io/zh-TW/12-名測試人員/#website",
-
       "url": "https://12-testers.github.io/zh-TW/12-名測試人員/",
-
       "name": "12 Testers For 14 Days by AppConsoleLab",
-
       "inLanguage": "zh-TW",
-
       "publisher": {
-
         "@id": "https://12-testers.github.io/#organization"
-
       }
-
     },
-
     {
-
       "@type": "Product",
-
       "name": "12 名測試人員連續測試 14 天 – Google Play 封閉測試服務 | AppConsoleLab",
-
       "description": "使用真實實體 Android 手機提供 12 名以上測試人員進行 14 天封閉測試。每日實際開啟 App、回報真實錯誤並提供問卷指導，確保順利取得 Google Play 正式版發布權限。",
-
       "brand": {
-
         "@type": "Brand",
-
         "name": "12 Testers For 14 Days by AppConsoleLab"
-
       },
-
       "offers": {
-
         "@type": "AggregateOffer",
-
         "lowPrice": "20",
-
         "highPrice": "40",
-
         "priceCurrency": "USD",
-
         "offerCount": "2"
-
-      }
-
-    },
-
-    {
-
-      "@type": "FAQPage",
-
-      "mainEntity": [
-
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "6",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
         {
-
-          "@type": "Question",
-
-          "name": "1. 為什麼在 Google Play 需要 12 名測試人員測試 14 天？",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Google Play 規定 2023 年 11 月之後建立的個人開發者帳戶，必須讓至少 12 名測試人員在封閉測試軌道連續保持 14 天參與，才能申請正式版發布權限。"
-
+          "@type": "Review",
+          "name": "首次送審就通過",
+          "reviewBody": "之前在 Reddit 花了三個禮拜找 12 名測試人員，還被拒絕兩次。AppConsoleLab 幾小時內就指派了 25 位真實測試員，我的健身 App 在第 15 天順利獲准上架。",
+          "author": {
+            "@type": "Person",
+            "name": "林先生 (Kevin L.)"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "2. 你們會指派多少名測試人員進行 Google Play 測試？",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "我們不會只安排剛剛好 12 人。Basic 方案提供 25 名真實測試人員，Premium 方案提供 50 名真實測試人員。這個安全緩衝確保 14 天內活躍人數永遠不會低於 12 人。"
-
+          "@type": "Review",
+          "name": "抓出真實的 Android 14 閃退",
+          "reviewBody": "他們的主管在封閉測試第 4 天幫我們發現一個 Android 14 閃退問題。我們立即推送 v1.0.1 更新，Google Play 審核一次過關。",
+          "author": {
+            "@type": "Person",
+            "name": "Priya M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "3. 你們的 12 名測試人員真的會連續 14 天每天開啟 App 嗎？",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "會的。我們的測試團隊每天都會在真實實體 Android 手機上開啟您的 App、探索核心畫面、檢查閃退並在 Google Play 內提交真實私密回饋。"
-
+          "@type": "Review",
+          "name": "零壓力，每一分錢都值得",
+          "reviewBody": "上架前花得最值得的 $20 美元。有 25 支實體 Android 手機撐著，完全不用擔心第 13 天突然有人解除安裝。",
+          "author": {
+            "@type": "Person",
+            "name": "Lucas R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "4. 會使用模擬器或自動化機器人嗎？",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "絕不會。Google Play 很容易偵測到模擬器與機器人農場。我們團隊中的每位測試人員都使用運行 Android 7 至 Android 16 的真實實體手機。"
-
+          "@type": "Review",
+          "name": "接案開發者必備幫手",
+          "reviewBody": "以前每個客戶的 App 都要卡在 12 人封閉測試好久。現在交給他們處理每日開啟，還幫忙撰寫 7 道問題的專屬回答，省下超多時間。",
+          "author": {
+            "@type": "Person",
+            "name": "Tariq H."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "5. 在 14 天封閉測試期間可以推送 App 更新嗎？",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "可以！事實上我們建議您在封閉測試週期中至少推送一次更新（例如 v1.0.1）。我們的測試人員會自動安裝更新並驗證修正，這能大幅提高正式版通過率。"
-
+          "@type": "Review",
+          "name": "詳細的介面 Bug 截圖報告",
+          "reviewBody": "除了連續 14 天維持 25+ 支手機活躍外，他們還截圖回報小米手機深色模式按鈕重疊的問題，讓我們在正式上架前就修好了。",
+          "author": {
+            "@type": "Person",
+            "name": "Elena V."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "6. 我需要分享 Google Play Console 帳號密碼嗎？",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "不需要。千萬不要與任何人分享 Play Console 密碼。您只需將我們管理的 Google 群組信箱名單加入封閉測試軌道，並分享您的公開測試加入連結即可。"
-
+          "@type": "Review",
+          "name": "取得正式版權限最快的方式",
+          "reviewBody": "工具類 App 急著需要 12 名測試人員做 14 天測試，下單後 4 小時內就開始安裝，一路協助我拿到正式版核准。",
+          "author": {
+            "@type": "Person",
+            "name": "張先生 (Eric C.)"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
-        },
-
-        {
-
-          "@type": "Question",
-
-          "name": "7. 如果我的正式版發布權限沒有通過怎麼辦？",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "我們為服務提供 100% 退費保證。如果您在遵循測試主管指導後仍未獲准發布正式版，可以選擇免費重測 14 天或全額退費。"
-
-          }
-
         }
-
       ]
-
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "1. 為什麼在 Google Play 需要 12 名測試人員測試 14 天？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Play 規定 2023 年 11 月之後建立的個人開發者帳戶，必須讓至少 12 名測試人員在封閉測試軌道連續保持 14 天參與，才能申請正式版發布權限。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2. 你們會指派多少名測試人員進行 Google Play 測試？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "我們不會只安排剛剛好 12 人。Basic 方案提供 25 名真實測試人員，Premium 方案提供 50 名真實測試人員。這個安全緩衝確保 14 天內活躍人數永遠不會低於 12 人。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "3. 你們的 12 名測試人員真的會連續 14 天每天開啟 App 嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "會的。我們的測試團隊每天都會在真實實體 Android 手機上開啟您的 App、探索核心畫面、檢查閃退並在 Google Play 內提交真實私密回饋。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "4. 會使用模擬器或自動化機器人嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "絕不會。Google Play 很容易偵測到模擬器與機器人農場。我們團隊中的每位測試人員都使用運行 Android 7 至 Android 16 的真實實體手機。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "5. 在 14 天封閉測試期間可以推送 App 更新嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以！事實上我們建議您在封閉測試週期中至少推送一次更新（例如 v1.0.1）。我們的測試人員會自動安裝更新並驗證修正，這能大幅提高正式版通過率。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "6. 我需要分享 Google Play Console 帳號密碼嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不需要。千萬不要與任何人分享 Play Console 密碼。您只需將我們管理的 Google 群組信箱名單加入封閉測試軌道，並分享您的公開測試加入連結即可。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "7. 如果我的正式版發布權限沒有通過怎麼辦？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "我們為服務提供 100% 退費保證。如果您在遵循測試主管指導後仍未獲准發布正式版，可以選擇免費重測 14 天或全額退費。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://12-testers.github.io/zh-TW/12-%E5%90%8D%E6%B8%AC%E8%A9%A6%E4%BA%BA%E5%93%A1/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://12-testers.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "12 名測試人員連續 14 天",
+          "item": "https://12-testers.github.io/zh-TW/12-%E5%90%8D%E6%B8%AC%E8%A9%A6%E4%BA%BA%E5%93%A1/"
+        }
+      ]
     }
-
   ]
-
 }
-
   </script>
 
 

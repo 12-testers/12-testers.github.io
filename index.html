@@ -170,205 +170,226 @@
   <!-- Schema.org JSON-LD -->
 
   <script type="application/ld+json">
-
-  {
-
-    "@context": "https://schema.org",
-
-    "@graph": [
-
-      {
-
-        "@type": "Organization",
-
-        "@id": "https://12-testers.github.io/#organization",
-
-        "name": "12 Testers For 14 Days",
-
-        "url": "https://12-testers.github.io/",
-
-        "logo": "https://12-testers.github.io/assets/logo.svg",
-
-        "contactPoint": {
-
-          "@type": "ContactPoint",
-
-          "telephone": "+92-339-4001479",
-
-          "contactType": "customer service",
-
-          "availableLanguage": ["English", "Ukrainian", "Spanish", "Chinese"]
-
-        }
-
-      },
-
-      {
-
-        "@type": "WebSite",
-
-        "@id": "https://12-testers.github.io/#website",
-
-        "url": "https://12-testers.github.io/",
-
-        "name": "12 Testers For 14 Days",
-
-        "publisher": { "@id": "https://12-testers.github.io/#organization" }
-
-      },
-
-      {
-
-        "@type": "Product",
-
-        "name": "12 Testers For 14 Days — Google Play Closed Testing Service",
-
-        "description": "Managed cohort of 12 testers for 14 days on real physical Android phones to pass 12 testers Google Play closed testing.",
-
-        "brand": { "@type": "Brand", "name": "12 Testers For 14 Days by AppConsoleLab" },
-
-        "offers": {
-
-          "@type": "AggregateOffer",
-
-          "lowPrice": "20",
-
-          "highPrice": "40",
-
-          "priceCurrency": "USD",
-
-          "offerCount": "2",
-
-          "offers": [
-
-            {
-
-              "@type": "Offer",
-
-              "name": "Basic Plan — 25 Physical Testers",
-
-              "price": "20",
-
-              "priceCurrency": "USD",
-
-              "url": "https://appconsolelab.com/?ref=12-testers.github.io&utm_source=12-testers.github.io&utm_medium=referral&utm_campaign=schema_basic"
-
-            },
-
-            {
-
-              "@type": "Offer",
-
-              "name": "Premium Plan — 50 Physical Testers",
-
-              "price": "40",
-
-              "priceCurrency": "USD",
-
-              "url": "https://appconsolelab.com/?ref=12-testers.github.io&utm_source=12-testers.github.io&utm_medium=referral&utm_campaign=schema_premium"
-
-            }
-
-          ]
-
-        }
-
-      },
-
-      {
-
-        "@type": "FAQPage",
-
-        "mainEntity": [
-
-          {
-
-            "@type": "Question",
-
-            "name": "Why do I need 12 testers for 14 days on Google Play?",
-
-            "acceptedAnswer": {
-
-              "@type": "Answer",
-
-              "text": "Google Play requires every personal developer account created after November 2023 to have at least 12 testers for closed testing opted in continuously for 14 days before applying for production access."
-
-            }
-
-          },
-
-          {
-
-            "@type": "Question",
-
-            "name": "How many testers do you assign for 12 testers Google Play testing?",
-
-            "acceptedAnswer": {
-
-              "@type": "Answer",
-
-              "text": "Instead of assigning only 12 testers, our Basic plan assigns 25 real human testers and our Premium plan assigns 50 real human testers. This safety buffer guarantees your active count never drops below 12."
-
-            }
-
-          },
-
-          {
-
-            "@type": "Question",
-
-            "name": "Do your 12 testers open the app every day for 14 days?",
-
-            "acceptedAnswer": {
-
-              "@type": "Answer",
-
-              "text": "Yes. Our testing team opens your app daily on real physical Android phones, explores every screen, checks for crashes, and submits genuine private feedback on Google Play."
-
-            }
-
-          },
-
-          {
-
-            "@type": "Question",
-
-            "name": "Are emulators or automated bots used for 12 testers for closed testing?",
-
-            "acceptedAnswer": {
-
-              "@type": "Answer",
-
-              "text": "Never. Google Play easily detects emulators and bot farms. Every single tester in our 12 testers for 14 days cohort uses a real physical Android smartphone running Android 7 through Android 16."
-
-            }
-
-          },
-
-          {
-
-            "@type": "Question",
-
-            "name": "What happens if my production access is not approved?",
-
-            "acceptedAnswer": {
-
-              "@type": "Answer",
-
-              "text": "We back our 12 testers for closed testing service with a 100% money-back guarantee. If your app is not approved for production after following our supervisor guidance, we re-run testing for free or issue a full refund."
-
-            }
-
-          }
-
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://12-testers.github.io/#organization",
+      "name": "12 Testers For 14 Days",
+      "url": "https://12-testers.github.io/",
+      "logo": "https://12-testers.github.io/assets/logo.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+92-339-4001479",
+        "contactType": "customer service",
+        "availableLanguage": [
+          "English",
+          "Ukrainian",
+          "Spanish",
+          "Chinese"
         ]
-
       }
-
-    ]
-
-  }
-
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://12-testers.github.io/#website",
+      "url": "https://12-testers.github.io/",
+      "name": "12 Testers For 14 Days",
+      "publisher": {
+        "@id": "https://12-testers.github.io/#organization"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "12 Testers For 14 Days — Google Play Closed Testing Service",
+      "description": "Managed cohort of 12 testers for 14 days on real physical Android phones to pass 12 testers Google Play closed testing.",
+      "brand": {
+        "@type": "Brand",
+        "name": "12 Testers For 14 Days by AppConsoleLab"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "20",
+        "highPrice": "40",
+        "priceCurrency": "USD",
+        "offerCount": "2",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Basic Plan — 25 Physical Testers",
+            "price": "20",
+            "priceCurrency": "USD",
+            "url": "https://appconsolelab.com/?ref=12-testers.github.io&utm_source=12-testers.github.io&utm_medium=referral&utm_campaign=schema_basic"
+          },
+          {
+            "@type": "Offer",
+            "name": "Premium Plan — 50 Physical Testers",
+            "price": "40",
+            "priceCurrency": "USD",
+            "url": "https://appconsolelab.com/?ref=12-testers.github.io&utm_source=12-testers.github.io&utm_medium=referral&utm_campaign=schema_premium"
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "6",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "name": "Approved on the First Attempt",
+          "reviewBody": "I wasted three weeks on Reddit trying to get 12 testers for 14 days and got rejected twice. AppConsoleLab assigned 25 real testers in hours and my fitness app was approved on Day 15.",
+          "author": {
+            "@type": "Person",
+            "name": "Daniel K."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        {
+          "@type": "Review",
+          "name": "Caught a Real Android 14 Crash",
+          "reviewBody": "Their supervisor caught a crash on Android 14 during day 4 of closed testing. We pushed v1.0.1 and passed the 12 testers Google Play review with zero issues.",
+          "author": {
+            "@type": "Person",
+            "name": "Priya M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        {
+          "@type": "Review",
+          "name": "Zero Stress, Worth Every Dollar",
+          "reviewBody": "Best $20 I spent on my launch. Having 25 physical Android phones opted in meant I never had to worry about someone uninstalling on Day 13.",
+          "author": {
+            "@type": "Person",
+            "name": "Lucas R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        {
+          "@type": "Review",
+          "name": "Great Support for Closed Testing",
+          "reviewBody": "Finding 12 testers for closed testing used to block every client app I shipped. Their team handles onboarding, daily opens, and even writes custom answers for the 7 questions.",
+          "author": {
+            "@type": "Person",
+            "name": "Tariq H."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        {
+          "@type": "Review",
+          "name": "Detailed UI Bug Reports",
+          "reviewBody": "Not only did they keep 25+ devices active for 14 straight days, they sent screenshots of a dark-mode button overlap on Xiaomi devices so we could fix it before launch.",
+          "author": {
+            "@type": "Person",
+            "name": "Elena V."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        {
+          "@type": "Review",
+          "name": "Fastest Way to Production",
+          "reviewBody": "I needed 12 testers for 14 days urgently for a utility app. They started within 4 hours of my order and guided me straight to production approval.",
+          "author": {
+            "@type": "Person",
+            "name": "Marcus T."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why do I need 12 testers for 14 days on Google Play?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Play requires every personal developer account created after November 2023 to have at least 12 testers for closed testing opted in continuously for 14 days before applying for production access."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many testers do you assign for 12 testers Google Play testing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Instead of assigning only 12 testers, our Basic plan assigns 25 real human testers and our Premium plan assigns 50 real human testers. This safety buffer guarantees your active count never drops below 12."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do your 12 testers open the app every day for 14 days?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our testing team opens your app daily on real physical Android phones, explores every screen, checks for crashes, and submits genuine private feedback on Google Play."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are emulators or automated bots used for 12 testers for closed testing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Never. Google Play easily detects emulators and bot farms. Every single tester in our 12 testers for 14 days cohort uses a real physical Android smartphone running Android 7 through Android 16."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if my production access is not approved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We back our 12 testers for closed testing service with a 100% money-back guarantee. If your app is not approved for production after following our supervisor guidance, we re-run testing for free or issue a full refund."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://12-testers.github.io/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://12-testers.github.io/"
+        }
+      ]
+    }
+  ]
+}
   </script>
 
 

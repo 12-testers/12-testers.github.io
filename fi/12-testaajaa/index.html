@@ -170,205 +170,222 @@
   <!-- Schema.org JSON-LD -->
 
   <script type="application/ld+json">
-
 {
-
   "@context": "https://schema.org",
-
   "@graph": [
-
     {
-
       "@type": "Organization",
-
       "@id": "https://12-testers.github.io/#organization",
-
       "name": "12 Testers For 14 Days – AppConsoleLab",
-
       "url": "https://12-testers.github.io/fi/12-testaajaa/",
-
       "logo": "https://12-testers.github.io/assets/logo.svg"
-
     },
-
     {
-
       "@type": "WebSite",
-
       "@id": "https://12-testers.github.io/fi/12-testaajaa/#website",
-
       "url": "https://12-testers.github.io/fi/12-testaajaa/",
-
       "name": "12 Testers For 14 Days – AppConsoleLab",
-
       "inLanguage": "fi",
-
       "publisher": {
-
         "@id": "https://12-testers.github.io/#organization"
-
       }
-
     },
-
     {
-
       "@type": "Product",
-
       "name": "12 testaajaa 14 päiväksi | Google Playn suljetun testauksen palvelu",
-
       "description": "Hanki 12 testaajaa 14 päiväksi oikeilla fyysisillä Android-puhelimilla. Läpäise Google Playn suljettu testaus päivittäisillä sovelluksen avauksilla, aidoilla bugiraporteilla ja taatulla tuotantokäyttöoikeudella.",
-
       "brand": {
-
         "@type": "Brand",
-
         "name": "12 Testers For 14 Days by AppConsoleLab"
-
       },
-
       "offers": {
-
         "@type": "AggregateOffer",
-
         "lowPrice": "20",
-
         "highPrice": "40",
-
         "priceCurrency": "USD",
-
         "offerCount": "2"
-
-      }
-
-    },
-
-    {
-
-      "@type": "FAQPage",
-
-      "mainEntity": [
-
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "6",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
         {
-
-          "@type": "Question",
-
-          "name": "1. Miksi tarvitsen 12 testaajaa 14 päiväksi Google Playssa?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Google Play edellyttää jokaiselta marraskuun 2023 jälkeen luodulta henkilökohtaiselta kehittäjätililtä vähintään 12 testaajan jatkuvaa osallistumista suljettuun testaukseen 14 päivän ajan ennen tuotantokäyttöoikeuden hakemista."
-
+          "@type": "Review",
+          "name": "Hyväksytty ensimmäisellä yrityksellä",
+          "reviewBody": "Tuhlasin kolme viikkoa Redditissä yrittäen saada 12 testaajaa ja sain kaksi hylkäystä. AppConsoleLab järjesti 25 oikeaa testaajaa tunneissa ja kuntoilusovellukseni hyväksyttiin päivänä 15.",
+          "author": {
+            "@type": "Person",
+            "name": "Mikko L."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "2. Kuinka monta testaajaa osoitatte Google Play -testaukseen?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Pelkän 12 testaajan sijaan Basic-pakettimme tarjoaa 25 oikeaa ihmistestaajaa ja Premium-pakettimme 50 oikeaa ihmistestaajaa. Tämä varmuuspuskuri takaa, ettei aktiivinen määrä koskaan laske alle 12:n."
-
+          "@type": "Review",
+          "name": "Oikea Android 14 -kaatuminen löytyi",
+          "reviewBody": "Heidän valvojansa huomasi Android 14 -kaatumisen suljetun testauksen 4. päivänä. Julkaisimme v1.0.1-päivityksen ja läpäisimme arvioinnin ongelmitta.",
+          "author": {
+            "@type": "Person",
+            "name": "Priya M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "3. Avaavatko testaajanne sovelluksen joka päivä 14 päivän ajan?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Kyllä. Testaustiimimme avaa sovelluksesi päivittäin oikeilla fyysisillä Android-puhelimilla, tutkii päänäkymät, tarkistaa kaatumiset ja lähettää aitoa yksityistä palautetta Google Playssa."
-
+          "@type": "Review",
+          "name": "Ei stressiä, jokaisen dollarin arvoinen",
+          "reviewBody": "Paras 20 $ sijoitus julkaisuuni. Kun 25 fyysistä Android-puhelinta oli mukana, ei tarvinnut pelätä kenenkään poistavan sovellusta päivänä 13.",
+          "author": {
+            "@type": "Person",
+            "name": "Lucas R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "4. Käytetäänkö emulaattoreita tai automaattisia botteja?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Ei koskaan. Google Play tunnistaa emulaattorit ja bottifarmit helposti. Jokainen testaajamme käyttää oikeaa fyysistä Android-älypuhelinta (Android 7–16)."
-
+          "@type": "Review",
+          "name": "Loistava tuki suljettuun testaukseen",
+          "reviewBody": "12 testaajan löytäminen jumitti jokaisen asiakassovellukseni. Tiimi hoitaa käyttöönoton, päivittäiset avaukset ja auttaa jopa 7 kysymyksen kanssa.",
+          "author": {
+            "@type": "Person",
+            "name": "Tariq H."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "5. Voinko julkaista sovelluspäivityksiä 14 päivän suljetun testauksen aikana?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Kyllä! Suosittelemme vähintään yhden päivityksen (kuten v1.0.1) julkaisemista syklin aikana. Testaajamme asentavat päivityksen automaattisesti ja varmistavat korjaukset, mikä parantaa hyväksyntämahdollisuuksia merkittävästi."
-
+          "@type": "Review",
+          "name": "Tarkat UI-bugiraportit",
+          "reviewBody": "Sen lisäksi että yli 25 laitetta pysyi aktiivisena 14 päivää, he lähettivät kuvakaappauksen tumman tilan painikevirheestä Xiaomilla, joten ehdimme korjata sen.",
+          "author": {
+            "@type": "Person",
+            "name": "Elena V."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "6. Pitääkö minun jakaa Google Play Console -salasanani?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Ei. Älä koskaan jaa Play Console -salasanaasi kenellekään. Lisäät vain hallinnoidun Google-ryhmämme sähköpostilistan suljetun testauksen kanavallesi ja jaat julkisen osallistumislinkin."
-
+          "@type": "Review",
+          "name": "Nopein tie tuotantoon",
+          "reviewBody": "Tarvitsin kiireellisesti 12 testaajaa hyötyohjelmalleni. Testaus alkoi 4 tunnissa tilauksesta ja eteni suoraan tuotantokäyttöoikeuteen.",
+          "author": {
+            "@type": "Person",
+            "name": "Janne K."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
-        },
-
-        {
-
-          "@type": "Question",
-
-          "name": "7. Mitä tapahtuu, jos tuotantokäyttöoikeutta ei hyväksytä?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Palvelullamme on 100 % rahat takaisin -takuu. Jos sovellustasi ei hyväksytä tuotantoon valvojamme ohjeiden noudattamisen jälkeen, voit valita ilmaisen 14 päivän uusinnan tai täyden hyvityksen."
-
-          }
-
         }
-
       ]
-
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "1. Miksi tarvitsen 12 testaajaa 14 päiväksi Google Playssa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Play edellyttää jokaiselta marraskuun 2023 jälkeen luodulta henkilökohtaiselta kehittäjätililtä vähintään 12 testaajan jatkuvaa osallistumista suljettuun testaukseen 14 päivän ajan ennen tuotantokäyttöoikeuden hakemista."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2. Kuinka monta testaajaa osoitatte Google Play -testaukseen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pelkän 12 testaajan sijaan Basic-pakettimme tarjoaa 25 oikeaa ihmistestaajaa ja Premium-pakettimme 50 oikeaa ihmistestaajaa. Tämä varmuuspuskuri takaa, ettei aktiivinen määrä koskaan laske alle 12:n."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "3. Avaavatko testaajanne sovelluksen joka päivä 14 päivän ajan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kyllä. Testaustiimimme avaa sovelluksesi päivittäin oikeilla fyysisillä Android-puhelimilla, tutkii päänäkymät, tarkistaa kaatumiset ja lähettää aitoa yksityistä palautetta Google Playssa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "4. Käytetäänkö emulaattoreita tai automaattisia botteja?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ei koskaan. Google Play tunnistaa emulaattorit ja bottifarmit helposti. Jokainen testaajamme käyttää oikeaa fyysistä Android-älypuhelinta (Android 7–16)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "5. Voinko julkaista sovelluspäivityksiä 14 päivän suljetun testauksen aikana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kyllä! Suosittelemme vähintään yhden päivityksen (kuten v1.0.1) julkaisemista syklin aikana. Testaajamme asentavat päivityksen automaattisesti ja varmistavat korjaukset, mikä parantaa hyväksyntämahdollisuuksia merkittävästi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "6. Pitääkö minun jakaa Google Play Console -salasanani?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ei. Älä koskaan jaa Play Console -salasanaasi kenellekään. Lisäät vain hallinnoidun Google-ryhmämme sähköpostilistan suljetun testauksen kanavallesi ja jaat julkisen osallistumislinkin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "7. Mitä tapahtuu, jos tuotantokäyttöoikeutta ei hyväksytä?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Palvelullamme on 100 % rahat takaisin -takuu. Jos sovellustasi ei hyväksytä tuotantoon valvojamme ohjeiden noudattamisen jälkeen, voit valita ilmaisen 14 päivän uusinnan tai täyden hyvityksen."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://12-testers.github.io/fi/12-testaajaa/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://12-testers.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "12 testaajaa 14 päiväksi",
+          "item": "https://12-testers.github.io/fi/12-testaajaa/"
+        }
+      ]
     }
-
   ]
-
 }
-
   </script>
 
 

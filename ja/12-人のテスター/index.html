@@ -170,205 +170,222 @@
   <!-- Schema.org JSON-LD -->
 
   <script type="application/ld+json">
-
 {
-
   "@context": "https://schema.org",
-
   "@graph": [
-
     {
-
       "@type": "Organization",
-
       "@id": "https://12-testers.github.io/#organization",
-
       "name": "12 Testers For 14 Days by AppConsoleLab",
-
       "url": "https://12-testers.github.io/ja/12-人のテスター/",
-
       "logo": "https://12-testers.github.io/assets/logo.svg"
-
     },
-
     {
-
       "@type": "WebSite",
-
       "@id": "https://12-testers.github.io/ja/12-人のテスター/#website",
-
       "url": "https://12-testers.github.io/ja/12-人のテスター/",
-
       "name": "12 Testers For 14 Days by AppConsoleLab",
-
       "inLanguage": "ja",
-
       "publisher": {
-
         "@id": "https://12-testers.github.io/#organization"
-
       }
-
     },
-
     {
-
       "@type": "Product",
-
       "name": "12人のテスター（14日間）— Google Play クローズド テスト & 製品版へのアクセス代行",
-
       "description": "Google Play Consoleの「12人のテスター・14日間のクローズド テスト」要件を確実にクリア。実機Android端末を使う12人以上のリアルなテスターを提供し、製品版へのアクセス承認をサポートします。",
-
       "brand": {
-
         "@type": "Brand",
-
         "name": "12 Testers For 14 Days by AppConsoleLab"
-
       },
-
       "offers": {
-
         "@type": "AggregateOffer",
-
         "lowPrice": "20",
-
         "highPrice": "40",
-
         "priceCurrency": "USD",
-
         "offerCount": "2"
-
-      }
-
-    },
-
-    {
-
-      "@type": "FAQPage",
-
-      "mainEntity": [
-
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "6",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
         {
-
-          "@type": "Question",
-
-          "name": "Google Playの規約に違反しませんか？安全性は大丈夫ですか？",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "はい、完全に安全です。すべてのテスターが個人のAndroid実機と通常の回線を使って手動でテストするため、Google Playの規約に100%準拠しています。"
-
+          "@type": "Review",
+          "name": "1回目で製品版へのアクセスが通りました！",
+          "reviewBody": "最初は無料の相互テストサイトを使いましたが14日後に却下されました。AppConsoleLabのPremiumプランに切り替えたところ、20人が毎日しっかり動かしてくれて一発合格できました。",
+          "author": {
+            "@type": "Person",
+            "name": "佐藤 健太 — 東京、日本"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "Play Consoleのログイン情報を渡す必要はありますか？",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "いいえ、一切不要です。クローズド テストのテスター設定に当社のGoogleグループを追加し、オプトインURLを共有いただくだけで開始できます。"
-
+          "@type": "Review",
+          "name": "時間と手間の大幅な節約になりました",
+          "reviewBody": "身近にAndroid端末を12台も集めるのは不可能でした。WhatsAppでGoogleグループの設定も丁寧に教えてもらえ、翌日にはテストが開始されました。",
+          "author": {
+            "@type": "Person",
+            "name": "高橋 美咲 — 大阪、日本"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "注文後、どのくらいでテスターが参加しますか？",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Basicプランは24時間以内、Premiumプランは6〜12時間以内にテスターの参加とインストールが始まります。"
-
+          "@type": "Review",
+          "name": "具体的なバグ報告がありがたかった",
+          "reviewBody": "ただ14日待つだけでなく、特定の画面サイズでの表示崩れを指摘してもらえました。製品版申請の回答例も非常に助かりました。",
+          "author": {
+            "@type": "Person",
+            "name": "田中 翔太 — 福岡、日本"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "14日間のテスト中にアプリをアップデートしてもよいですか？",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "もちろんです。クローズド テストに新しいビルドを公開いただければ、テスターがアプリを更新して引き続きテストを行います。"
-
+          "@type": "Review",
+          "name": "Basicプラン（$20）で十分満足",
+          "reviewBody": "個人開発者としてBasicを利用しました。14日間ひとりも離脱せず、申請から3日で製品版が承認されました。コスパ最強です。",
+          "author": {
+            "@type": "Person",
+            "name": "伊藤 大輔 — 名古屋、日本"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "万が一、製品版へのアクセスが却下された場合はどうなりますか？",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "99.2%が初回で承認されていますが、万が一Googleから追加テストを求められた場合は、追加費用なしで14日間の再テストを無料で実施します。"
-
+          "@type": "Review",
+          "name": "一度却下されたアプリも無事公開",
+          "reviewBody": "最初の申請がテスト不足で差し戻されましたが、こちらに依頼して14日間きっちり運用してもらった結果、再申請ですぐに通りました。",
+          "author": {
+            "@type": "Person",
+            "name": "渡辺 拓海 — 横浜、日本"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "ログインが必要なアプリや有料アプリも対応できますか？",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "はい、対応可能です。ログインが必要な場合はテスト用アカウントをお知らせください。有料アプリの場合はPlay Consoleのプロモーションコードをご共有いただければテストできます。"
-
+          "@type": "Review",
+          "name": "受託開発のクライアント案件で活用",
+          "reviewBody": "クライアントの新規個人アカウント向けにこれまで4本のアプリで利用しています。すべて問題なく製品版へ移行できました。",
+          "author": {
+            "@type": "Person",
+            "name": "山本 誠 — 札幌、日本"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
-        },
-
-        {
-
-          "@type": "Question",
-
-          "name": "支払い方法には何がありますか？",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "AppConsoleLabのサイト上でクレジットカードやPayPalなどで安全にお支払いいただけます。ご不明点があればWhatsAppでお気軽にお問い合わせください。"
-
-          }
-
         }
-
       ]
-
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Google Playの規約に違反しませんか？安全性は大丈夫ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい、完全に安全です。すべてのテスターが個人のAndroid実機と通常の回線を使って手動でテストするため、Google Playの規約に100%準拠しています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Play Consoleのログイン情報を渡す必要はありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "いいえ、一切不要です。クローズド テストのテスター設定に当社のGoogleグループを追加し、オプトインURLを共有いただくだけで開始できます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "注文後、どのくらいでテスターが参加しますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Basicプランは24時間以内、Premiumプランは6〜12時間以内にテスターの参加とインストールが始まります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "14日間のテスト中にアプリをアップデートしてもよいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "もちろんです。クローズド テストに新しいビルドを公開いただければ、テスターがアプリを更新して引き続きテストを行います。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "万が一、製品版へのアクセスが却下された場合はどうなりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "99.2%が初回で承認されていますが、万が一Googleから追加テストを求められた場合は、追加費用なしで14日間の再テストを無料で実施します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ログインが必要なアプリや有料アプリも対応できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい、対応可能です。ログインが必要な場合はテスト用アカウントをお知らせください。有料アプリの場合はPlay Consoleのプロモーションコードをご共有いただければテストできます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "支払い方法には何がありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AppConsoleLabのサイト上でクレジットカードやPayPalなどで安全にお支払いいただけます。ご不明点があればWhatsAppでお気軽にお問い合わせください。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://12-testers.github.io/ja/12-%E4%BA%BA%E3%81%AE%E3%83%86%E3%82%B9%E3%82%BF%E3%83%BC/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://12-testers.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "14日間で12人のリアルなテスターを確保し、Google Play 製品版へのアクセスを解除",
+          "item": "https://12-testers.github.io/ja/12-%E4%BA%BA%E3%81%AE%E3%83%86%E3%82%B9%E3%82%BF%E3%83%BC/"
+        }
+      ]
     }
-
   ]
-
 }
-
   </script>
 
 

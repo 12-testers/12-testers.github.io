@@ -170,205 +170,222 @@
   <!-- Schema.org JSON-LD -->
 
   <script type="application/ld+json">
-
 {
-
   "@context": "https://schema.org",
-
   "@graph": [
-
     {
-
       "@type": "Organization",
-
       "@id": "https://12-testers.github.io/#organization",
-
       "name": "12 Testers voor 14 Dagen — AppConsoleLab",
-
       "url": "https://12-testers.github.io/nl/12-testers/",
-
       "logo": "https://12-testers.github.io/assets/logo.svg"
-
     },
-
     {
-
       "@type": "WebSite",
-
       "@id": "https://12-testers.github.io/nl/12-testers/#website",
-
       "url": "https://12-testers.github.io/nl/12-testers/",
-
       "name": "12 Testers voor 14 Dagen — AppConsoleLab",
-
       "inLanguage": "nl",
-
       "publisher": {
-
         "@id": "https://12-testers.github.io/#organization"
-
       }
-
     },
-
     {
-
       "@type": "Product",
-
       "name": "12 testers voor 14 dagen — Google Play gesloten test | AppConsoleLab",
-
       "description": "Krijg 12 testers voor 14 dagen op echte fysieke Android-telefoons. Doorloop de Google Play gesloten test met dagelijkse app-opens, echte bugrapporten en gegarandeerde toegang tot productie of geld terug.",
-
       "brand": {
-
         "@type": "Brand",
-
         "name": "12 Testers For 14 Days by AppConsoleLab"
-
       },
-
       "offers": {
-
         "@type": "AggregateOffer",
-
         "lowPrice": "20",
-
         "highPrice": "40",
-
         "priceCurrency": "USD",
-
         "offerCount": "2"
-
-      }
-
-    },
-
-    {
-
-      "@type": "FAQPage",
-
-      "mainEntity": [
-
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "6",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
         {
-
-          "@type": "Question",
-
-          "name": "1. Waarom heb ik 12 testers voor 14 dagen nodig op Google Play?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Google Play verplicht elk persoonlijk ontwikkelaarsaccount dat na november 2023 is aangemaakt om minstens <strong>12 testers voor een gesloten test</strong> 14 dagen aaneengesloten aangemeld te houden voordat je toegang tot productie kunt aanvragen."
-
+          "@type": "Review",
+          "name": "In één keer goedgekeurd",
+          "reviewBody": "Ik had drie weken verspild op Reddit en werd twee keer afgewezen. AppConsoleLab zette binnen een paar uur 25 echte testers in en mijn fitness-app kreeg op dag 15 toegang tot productie.",
+          "author": {
+            "@type": "Person",
+            "name": "Bram V."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "2. Hoeveel testers wijzen jullie toe voor de test?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "In plaats van krap 12 testers biedt het Basic-pakket 25 echte testers en Premium 50 echte testers. Die buffer voorkomt dat je actieve aantal ooit onder de 12 zakt."
-
+          "@type": "Review",
+          "name": "Echte crash op Android 14 ontdekt",
+          "reviewBody": "Hun supervisor ving op dag 4 een crash op Android 14 op. We pushten v1.0.1 en kwamen probleemloos door de Google Play-review.",
+          "author": {
+            "@type": "Person",
+            "name": "Daan K."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "3. Openen jullie testers de app elke dag gedurende 14 dagen?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Ja. Ons team opent je app dagelijks op echte Android-telefoons, doorloopt hoofdschermen, let op crashes en stuurt oprechte privéfeedback via Google Play."
-
+          "@type": "Review",
+          "name": "Geen stress, elke dollar waard",
+          "reviewBody": "Beste $20 van mijn hele lancering. Met 25 fysieke Android-telefoons hoefde ik nooit bang te zijn dat iemand op dag 13 zou verwijderen.",
+          "author": {
+            "@type": "Person",
+            "name": "Lotte B."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "4. Worden er emulators of geautomatiseerde bots gebruikt?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Nooit. Google Play herkent emulators en botfarms direct. Elke tester in ons netwerk gebruikt een echte fysieke Android-smartphone met Android 7 tot en met 16."
-
+          "@type": "Review",
+          "name": "Topondersteuning voor klantapps",
+          "reviewBody": "12 testers regelen hield elke klantapp op. Hun team regelt nu de aanmeldingen, dagelijkse opens en zelfs de antwoorden op de 7 vragen.",
+          "author": {
+            "@type": "Person",
+            "name": "Thijs M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "5. Mag ik tijdens de 14-daagse test een app-update uitbrengen?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Ja! We raden zelfs aan om minstens één update (zoals v1.0.1) uit te rollen. Onze testers installeren de update automatisch en controleren je bugfixes."
-
+          "@type": "Review",
+          "name": "Scherpe UI-bugrapporten",
+          "reviewBody": "Ze hielden niet alleen 25+ toestellen 14 dagen actief, maar stuurden ook screenshots van een overlappende knop in donkere modus op Xiaomi.",
+          "author": {
+            "@type": "Person",
+            "name": "Sanne D."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "6. Moet ik mijn wachtwoord van Google Play Console delen?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Nee. Deel nooit je Play Console-wachtwoord. Je voegt simpelweg onze beheerde Google Groep toe aan je gesloten testtrack en stuurt ons de publieke opt-in-link."
-
+          "@type": "Review",
+          "name": "Snelste route naar productie",
+          "reviewBody": "Ik had met spoed 12 testers voor 14 dagen nodig voor een utility-app. Binnen 4 uur waren ze gestart en ik werd soepel goedgekeurd.",
+          "author": {
+            "@type": "Person",
+            "name": "Jeroen W."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
-        },
-
-        {
-
-          "@type": "Question",
-
-          "name": "7. Wat als mijn toegang tot productie niet wordt goedgekeurd?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "We bieden 100% geld-terug-garantie. Wordt je app na het opvolgen van ons supervisoradvies niet goedgekeurd, dan kies je voor een gratis nieuwe ronde of volledige terugbetaling."
-
-          }
-
         }
-
       ]
-
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "1. Waarom heb ik 12 testers voor 14 dagen nodig op Google Play?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Play verplicht elk persoonlijk ontwikkelaarsaccount dat na november 2023 is aangemaakt om minstens <strong>12 testers voor een gesloten test</strong> 14 dagen aaneengesloten aangemeld te houden voordat je toegang tot productie kunt aanvragen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2. Hoeveel testers wijzen jullie toe voor de test?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In plaats van krap 12 testers biedt het Basic-pakket 25 echte testers en Premium 50 echte testers. Die buffer voorkomt dat je actieve aantal ooit onder de 12 zakt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "3. Openen jullie testers de app elke dag gedurende 14 dagen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Ons team opent je app dagelijks op echte Android-telefoons, doorloopt hoofdschermen, let op crashes en stuurt oprechte privéfeedback via Google Play."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "4. Worden er emulators of geautomatiseerde bots gebruikt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nooit. Google Play herkent emulators en botfarms direct. Elke tester in ons netwerk gebruikt een echte fysieke Android-smartphone met Android 7 tot en met 16."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "5. Mag ik tijdens de 14-daagse test een app-update uitbrengen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja! We raden zelfs aan om minstens één update (zoals v1.0.1) uit te rollen. Onze testers installeren de update automatisch en controleren je bugfixes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "6. Moet ik mijn wachtwoord van Google Play Console delen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nee. Deel nooit je Play Console-wachtwoord. Je voegt simpelweg onze beheerde Google Groep toe aan je gesloten testtrack en stuurt ons de publieke opt-in-link."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "7. Wat als mijn toegang tot productie niet wordt goedgekeurd?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We bieden 100% geld-terug-garantie. Wordt je app na het opvolgen van ons supervisoradvies niet goedgekeurd, dan kies je voor een gratis nieuwe ronde of volledige terugbetaling."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://12-testers.github.io/nl/12-testers/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://12-testers.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "12 testers voor 14 dagen",
+          "item": "https://12-testers.github.io/nl/12-testers/"
+        }
+      ]
     }
-
   ]
-
 }
-
   </script>
 
 

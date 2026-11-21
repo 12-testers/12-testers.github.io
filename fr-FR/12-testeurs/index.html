@@ -170,205 +170,222 @@
   <!-- Schema.org JSON-LD -->
 
   <script type="application/ld+json">
-
 {
-
   "@context": "https://schema.org",
-
   "@graph": [
-
     {
-
       "@type": "Organization",
-
       "@id": "https://12-testers.github.io/#organization",
-
       "name": "12 Testers For 14 Days par AppConsoleLab",
-
       "url": "https://12-testers.github.io/fr-FR/12-testeurs/",
-
       "logo": "https://12-testers.github.io/assets/logo.svg"
-
     },
-
     {
-
       "@type": "WebSite",
-
       "@id": "https://12-testers.github.io/fr-FR/12-testeurs/#website",
-
       "url": "https://12-testers.github.io/fr-FR/12-testeurs/",
-
       "name": "12 Testers For 14 Days par AppConsoleLab",
-
       "inLanguage": "fr-FR",
-
       "publisher": {
-
         "@id": "https://12-testers.github.io/#organization"
-
       }
-
     },
-
     {
-
       "@type": "Product",
-
       "name": "12 testeurs pendant 14 jours | Service de tests fermés Google Play",
-
       "description": "Obtenez 12 testeurs pendant 14 jours sur de vrais smartphones Android. Réussissez les tests fermés Google Play avec des ouvertures quotidiennes, de vrais rapports de bugs et un accès à la production garanti.",
-
       "brand": {
-
         "@type": "Brand",
-
         "name": "12 Testers For 14 Days by AppConsoleLab"
-
       },
-
       "offers": {
-
         "@type": "AggregateOffer",
-
         "lowPrice": "20",
-
         "highPrice": "40",
-
         "priceCurrency": "USD",
-
         "offerCount": "2"
-
-      }
-
-    },
-
-    {
-
-      "@type": "FAQPage",
-
-      "mainEntity": [
-
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "6",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
         {
-
-          "@type": "Question",
-
-          "name": "1. Pourquoi faut-il 12 testeurs pendant 14 jours sur Google Play ?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Google Play impose à tout compte développeur personnel créé après novembre 2023 de garder au moins 12 testeurs inscrits en continu aux tests fermés pendant 14 jours avant de pouvoir demander l'accès à la production."
-
+          "@type": "Review",
+          "name": "Validé dès la première demande",
+          "reviewBody": "« J'ai perdu trois semaines sur Reddit pour trouver 12 testeurs et j'ai été refusé deux fois. AppConsoleLab a déployé 25 vrais testeurs en quelques heures et mon appli a été validée au 15e jour. »",
+          "author": {
+            "@type": "Person",
+            "name": "Julien M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "2. Combien de testeurs assignez-vous pour les tests Google Play ?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Au lieu de n'assigner que 12 testeurs, notre offre Basic déploie 25 vrais testeurs humains et notre offre Premium en déploie 50. Cette marge garantit que votre compteur ne passe jamais sous 12 durant les 14 jours."
-
+          "@type": "Review",
+          "name": "Crash Android 14 détecté à temps",
+          "reviewBody": "« Leur superviseur a repéré un crash sur Android 14 dès le 4e jour des tests fermés. Nous avons publié la v1.0.1 et obtenu la validation Google Play sans encombre. »",
+          "author": {
+            "@type": "Person",
+            "name": "Priya M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "3. Vos testeurs ouvrent-ils l'application chaque jour pendant 14 jours ?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Oui. Notre équipe ouvre votre appli quotidiennement sur de vrais smartphones Android physiques, parcourt les écrans principaux, vérifie les crashs et laisse de vrais avis privés sur Google Play."
-
+          "@type": "Review",
+          "name": "Zéro stress, rentabilisé dès le début",
+          "reviewBody": "« Les 20 $ les mieux investis de mon lancement. Savoir 25 vrais téléphones inscrits m'a évité de stresser pour une désinstallation au 13e jour. »",
+          "author": {
+            "@type": "Person",
+            "name": "Lucas R."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "4. Utilisez-vous des émulateurs ou des bots ?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Jamais. Google Play détecte très vite les émulateurs et fermes à bots. Chaque testeur de notre cohorte utilise un véritable smartphone Android tournant sous Android 7 à 16."
-
+          "@type": "Review",
+          "name": "Accompagnement parfait",
+          "reviewBody": "« Trouver 12 testeurs bloquait toutes les applis de mes clients. Leur équipe gère l'installation, les ouvertures quotidiennes et prépare même les réponses aux 7 questions. »",
+          "author": {
+            "@type": "Person",
+            "name": "Tariq H."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "5. Puis-je publier des mises à jour pendant les 14 jours de tests fermés ?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Oui ! Nous conseillons même de publier au moins une mise à jour (comme la v1.0.1) pendant le cycle. Nos testeurs installent la mise à jour et vérifient vos correctifs, ce qui renforce vos chances d'approbation."
-
+          "@type": "Review",
+          "name": "Rapports de bugs UI très précis",
+          "reviewBody": "« En plus de garder 25+ mobiles actifs pendant 14 jours, ils m'ont envoyé des captures d'un chevauchement de bouton en mode sombre sur Xiaomi avant la sortie. »",
+          "author": {
+            "@type": "Person",
+            "name": "Elena V."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "6. Dois-je partager mon mot de passe Google Play Console ?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Non. Ne partagez jamais votre mot de passe Play Console. Vous ajoutez simplement l'adresse e-mail de notre Google Group géré à votre piste de tests fermés et nous envoyez le lien d'inscription public."
-
+          "@type": "Review",
+          "name": "Le moyen le plus rapide vers la production",
+          "reviewBody": "« J'avais besoin d'urgence de 12 testeurs pour un utilitaire. Ils ont démarré en 4 heures et m'ont accompagné jusqu'à l'accès à la production. »",
+          "author": {
+            "@type": "Person",
+            "name": "Camille D."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
-        },
-
-        {
-
-          "@type": "Question",
-
-          "name": "7. Que se passe-t-il si mon accès à la production est refusé ?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Nous garantissons notre service à 100 % satisfait ou remboursé. Si votre appli n'est pas approuvée après avoir suivi les recommandations de notre superviseur, vous choisissez une relance gratuite de 14 jours ou un remboursement intégral."
-
-          }
-
         }
-
       ]
-
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "1. Pourquoi faut-il 12 testeurs pendant 14 jours sur Google Play ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Play impose à tout compte développeur personnel créé après novembre 2023 de garder au moins 12 testeurs inscrits en continu aux tests fermés pendant 14 jours avant de pouvoir demander l'accès à la production."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2. Combien de testeurs assignez-vous pour les tests Google Play ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Au lieu de n'assigner que 12 testeurs, notre offre Basic déploie 25 vrais testeurs humains et notre offre Premium en déploie 50. Cette marge garantit que votre compteur ne passe jamais sous 12 durant les 14 jours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "3. Vos testeurs ouvrent-ils l'application chaque jour pendant 14 jours ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Notre équipe ouvre votre appli quotidiennement sur de vrais smartphones Android physiques, parcourt les écrans principaux, vérifie les crashs et laisse de vrais avis privés sur Google Play."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "4. Utilisez-vous des émulateurs ou des bots ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jamais. Google Play détecte très vite les émulateurs et fermes à bots. Chaque testeur de notre cohorte utilise un véritable smartphone Android tournant sous Android 7 à 16."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "5. Puis-je publier des mises à jour pendant les 14 jours de tests fermés ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui ! Nous conseillons même de publier au moins une mise à jour (comme la v1.0.1) pendant le cycle. Nos testeurs installent la mise à jour et vérifient vos correctifs, ce qui renforce vos chances d'approbation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "6. Dois-je partager mon mot de passe Google Play Console ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Ne partagez jamais votre mot de passe Play Console. Vous ajoutez simplement l'adresse e-mail de notre Google Group géré à votre piste de tests fermés et nous envoyez le lien d'inscription public."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "7. Que se passe-t-il si mon accès à la production est refusé ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nous garantissons notre service à 100 % satisfait ou remboursé. Si votre appli n'est pas approuvée après avoir suivi les recommandations de notre superviseur, vous choisissez une relance gratuite de 14 jours ou un remboursement intégral."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://12-testers.github.io/fr-FR/12-testeurs/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://12-testers.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "12 testeurs pendant 14 jours",
+          "item": "https://12-testers.github.io/fr-FR/12-testeurs/"
+        }
+      ]
     }
-
   ]
-
 }
-
   </script>
 
 

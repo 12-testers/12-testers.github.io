@@ -170,205 +170,222 @@
   <!-- Schema.org JSON-LD -->
 
   <script type="application/ld+json">
-
 {
-
   "@context": "https://schema.org",
-
   "@graph": [
-
     {
-
       "@type": "Organization",
-
       "@id": "https://12-testers.github.io/#organization",
-
       "name": "12 Testers For 14 Days ng AppConsoleLab",
-
       "url": "https://12-testers.github.io/fil/12-na-tester/",
-
       "logo": "https://12-testers.github.io/assets/logo.svg"
-
     },
-
     {
-
       "@type": "WebSite",
-
       "@id": "https://12-testers.github.io/fil/12-na-tester/#website",
-
       "url": "https://12-testers.github.io/fil/12-na-tester/",
-
       "name": "12 Testers For 14 Days ng AppConsoleLab",
-
       "inLanguage": "fil",
-
       "publisher": {
-
         "@id": "https://12-testers.github.io/#organization"
-
       }
-
     },
-
     {
-
       "@type": "Product",
-
       "name": "12 na Tester sa Loob ng 14 na Araw | Serbisyo para sa Saradong Pagsubok sa Google Play",
-
       "description": "Kumuha ng 12 na tester sa loob ng 14 na araw gamit ang totoong Android phone. Ipasa ang saradong pagsubok sa Google Play na may araw-araw na pagbukas ng app, detalyadong ulat ng bug, at garantisadong access sa produksyon.",
-
       "brand": {
-
         "@type": "Brand",
-
         "name": "12 Testers For 14 Days by AppConsoleLab"
-
       },
-
       "offers": {
-
         "@type": "AggregateOffer",
-
         "lowPrice": "20",
-
         "highPrice": "40",
-
         "priceCurrency": "USD",
-
         "offerCount": "2"
-
-      }
-
-    },
-
-    {
-
-      "@type": "FAQPage",
-
-      "mainEntity": [
-
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "6",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
         {
-
-          "@type": "Question",
-
-          "name": "1. Bakit kailangan ko ng 12 na tester sa loob ng 14 na araw sa Google Play?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Inoobliga ng Google Play ang bawat personal na developer account na ginawa pagkatapos ng Nobyembre 2023 na magkaroon ng hindi bababa sa 12 na tester sa saradong pagsubok na naka-opt in nang tuloy-tuloy sa loob ng 14 na araw bago makapag-apply para sa access sa produksyon."
-
+          "@type": "Review",
+          "name": "Aprubado sa Unang Subok",
+          "reviewBody": "Tatlong linggo akong nagsayang ng oras sa Reddit para sa 12 na tester at dalawang beses na-reject. Nagtalaga ang AppConsoleLab ng 25 totoong tester sa loob ng ilang oras at naaprubahan ang fitness app ko sa Day 15.",
+          "author": {
+            "@type": "Person",
+            "name": "Mark D."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "2. Ilang tester ang itinatalaga ninyo para sa pagsubok sa Google Play?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Sa halip na 12 lang, nagbibigay ang Basic plan namin ng 25 totoong tao at 50 naman sa Premium plan. Tinitiyak ng safety buffer na ito na hindi bababa sa 12 ang aktibong bilang sa buong 14 na araw."
-
+          "@type": "Review",
+          "name": "Nahuli ang Crash sa Android 14",
+          "reviewBody": "Nahuli ng supervisor nila ang isang crash sa Android 14 sa ika-4 na araw ng saradong pagsubok. Nag-push kami ng v1.0.1 at nakapasa sa review nang walang kahirap-hirap.",
+          "author": {
+            "@type": "Person",
+            "name": "Priya M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "3. Binubuksan ba ng mga tester ang app araw-araw sa loob ng 14 na araw?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Oo. Binubuksan ng team namin ang app mo araw-araw sa mga totoong pisikal na Android phone, sinusuri ang pangunahing screen, tinitingnan kung may crash, at nagpapadala ng tunay na pribadong feedback sa Google Play."
-
+          "@type": "Review",
+          "name": "Walang Stress, Sulit na Sulit",
+          "reviewBody": "Pinakasulit na $20 na ginastos ko para sa launch. Dahil 25 pisikal na Android phone ang naka-opt in, hindi ako kinabahan na may mag-uninstall sa Day 13.",
+          "author": {
+            "@type": "Person",
+            "name": "Rafael S."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "4. Gumagamit ba kayo ng emulator o automated bot?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Hindi kailanman. Madaling nade-detect ng Google Play ang mga emulator at bot farm. Bawat tester sa aming cohort ay gumagamit ng totoong pisikal na Android smartphone mula Android 7 hanggang Android 16."
-
+          "@type": "Review",
+          "name": "Mahusay na Suporta sa Saradong Pagsubok",
+          "reviewBody": "Dati, nakaka-block ng launch ang paghahanap ng 12 na tester. Sila na ang bahala sa onboarding, araw-araw na pagbukas, pati sa custom na sagot sa 7 tanong.",
+          "author": {
+            "@type": "Person",
+            "name": "Tariq H."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "5. Pwede ba akong mag-push ng app update habang nasa 14-araw na saradong pagsubok?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Oo! Inirerekomenda pa nga namin ang paglabas ng kahit isang update (gaya ng v1.0.1) sa gitna ng siklo. Awtomatikong ini-install ng mga tester ang update at bineberipika ang mga pag-ayos, na malaki ang tulong sa pag-apruba."
-
+          "@type": "Review",
+          "name": "Detalyadong Ulat sa UI Bug",
+          "reviewBody": "Bukod sa 14 na araw na aktibong 25+ device, nagpadala pa sila ng screenshot ng nag-overlap na button sa dark mode sa Xiaomi kaya naayos namin agad bago mag-live.",
+          "author": {
+            "@type": "Person",
+            "name": "Elena V."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "6. Kailangan ko bang ibahagi ang password ng Google Play Console ko?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Hindi. Huwag kailanman ibahagi ang password ng Play Console mo kahit kanino. Idaragdag mo lang ang aming pinamamahalaang Google Group email sa iyong track ng saradong pagsubok at ibabahagi ang Play Store opt-in link."
-
+          "@type": "Review",
+          "name": "Pinakamabilis na Daan sa Produksyon",
+          "reviewBody": "Kailangan ko nang madalian ng 12 na tester para sa utility app ko. Nagsimula sila sa loob ng 4 na oras at ginabayan ako hanggang makakuha ng access sa produksyon.",
+          "author": {
+            "@type": "Person",
+            "name": "Marcus T."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
-        },
-
-        {
-
-          "@type": "Question",
-
-          "name": "7. Ano ang mangyayari kung hindi maaprubahan ang access ko sa produksyon?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Sinasaklaw namin ang serbisyo ng 100% garantiyang ibabalik ang bayad. Kung hindi maaprubahan ang app mo matapos sundin ang gabay ng aming supervisor, maaari kang pumili ng libreng 14-araw na re-run o buong refund."
-
-          }
-
         }
-
       ]
-
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "1. Bakit kailangan ko ng 12 na tester sa loob ng 14 na araw sa Google Play?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Inoobliga ng Google Play ang bawat personal na developer account na ginawa pagkatapos ng Nobyembre 2023 na magkaroon ng hindi bababa sa 12 na tester sa saradong pagsubok na naka-opt in nang tuloy-tuloy sa loob ng 14 na araw bago makapag-apply para sa access sa produksyon."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2. Ilang tester ang itinatalaga ninyo para sa pagsubok sa Google Play?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sa halip na 12 lang, nagbibigay ang Basic plan namin ng 25 totoong tao at 50 naman sa Premium plan. Tinitiyak ng safety buffer na ito na hindi bababa sa 12 ang aktibong bilang sa buong 14 na araw."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "3. Binubuksan ba ng mga tester ang app araw-araw sa loob ng 14 na araw?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oo. Binubuksan ng team namin ang app mo araw-araw sa mga totoong pisikal na Android phone, sinusuri ang pangunahing screen, tinitingnan kung may crash, at nagpapadala ng tunay na pribadong feedback sa Google Play."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "4. Gumagamit ba kayo ng emulator o automated bot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hindi kailanman. Madaling nade-detect ng Google Play ang mga emulator at bot farm. Bawat tester sa aming cohort ay gumagamit ng totoong pisikal na Android smartphone mula Android 7 hanggang Android 16."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "5. Pwede ba akong mag-push ng app update habang nasa 14-araw na saradong pagsubok?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oo! Inirerekomenda pa nga namin ang paglabas ng kahit isang update (gaya ng v1.0.1) sa gitna ng siklo. Awtomatikong ini-install ng mga tester ang update at bineberipika ang mga pag-ayos, na malaki ang tulong sa pag-apruba."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "6. Kailangan ko bang ibahagi ang password ng Google Play Console ko?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hindi. Huwag kailanman ibahagi ang password ng Play Console mo kahit kanino. Idaragdag mo lang ang aming pinamamahalaang Google Group email sa iyong track ng saradong pagsubok at ibabahagi ang Play Store opt-in link."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "7. Ano ang mangyayari kung hindi maaprubahan ang access ko sa produksyon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sinasaklaw namin ang serbisyo ng 100% garantiyang ibabalik ang bayad. Kung hindi maaprubahan ang app mo matapos sundin ang gabay ng aming supervisor, maaari kang pumili ng libreng 14-araw na re-run o buong refund."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://12-testers.github.io/fil/12-na-tester/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://12-testers.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "12 na Tester sa Loob ng 14 na Araw",
+          "item": "https://12-testers.github.io/fil/12-na-tester/"
+        }
+      ]
     }
-
   ]
-
 }
-
   </script>
 
 

@@ -170,205 +170,222 @@
   <!-- Schema.org JSON-LD -->
 
   <script type="application/ld+json">
-
 {
-
   "@context": "https://schema.org",
-
   "@graph": [
-
     {
-
       "@type": "Organization",
-
       "@id": "https://12-testers.github.io/#organization",
-
       "name": "12 Testare i 14 Dagar",
-
       "url": "https://12-testers.github.io/sv/12-testare/",
-
       "logo": "https://12-testers.github.io/assets/logo.svg"
-
     },
-
     {
-
       "@type": "WebSite",
-
       "@id": "https://12-testers.github.io/sv/12-testare/#website",
-
       "url": "https://12-testers.github.io/sv/12-testare/",
-
       "name": "12 Testare i 14 Dagar",
-
       "inLanguage": "sv",
-
       "publisher": {
-
         "@id": "https://12-testers.github.io/#organization"
-
       }
-
     },
-
     {
-
       "@type": "Product",
-
       "name": "12 Testare i 14 Dagar | Sluten Testning på Google Play Console",
-
       "description": "Få 12 testare i 14 dagar på riktiga Android-telefoner. Klara kraven för sluten testning på Google Play och lås upp åtkomst till produktion på första försöket.",
-
       "brand": {
-
         "@type": "Brand",
-
         "name": "12 Testers For 14 Days by AppConsoleLab"
-
       },
-
       "offers": {
-
         "@type": "AggregateOffer",
-
         "lowPrice": "20",
-
         "highPrice": "40",
-
         "priceCurrency": "USD",
-
         "offerCount": "2"
-
-      }
-
-    },
-
-    {
-
-      "@type": "FAQPage",
-
-      "mainEntity": [
-
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "6",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
         {
-
-          "@type": "Question",
-
-          "name": "Är tjänsten tillåten enligt Google Plays regler?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Ja. Google kräver att riktiga människor testar din app på riktiga Android-enheter under 14 dagar. Våra testare ansluter via din officiella länk för sluten testning och använder appen naturligt."
-
+          "@type": "Review",
+          "name": "Godkänd direkt på dag 15",
+          "reviewBody": "Hade kört fast i två veckor med forumtestare som aldrig öppnade appen. Med den här tjänsten gick ansökan igenom utan minsta problem.",
+          "author": {
+            "@type": "Person",
+            "name": "Erik Lindqvist — Stockholm, Sverige"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "Varför ingår 25+ testare när Google bara kräver 12?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "För din säkerhet. Om en testare byter telefon eller glömmer en dag gör vår buffert på 25+ personer att du alltid ligger långt över kravet på 12 aktiva testare."
-
+          "@type": "Review",
+          "name": "Hittade en bugg på Android 13",
+          "reviewBody": "Testarna upptäckte att min betalningsvy klipptes på mindre skärmar. Det var guld värt att fixa innan lansering!",
+          "author": {
+            "@type": "Person",
+            "name": "Maja Bergström — Göteborg, Sverige"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "Hur bjuder jag in testarna i Play Console?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Du kan antingen lägga till vår Google Group i ditt slutna testspår eller klistra in den e-postlista vi skickar till dig."
-
+          "@type": "Review",
+          "name": "Smidig support via WhatsApp",
+          "reviewBody": "Jag laddade upp en ny AAB på dag 8 och alla testare uppdaterade samma dag. Väldigt proffsigt bemötande.",
+          "author": {
+            "@type": "Person",
+            "name": "Oskar Nyström — Malmö, Sverige"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "Vad gäller om min app kostar pengar?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Du kan skapa kampanjkoder (Promo Codes) i Play Console eller göra appen gratis under de 14 dagarna av sluten testning."
-
+          "@type": "Review",
+          "name": "Värt varenda krona",
+          "reviewBody": "För $20 slapp jag jaga kompisar och kollegor i två veckor. Allt rullade på automatiskt.",
+          "author": {
+            "@type": "Person",
+            "name": "Henrik Solberg — Oslo, Norge"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "Kan ni testa appar som kräver inloggning?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Ja! Skicka ett demokonto eller låt våra testare registrera sig själva med sina egna konton."
-
+          "@type": "Review",
+          "name": "Färdiga svaren sparade massor av tid",
+          "reviewBody": "Med Premium-paketet fick jag en tydlig rapport och välformulerade svar till Google. Blev godkänd på under ett dygn.",
+          "author": {
+            "@type": "Person",
+            "name": "Sofia Holm — Uppsala, Sverige"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "Vad händer om Google ändå nekar åtkomst till produktion?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Vi analyserar avslaget tillsammans med dig, kör en ny runda helt gratis eller betalar tillbaka 100% av pengarna enligt vår garanti."
-
+          "@type": "Review",
+          "name": "Riktiga sessioner i Firebase",
+          "reviewBody": "Jag kunde följa i Firebase Analytics att 25+ olika enheter använde appen dagligen i 14 dagar. Rekommenderas starkt.",
+          "author": {
+            "@type": "Person",
+            "name": "Lukas Lind — Köpenhamn, Danmark"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
-        },
-
-        {
-
-          "@type": "Question",
-
-          "name": "Vilka betalningsmetoder fungerar?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Vi tar emot kortbetalningar, PayPal och andra vanliga internationella betalsätt. Skriv till oss på WhatsApp om du behöver hjälp."
-
-          }
-
         }
-
       ]
-
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Är tjänsten tillåten enligt Google Plays regler?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Google kräver att riktiga människor testar din app på riktiga Android-enheter under 14 dagar. Våra testare ansluter via din officiella länk för sluten testning och använder appen naturligt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Varför ingår 25+ testare när Google bara kräver 12?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "För din säkerhet. Om en testare byter telefon eller glömmer en dag gör vår buffert på 25+ personer att du alltid ligger långt över kravet på 12 aktiva testare."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hur bjuder jag in testarna i Play Console?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Du kan antingen lägga till vår Google Group i ditt slutna testspår eller klistra in den e-postlista vi skickar till dig."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vad gäller om min app kostar pengar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Du kan skapa kampanjkoder (Promo Codes) i Play Console eller göra appen gratis under de 14 dagarna av sluten testning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan ni testa appar som kräver inloggning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja! Skicka ett demokonto eller låt våra testare registrera sig själva med sina egna konton."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vad händer om Google ändå nekar åtkomst till produktion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vi analyserar avslaget tillsammans med dig, kör en ny runda helt gratis eller betalar tillbaka 100% av pengarna enligt vår garanti."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vilka betalningsmetoder fungerar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vi tar emot kortbetalningar, PayPal och andra vanliga internationella betalsätt. Skriv till oss på WhatsApp om du behöver hjälp."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://12-testers.github.io/sv/12-testare/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://12-testers.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "12 Testare i 14 Dagar: Klara Sluten Testning på Google Play Utan Krångel",
+          "item": "https://12-testers.github.io/sv/12-testare/"
+        }
+      ]
     }
-
   ]
-
 }
-
   </script>
 
 

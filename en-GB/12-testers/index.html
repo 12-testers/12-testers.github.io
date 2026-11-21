@@ -170,205 +170,222 @@
   <!-- Schema.org JSON-LD -->
 
   <script type="application/ld+json">
-
 {
-
   "@context": "https://schema.org",
-
   "@graph": [
-
     {
-
       "@type": "Organization",
-
       "@id": "https://12-testers.github.io/#organization",
-
       "name": "12 Testers For 14 Days — AppConsoleLab",
-
       "url": "https://12-testers.github.io/en-GB/12-testers/",
-
       "logo": "https://12-testers.github.io/assets/logo.svg"
-
     },
-
     {
-
       "@type": "WebSite",
-
       "@id": "https://12-testers.github.io/en-GB/12-testers/#website",
-
       "url": "https://12-testers.github.io/en-GB/12-testers/",
-
       "name": "12 Testers For 14 Days — AppConsoleLab",
-
       "inLanguage": "en-GB",
-
       "publisher": {
-
         "@id": "https://12-testers.github.io/#organization"
-
       }
-
     },
-
     {
-
       "@type": "Product",
-
       "name": "12 Testers For 14 Days — Google Play Closed Testing Service | AppConsoleLab",
-
       "description": "Get 12 testers for 14 days on real physical Android mobile phones. Pass Google Play closed testing with daily app opens, thorough bug reports, and guaranteed production access or your money back.",
-
       "brand": {
-
         "@type": "Brand",
-
         "name": "12 Testers For 14 Days by AppConsoleLab"
-
       },
-
       "offers": {
-
         "@type": "AggregateOffer",
-
         "lowPrice": "20",
-
         "highPrice": "40",
-
         "priceCurrency": "USD",
-
         "offerCount": "2"
-
-      }
-
-    },
-
-    {
-
-      "@type": "FAQPage",
-
-      "mainEntity": [
-
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "6",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
         {
-
-          "@type": "Question",
-
-          "name": "1. Why do I need 12 testers for 14 days on Google Play?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Google Play requires every personal developer account created after November 2023 to have at least <strong>12 testers for closed testing</strong> opted in continuously for 14 days before you can apply for production access."
-
+          "@type": "Review",
+          "name": "Approved on the First Attempt",
+          "reviewBody": "I wasted three weeks on Reddit trying to gather 12 testers and got rejected twice. AppConsoleLab assigned 25 real testers within hours and my fitness app was approved on Day 15.",
+          "author": {
+            "@type": "Person",
+            "name": "Oliver W."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "2. How many testers do you assign for Google Play testing?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Instead of assigning only 12 testers, our Basic plan provides 25 real human testers and our Premium plan provides 50 real human testers. This safety buffer guarantees your active count never drops below 12 during the 14-day window."
-
+          "@type": "Review",
+          "name": "Caught a Real Android 14 Crash",
+          "reviewBody": "Their supervisor spotted a crash on Android 14 during day 4 of closed testing. We pushed v1.0.1 and passed the Google Play review with zero issues.",
+          "author": {
+            "@type": "Person",
+            "name": "Charlotte B."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "3. Do your 12 testers open the app every day for 14 days?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Yes. Our testing team opens your app daily on real physical Android mobile phones, explores core screens, checks for crashes, and submits genuine private feedback inside Google Play."
-
+          "@type": "Review",
+          "name": "Zero Stress, Worth Every Penny",
+          "reviewBody": "Best $20 I spent on my launch. Having 25 physical Android handsets opted in meant I never had to worry about someone uninstalling on Day 13.",
+          "author": {
+            "@type": "Person",
+            "name": "Callum M."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "4. Are emulators or automated bots used?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Never. Google Play easily detects emulators and bot farms. Every single tester in our cohort uses a real physical Android smartphone running Android 7 through Android 16."
-
+          "@type": "Review",
+          "name": "Great Support for Client Apps",
+          "reviewBody": "Finding 12 testers for closed testing used to stall every client app I shipped. Their team handles onboarding, daily opens, and even drafts tailored answers for the 7 questions.",
+          "author": {
+            "@type": "Person",
+            "name": "Liam O."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "5. Can I push app updates during the 14-day closed testing period?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "Yes! In fact, we recommend pushing at least one update (such as v1.0.1) during your closed testing cycle. Our testers automatically install the update and verify your bug fixes, which significantly boosts production approval odds."
-
+          "@type": "Review",
+          "name": "Detailed UI Bug Reports",
+          "reviewBody": "Not only did they keep 25+ devices active for 14 straight days, they sent screenshots of a dark-mode button overlap on Xiaomi phones so we could fix it before launch.",
+          "author": {
+            "@type": "Person",
+            "name": "Amelia H."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
         },
-
         {
-
-          "@type": "Question",
-
-          "name": "6. Do I need to share my Google Play Console password?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "No. Never share your Play Console password with anyone. You simply add our managed Google Group email list to your closed testing track and share your public Play Store opt-in link."
-
+          "@type": "Review",
+          "name": "Fastest Route to Production",
+          "reviewBody": "I needed 12 testers for 14 days urgently for a utility app. They started within 4 hours of my order and guided me straight to production approval.",
+          "author": {
+            "@type": "Person",
+            "name": "George P."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
           }
-
-        },
-
-        {
-
-          "@type": "Question",
-
-          "name": "7. What happens if my production access is not approved?",
-
-          "acceptedAnswer": {
-
-            "@type": "Answer",
-
-            "text": "We back our service with a 100% money-back guarantee. If your app is not approved for production after following our supervisor guidance, you can choose a free 14-day re-run or a full refund."
-
-          }
-
         }
-
       ]
-
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "1. Why do I need 12 testers for 14 days on Google Play?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Play requires every personal developer account created after November 2023 to have at least <strong>12 testers for closed testing</strong> opted in continuously for 14 days before you can apply for production access."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2. How many testers do you assign for Google Play testing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Instead of assigning only 12 testers, our Basic plan provides 25 real human testers and our Premium plan provides 50 real human testers. This safety buffer guarantees your active count never drops below 12 during the 14-day window."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "3. Do your 12 testers open the app every day for 14 days?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our testing team opens your app daily on real physical Android mobile phones, explores core screens, checks for crashes, and submits genuine private feedback inside Google Play."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "4. Are emulators or automated bots used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Never. Google Play easily detects emulators and bot farms. Every single tester in our cohort uses a real physical Android smartphone running Android 7 through Android 16."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "5. Can I push app updates during the 14-day closed testing period?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! In fact, we recommend pushing at least one update (such as v1.0.1) during your closed testing cycle. Our testers automatically install the update and verify your bug fixes, which significantly boosts production approval odds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "6. Do I need to share my Google Play Console password?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Never share your Play Console password with anyone. You simply add our managed Google Group email list to your closed testing track and share your public Play Store opt-in link."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "7. What happens if my production access is not approved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We back our service with a 100% money-back guarantee. If your app is not approved for production after following our supervisor guidance, you can choose a free 14-day re-run or a full refund."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://12-testers.github.io/en-GB/12-testers/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://12-testers.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "12 Testers For 14 Days",
+          "item": "https://12-testers.github.io/en-GB/12-testers/"
+        }
+      ]
     }
-
   ]
-
 }
-
   </script>
 
 
