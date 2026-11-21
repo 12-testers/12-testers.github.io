@@ -2241,6 +2241,7 @@ a:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 0.35rem;
 }
+.lang-dropdown-item.is-main-en { background: #eff6ff; color: var(--brand-primary); font-weight: 700; grid-column: 1 / -1; margin-bottom: 0.35rem; border: 1px solid #bfdbfe; }
 .lang-dropdown.is-open .lang-dropdown-menu {
   display: grid;
 }
@@ -2354,10 +2355,11 @@ a:hover {
           <li class="lang-dropdown" id="langDropdown">
             <button type="button" class="lang-toggle-btn" id="langToggleBtn" aria-expanded="false" aria-haspopup="true">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              <span>Languages (49)</span>
+              <span>Languages (50)</span>
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="lang-dropdown-menu" role="menu">
+              <a href="/" class="lang-dropdown-item is-main-en"><span>English (Main Homepage)</span><span class="lang-code-pill">EN</span></a>
               <a href="/af/12-toetsers/" class="lang-dropdown-item"><span>Afrikaans</span><span class="lang-code-pill">af</span></a>
               <a href="/am/12-ሞካሪዎች/" class="lang-dropdown-item"><span>አማርኛ (Amharic)</span><span class="lang-code-pill">am</span></a>
               <a href="/bg/12-тестери/" class="lang-dropdown-item"><span>Български (Bulgarian)</span><span class="lang-code-pill">bg</span></a>

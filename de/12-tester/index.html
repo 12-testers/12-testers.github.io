@@ -2198,7 +2198,111 @@ a:hover {
 
 
 
-  </style>
+  
+/* Language Switcher Dropdown */
+.lang-dropdown {
+  position: relative;
+}
+.lang-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #f8fafc;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.42rem 0.78rem;
+  border-radius: var(--radius-sm, 8px);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.lang-toggle-btn:hover {
+  border-color: var(--brand-primary);
+  color: var(--brand-primary);
+  background: #f0f9ff;
+}
+.lang-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.65rem);
+  right: 0;
+  width: 620px;
+  max-width: calc(100vw - 2rem);
+  max-height: 400px;
+  overflow-y: auto;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md, 12px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.14);
+  padding: 1rem;
+  z-index: 1100;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.35rem;
+}
+[dir="rtl"] .lang-dropdown-menu {
+  right: auto;
+  left: 0;
+}
+.lang-dropdown.is-open .lang-dropdown-menu {
+  display: grid;
+}
+.lang-dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-body);
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.lang-dropdown-item:hover {
+  background: #f0f9ff;
+  color: var(--brand-primary);
+}
+.lang-dropdown-item.is-main-en {
+  background: #eff6ff;
+  color: var(--brand-primary);
+  font-weight: 700;
+  grid-column: 1 / -1;
+  margin-bottom: 0.35rem;
+  border: 1px solid #bfdbfe;
+}
+.lang-code-pill {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  margin-left: 0.35rem;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .lang-dropdown {
+    width: 100%;
+  }
+  .lang-toggle-btn {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .lang-dropdown-menu {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 260px;
+    box-shadow: none;
+    background: #f8fafc;
+  }
+}
+
+</style>
 </head>
 <body>
 
@@ -2253,6 +2357,65 @@ a:hover {
           <li><a href="#pricing" class="nav-link">Preise</a></li>
           <li><a href="#reviews" class="nav-link">Bewertungen</a></li>
           <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li class="lang-dropdown" id="langDropdown">
+            <button type="button" class="lang-toggle-btn" id="langToggleBtn" aria-expanded="false" aria-haspopup="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span>Languages (50)</span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="lang-dropdown-menu" role="menu">
+              <a href="/" class="lang-dropdown-item is-main-en"><span>English (Main Homepage)</span><span class="lang-code-pill">EN</span></a>
+              <a href="/af/12-toetsers/" class="lang-dropdown-item"><span>Afrikaans</span><span class="lang-code-pill">af</span></a>
+              <a href="/am/12-ሞካሪዎች/" class="lang-dropdown-item"><span>አማርኛ (Amharic)</span><span class="lang-code-pill">am</span></a>
+              <a href="/bg/12-тестери/" class="lang-dropdown-item"><span>Български (Bulgarian)</span><span class="lang-code-pill">bg</span></a>
+              <a href="/ca/12-provadors/" class="lang-dropdown-item"><span>Català (Catalan)</span><span class="lang-code-pill">ca</span></a>
+              <a href="/zh-HK/12-名測試人員/" class="lang-dropdown-item"><span>繁體中文 — 香港</span><span class="lang-code-pill">zh-HK</span></a>
+              <a href="/zh-CN/12-名测试人员/" class="lang-dropdown-item"><span>简体中文 — 中国</span><span class="lang-code-pill">zh-CN</span></a>
+              <a href="/zh-TW/12-名測試人員/" class="lang-dropdown-item"><span>繁體中文 — 台灣</span><span class="lang-code-pill">zh-TW</span></a>
+              <a href="/hr/12-testera/" class="lang-dropdown-item"><span>Hrvatski (Croatian)</span><span class="lang-code-pill">hr</span></a>
+              <a href="/cs/12-testerů/" class="lang-dropdown-item"><span>Čeština (Czech)</span><span class="lang-code-pill">cs</span></a>
+              <a href="/da/12-testere/" class="lang-dropdown-item"><span>Dansk (Danish)</span><span class="lang-code-pill">da</span></a>
+              <a href="/nl/12-testers/" class="lang-dropdown-item"><span>Nederlands (Dutch)</span><span class="lang-code-pill">nl</span></a>
+              <a href="/en-GB/12-testers/" class="lang-dropdown-item"><span>English (UK)</span><span class="lang-code-pill">en-GB</span></a>
+              <a href="/en-US/12-testers/" class="lang-dropdown-item"><span>English (US)</span><span class="lang-code-pill">en-US</span></a>
+              <a href="/et/12-testijat/" class="lang-dropdown-item"><span>Eesti (Estonian)</span><span class="lang-code-pill">et</span></a>
+              <a href="/fil/12-na-tester/" class="lang-dropdown-item"><span>Filipino</span><span class="lang-code-pill">fil</span></a>
+              <a href="/fi/12-testaajaa/" class="lang-dropdown-item"><span>Suomi (Finnish)</span><span class="lang-code-pill">fi</span></a>
+              <a href="/fr-CA/12-testeurs/" class="lang-dropdown-item"><span>Français (Canada)</span><span class="lang-code-pill">fr-CA</span></a>
+              <a href="/fr-FR/12-testeurs/" class="lang-dropdown-item"><span>Français (France)</span><span class="lang-code-pill">fr-FR</span></a>
+              <a href="/de/12-tester/" class="lang-dropdown-item"><span>Deutsch (German)</span><span class="lang-code-pill">de</span></a>
+              <a href="/el/12-δοκιμαστές/" class="lang-dropdown-item"><span>Ελληνικά (Greek)</span><span class="lang-code-pill">el</span></a>
+              <a href="/he/12-בודקים/" class="lang-dropdown-item"><span>עברית (Hebrew)</span><span class="lang-code-pill">he</span></a>
+              <a href="/hi/12-टेस्टर/" class="lang-dropdown-item"><span>हिन्दी (Hindi)</span><span class="lang-code-pill">hi</span></a>
+              <a href="/hu/12-tesztelő/" class="lang-dropdown-item"><span>Magyar (Hungarian)</span><span class="lang-code-pill">hu</span></a>
+              <a href="/is/12-prófendur/" class="lang-dropdown-item"><span>Íslenska (Icelandic)</span><span class="lang-code-pill">is</span></a>
+              <a href="/id/12-penguji/" class="lang-dropdown-item"><span>Bahasa Indonesia</span><span class="lang-code-pill">id</span></a>
+              <a href="/it/12-tester/" class="lang-dropdown-item"><span>Italiano (Italian)</span><span class="lang-code-pill">it</span></a>
+              <a href="/ja/12-人のテスター/" class="lang-dropdown-item"><span>日本語 (Japanese)</span><span class="lang-code-pill">ja</span></a>
+              <a href="/ko/12-명의-테스터/" class="lang-dropdown-item"><span>한국어 (Korean)</span><span class="lang-code-pill">ko</span></a>
+              <a href="/lv/12-testētāji/" class="lang-dropdown-item"><span>Latviešu (Latvian)</span><span class="lang-code-pill">lv</span></a>
+              <a href="/lt/12-testuotojai/" class="lang-dropdown-item"><span>Lietuvių (Lithuanian)</span><span class="lang-code-pill">lt</span></a>
+              <a href="/ms/12-penguji/" class="lang-dropdown-item"><span>Bahasa Melayu (Malay)</span><span class="lang-code-pill">ms</span></a>
+              <a href="/no/12-testere/" class="lang-dropdown-item"><span>Norsk (Norwegian)</span><span class="lang-code-pill">no</span></a>
+              <a href="/pl/12-testerów/" class="lang-dropdown-item"><span>Polski (Polish)</span><span class="lang-code-pill">pl</span></a>
+              <a href="/pt-BR/12-testadores/" class="lang-dropdown-item"><span>Português (Brasil)</span><span class="lang-code-pill">pt-BR</span></a>
+              <a href="/pt-PT/12-testadores/" class="lang-dropdown-item"><span>Português (Portugal)</span><span class="lang-code-pill">pt-PT</span></a>
+              <a href="/ro/12-testeri/" class="lang-dropdown-item"><span>Română (Romanian)</span><span class="lang-code-pill">ro</span></a>
+              <a href="/ru/12-тестировщиков/" class="lang-dropdown-item"><span>Русский (Russian)</span><span class="lang-code-pill">ru</span></a>
+              <a href="/sr/12-тестера/" class="lang-dropdown-item"><span>Српски (Serbian)</span><span class="lang-code-pill">sr</span></a>
+              <a href="/sk/12-testerov/" class="lang-dropdown-item"><span>Slovenčina (Slovak)</span><span class="lang-code-pill">sk</span></a>
+              <a href="/sl/12-preizkuševalcev/" class="lang-dropdown-item"><span>Slovenščina (Slovenian)</span><span class="lang-code-pill">sl</span></a>
+              <a href="/es-419/12-evaluadores/" class="lang-dropdown-item"><span>Español (Latinoamérica)</span><span class="lang-code-pill">es-419</span></a>
+              <a href="/es-ES/12-evaluadores/" class="lang-dropdown-item"><span>Español (España)</span><span class="lang-code-pill">es-ES</span></a>
+              <a href="/sw/wajaribu-12/" class="lang-dropdown-item"><span>Kiswahili (Swahili)</span><span class="lang-code-pill">sw</span></a>
+              <a href="/sv/12-testare/" class="lang-dropdown-item"><span>Svenska (Swedish)</span><span class="lang-code-pill">sv</span></a>
+              <a href="/th/12-ผู้ทดสอบ/" class="lang-dropdown-item"><span>ไทย (Thai)</span><span class="lang-code-pill">th</span></a>
+              <a href="/tr/12-test-kullanıcısı/" class="lang-dropdown-item"><span>Türkçe (Turkish)</span><span class="lang-code-pill">tr</span></a>
+              <a href="/uk-UA/12-тестувальників/" class="lang-dropdown-item"><span>Українська (uk-UA)</span><span class="lang-code-pill">uk-UA</span></a>
+              <a href="/vi/12-người-thử-nghiệm/" class="lang-dropdown-item"><span>Tiếng Việt (Vietnamese)</span><span class="lang-code-pill">vi</span></a>
+              <a href="/zu/abahloli-abayi-12/" class="lang-dropdown-item"><span>isiZulu (Zulu)</span><span class="lang-code-pill">zu</span></a>
+            </div>
+          </li>
         </ul>
         <div class="nav-cta-wrap">
           <a href="https://wa.me/923394001479?text=Hi%2C%20I%20need%2012%20testers%20for%2014%20days" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
@@ -2932,5 +3095,26 @@ a:hover {
     });
 
   </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var langDropdown = document.getElementById('langDropdown');
+    var langBtn = document.getElementById('langToggleBtn');
+    if (langDropdown && langBtn) {
+      langBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var open = langDropdown.classList.toggle('is-open');
+        langBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      document.addEventListener('click', function(e) {
+        if (!langDropdown.contains(e.target)) {
+          langDropdown.classList.remove('is-open');
+          langBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  });
+</script>
+
 </body>
 </html>
